@@ -83,13 +83,13 @@ button{font-family:var(--font-body)}
     </sc-for>
   </div>
   <sc-for list="{{ shown }}" as="p" hint-placeholder-count="3">
-    <a href="{{ p.href }}" onClick="{{ p.open }}" style="display:grid;grid-template-columns:minmax(120px,180px) minmax(0,1fr) auto;gap:12px 32px;align-items:baseline;padding:32px 0;border-bottom:2px solid var(--color-divider);text-decoration:none;color:var(--color-text)" style-hover="background:var(--color-accent-100)">
-      <div style="display:flex;flex-direction:column;gap:6px;font-size:14px">
-        <span style="font-weight:600;letter-spacing:0.08em;text-transform:uppercase;font-size:12px;color:var(--color-accent-700)">{{ p.cat }}</span>
+    <a href="{{ p.href }}" onClick="{{ p.open }}" style="display:flex;flex-wrap:wrap;gap:12px 32px;align-items:baseline;padding:32px 0;border-bottom:2px solid var(--color-divider);text-decoration:none;color:var(--color-text)" style-hover="background:var(--color-accent-100)">
+      <div style="flex:0 0 160px;display:flex;flex-wrap:wrap;column-gap:16px;row-gap:6px;font-size:14px">
+        <span style="width:100%;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;font-size:12px;color:var(--color-accent-700)">{{ p.cat }}</span>
         <span>{{ p.date }}</span>
       </div>
-      <div style="min-width:0">
-        <h2 style="margin:0 0 10px;font-size:clamp(26px,2.8vw,36px);line-height:1.1;letter-spacing:-0.02em">{{ p.title }}</h2>
+      <div style="flex:1 1 320px;min-width:0">
+        <h2 style="margin:0 0 10px;font-size:clamp(24px,2.8vw,36px);line-height:1.1;letter-spacing:-0.02em">{{ p.title }}</h2>
         <p style="margin:0;font-size:17px;line-height:1.6;max-width:62ch">{{ p.dek }}</p>
       </div>
       <span style="display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--color-accent-2-700);white-space:nowrap">{{ p.mins }} <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
@@ -167,6 +167,18 @@ button{font-family:var(--font-body)}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
   </article>
 
   <div style="margin-top:56px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));border-top:2px solid var(--color-text)">
@@ -227,6 +239,24 @@ class Component extends DCLogic {
     { id: 'forecast-evidence', key: 'p6', cat: 'Forecasting', date: '5 October 2026', mins: '6 min read',
       title: 'A forecast is evidence, not optimism',
       dek: 'Why most early-stage forecasts miss, and how exit criteria, deal reviews and a few honest questions make the number something you can trust.' },
+    { id: 'pick-one-segment', key: 'p7', cat: 'Strategy', date: '5 October 2026', mins: '5 min read',
+      title: 'Pick one segment and win it first',
+      dek: 'Early sales teams spread across too many markets. How to choose a first segment, test it and know when to expand.' },
+    { id: 'pipeline-coverage', key: 'p8', cat: 'Pipeline', date: '5 October 2026', mins: '5 min read',
+      title: 'How much pipeline do you actually need?',
+      dek: 'A simple way to work out pipeline coverage from your own numbers, and what to do when you are short.' },
+    { id: 'working-with-procurement', key: 'p9', cat: 'Negotiation', date: '5 October 2026', mins: '5 min read',
+      title: 'Working with procurement, not around it',
+      dek: 'Procurement is part of every enterprise deal. How to bring them in early, understand what they need and keep the deal moving.' },
+    { id: 'discovery-call', key: 'p10', cat: 'Methodology', date: '5 October 2026', mins: '5 min read',
+      title: 'Running a discovery call that earns the second meeting',
+      dek: 'A practical structure for first calls with enterprise buyers, the questions worth asking and how to end with a clear next step.' },
+    { id: 'weekly-forecast-call', key: 'p11', cat: 'Forecasting', date: '5 October 2026', mins: '4 min read',
+      title: 'Running a weekly forecast call in 30 minutes',
+      dek: 'A simple agenda for a weekly forecast meeting that keeps the number honest without taking over the team\'s week.' },
+    { id: 'cold-email-senior-buyers', key: 'p12', cat: 'Outbound', date: '5 October 2026', mins: '4 min read',
+      title: 'Writing a cold email a senior buyer will read',
+      dek: 'A practical guide to short, specific outbound emails for enterprise buyers, with a simple structure and what to leave out.' },
   ];
   CATS = ['All', 'Strategy', 'Pipeline', 'Negotiation', 'Methodology', 'Forecasting', 'Outbound'];
   state = { view: 'mutual-success-plans', cat: 'All' };
@@ -282,7 +312,7 @@ class Component extends DCLogic {
     return {
       isIndex: !post, isPost: !!post,
       post: post || {},
-      p1: post && post.key === 'p1', p2: post && post.key === 'p2', p3: post && post.key === 'p3', p4: post && post.key === 'p4', p5: post && post.key === 'p5', p6: post && post.key === 'p6',
+      ...Object.fromEntries(this.POSTS.map(x => [x.key, !!post && post.key === x.key])),
       goIndex: undefined,
       cats: this.CATS.map(name => {
         const on = name === cat;

@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /map.html
-
-Sitemap: https://www.coltasa.com/sitemap.xml

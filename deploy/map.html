@@ -41,13 +41,14 @@ function draw(){
   proj.fitExtent([[8,8],[W-8,H-8]], noAnt);
   svg.append('path').attr('d',path(d3.geoGraticule10())).attr('fill','none').attr('stroke',C.grat);
   svg.append('path').attr('d',path(noAnt)).attr('fill',C.land).attr('stroke',C.stroke).attr('stroke-width',.5);
-  const s = Math.max(.7, Math.min(1.2, W/900));
+  const s = Math.max(.75, Math.min(1.2, W/900));
   const g = svg.append('g');
+  const narrow = W < 560;
   cities.forEach(([n,p,dx,dy,a])=>{
     const [x,y] = proj(p);
     g.append('circle').attr('cx',x).attr('cy',y).attr('r',9*s).attr('fill','none').attr('stroke',C.line).attr('stroke-width',1.5);
     g.append('circle').attr('cx',x).attr('cy',y).attr('r',4.5*s).attr('fill',C.pin).attr('stroke',C.ring).attr('stroke-width',1.5);
-    g.append('text').attr('x',x+dx*s).attr('y',y+dy*s).attr('text-anchor',a).attr('fill',C.text)
+    if(!narrow) g.append('text').attr('x',x+dx*s).attr('y',y+dy*s).attr('text-anchor',a).attr('fill',C.text)
       .attr('font-size',13*s).attr('font-weight',700).attr('letter-spacing','.04em').text(n.toUpperCase());
   });
 }

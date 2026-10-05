@@ -48,6 +48,7 @@ button,input,textarea,select{font-family:var(--font-body)}
 .btn,label,.input,.tag{font-family:var(--font-body);font-weight:600}
 .btn:hover,.btn:focus-visible{background:var(--color-accent-2-600,#1877a5) !important;border-color:var(--color-accent-2-600,#1877a5) !important;color:#ffffff !important}
 .btn:active{background:var(--color-accent-2-700,#155f85) !important;border-color:var(--color-accent-2-700,#155f85) !important}
+@media (max-width:760px){[data-m="svc-side"],[data-m="mt-side"]{display:none!important}[data-m="mt-inline"]{display:block!important}[data-m="svc-inline"]{display:grid!important}}
 @media (max-width:640px){header[data-m="hdr"]{position:static!important}[data-m="sub"]{display:none!important}nav[data-m="nav"]{order:3;width:100%;justify-content:space-between;gap:4px!important}nav[data-m="nav"] a{display:flex;align-items:center;min-height:44px}footer a{display:inline-flex;align-items:center;min-height:44px}}
 </style>
 </helmet>
@@ -201,16 +202,34 @@ button,input,textarea,select{font-family:var(--font-body)}
           <p style="margin:0 0 4px;font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-accent-700)">{{ g.name }}</p>
           <div style="border-top:1px solid var(--color-divider)">
             <sc-for list="{{ g.items }}" as="it" hint-placeholder-count="3">
-              <button type="button" onClick="{{ it.select }}" onMouseEnter="{{ it.select }}" onFocus="{{ it.select }}" aria-pressed="{{ it.active }}" style="display:flex;align-items:center;gap:14px;width:100%;min-height:52px;padding:12px 12px 12px 16px;border:0;border-bottom:1px solid var(--color-divider);border-left:4px solid {{ it.bar }};background:{{ it.bg }};color:{{ it.fg }};font-family:var(--font-heading);font-weight:var(--heading-weight,800);font-size:clamp(18px,1.7vw,21px);line-height:1.2;cursor:pointer;text-align:left;transition:background .15s,color .15s,border-color .15s">
+              <button type="button" onClick="{{ it.select }}" onMouseEnter="{{ it.hover }}" onFocus="{{ it.hover }}" aria-pressed="{{ it.active }}" style="display:flex;align-items:center;gap:14px;width:100%;min-height:52px;padding:12px 12px 12px 16px;border:0;border-bottom:1px solid var(--color-divider);border-left:4px solid {{ it.bar }};background:{{ it.bg }};color:{{ it.fg }};font-family:var(--font-heading);font-weight:var(--heading-weight,800);font-size:clamp(18px,1.7vw,21px);line-height:1.2;cursor:pointer;text-align:left;transition:background .15s,color .15s,border-color .15s">
                 <span style="flex:1">{{ it.title }}</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent-2)" stroke-width="2.5" style="opacity:{{ it.arrow }};transition:opacity .15s"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
               </button>
+              <sc-if value="{{ it.active }}" hint-placeholder-val="{{ false }}">
+                <div data-m="svc-inline" style="display:none;background:var(--color-text);color:var(--color-bg);padding:24px 20px;gap:16px;border-top:4px solid var(--color-accent)">
+                  <p style="margin:0;font-size:16px;line-height:1.6">{{ it.d.desc }}</p>
+                  <div style="border-top:1px solid color-mix(in srgb,var(--color-bg) 25%,transparent);padding-top:14px">
+                    <p style="margin:0 0 10px;font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-accent-400)">What we deliver</p>
+                    <div style="display:grid;gap:10px">
+                      <sc-for list="{{ it.d.gets }}" as="x" hint-placeholder-count="3">
+                        <div style="display:flex;gap:12px;align-items:baseline;font-size:15px;line-height:1.5"><span style="width:8px;height:8px;flex:none;background:var(--color-accent-2);transform:translateY(-2px)"></span><span>{{ x }}</span></div>
+                      </sc-for>
+                    </div>
+                  </div>
+                  <div style="border-top:1px solid color-mix(in srgb,var(--color-bg) 25%,transparent);padding-top:14px">
+                    <p style="margin:0 0 6px;font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-accent-400)">Right for you if</p>
+                    <p style="margin:0;font-size:15px;line-height:1.55">{{ it.d.fit }}</p>
+                  </div>
+                  <a class="btn btn-primary" href="#contact" style="justify-self:start;min-width:200px;justify-content:space-between;padding:12px 16px">Talk about this <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+                </div>
+              </sc-if>
             </sc-for>
           </div>
         </div>
       </sc-for>
     </div>
-    <div style="flex:1.2 1 380px;min-width:0;position:sticky;top:96px;margin-top:24px;background:var(--color-text);color:var(--color-bg);padding:clamp(28px,3.5vw,44px);display:grid;gap:20px;border-top:4px solid var(--color-accent)">
+    <div data-m="svc-side" style="flex:1.2 1 380px;min-width:0;position:sticky;top:96px;margin-top:24px;background:var(--color-text);color:var(--color-bg);padding:clamp(28px,3.5vw,44px);display:grid;gap:20px;border-top:4px solid var(--color-accent)">
       <p style="margin:0;font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-accent-400)">{{ svc.group }}</p>
       <h3 style="margin:-8px 0 0;font-size:clamp(28px,3vw,38px);line-height:1.08;letter-spacing:-0.015em">{{ svc.title }}</h3>
       <p style="margin:0;font-size:17px;line-height:1.6;color:color-mix(in srgb,var(--color-bg) 90%,transparent)">{{ svc.desc }}</p>
@@ -320,13 +339,18 @@ button,input,textarea,select{font-family:var(--font-body)}
           <div style="display:grid;gap:8px">
             <sc-for list="{{ mg.items }}" as="mt" hint-placeholder-count="3">
               <button type="button" onClick="{{ mt.toggle }}" aria-expanded="{{ mt.active }}" style="display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:48px;padding:10px 16px;border:2px solid {{ mt.bg }};background:{{ mt.bg }};color:{{ mt.fg }};font-size:15px;font-weight:600;text-align:left;cursor:pointer;transition:background .15s,color .15s" style-hover="background:var(--color-accent-2-600);border-color:var(--color-accent-2-600);color:#ffffff">{{ mt.name }}<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="flex:none;transform:{{ mt.rot }};transition:transform .2s"><path d="M12 5v14M5 12h14"></path></svg></button>
+              <sc-if value="{{ mt.active }}" hint-placeholder-val="{{ false }}">
+                <div data-m="mt-inline" style="display:none;background:var(--color-text);color:var(--color-bg);padding:18px 20px;border-left:4px solid var(--color-accent-2)">
+                  <p style="margin:0;font-size:15px;line-height:1.6">{{ mt.desc }}</p>
+                </div>
+              </sc-if>
             </sc-for>
           </div>
         </div>
       </sc-for>
     </div>
     <sc-if value="{{ method }}" hint-placeholder-val="{{ false }}">
-      <div style="margin-top:20px;background:var(--color-text);color:var(--color-bg);padding:22px 26px;border-left:4px solid var(--color-accent-2)">
+      <div data-m="mt-side" style="margin-top:20px;background:var(--color-text);color:var(--color-bg);padding:22px 26px;border-left:4px solid var(--color-accent-2)">
         <p style="margin:0 0 6px;font-family:var(--font-heading);font-weight:var(--heading-weight,800);font-size:22px;line-height:1.2">{{ method.name }}</p>
         <p style="margin:0;font-size:15px;line-height:1.6;max-width:72ch;color:color-mix(in srgb,var(--color-bg) 88%,transparent)">{{ method.desc }}</p>
       </div>
@@ -609,11 +633,16 @@ class Component extends DCLogic {
         const svcGroups = this.SVC.map((g, gi) => ({ name: g.name, items: g.items.map(([title, desc], ii) => {
           const id = gi + '-' + ii, active = id === cur;
           const more = this.SVC_MORE[title] || [[], ''];
-          if (active) svc = { group: g.name, title, desc, gets: more[0], fit: more[1] ? more[1].charAt(0).toUpperCase() + more[1].slice(1) : '' };
-          return { title, active, select: () => { if (this.state.svc !== id) this.setState({ svc: id }); },
+          const d = { group: g.name, title, desc, gets: more[0], fit: more[1] ? more[1].charAt(0).toUpperCase() + more[1].slice(1) : '' };
+          if (active) svc = d;
+          const mobile = () => window.matchMedia('(max-width:760px)').matches;
+          return { title, active, d,
+            select: () => { if (this.state.svc !== id) this.setState({ svc: id }); else if (mobile()) this.setState({ svc: 'none' }); },
+            hover: () => { if (!mobile() && this.state.svc !== id) this.setState({ svc: id }); },
             bg: active ? 'var(--color-surface)' : 'transparent', fg: active ? 'var(--color-text)' : 'color-mix(in srgb, var(--color-text) 72%, transparent)',
             bar: active ? 'var(--color-accent-2)' : 'transparent', arrow: active ? 1 : 0 };
         }) }));
+        if (!svc) { const g0 = this.SVC[0], m0 = this.SVC_MORE[g0.items[0][0]] || [[], '']; svc = { group: g0.name, title: g0.items[0][0], desc: g0.items[0][1], gets: m0[0], fit: m0[1] ? m0[1].charAt(0).toUpperCase() + m0[1].slice(1) : '' }; }
         return { svcGroups, svc };
       })(),
       ...(() => {
@@ -647,7 +676,7 @@ class Component extends DCLogic {
       methodGroups: [['Qualification', ['MEDDPICC', 'BANT']], ['Selling methodology', ['Sandler', 'Challenger', 'SPIN Selling']], ['Deal execution', ['Command of the Message', 'Mutual Action Planning']]].map(([name, list]) => ({
         name, items: list.map(n => {
           const i = this.METHODS.findIndex(x => x[0] === n), active = s.method === i;
-          return { name: n, active, toggle: () => this.setState(st => ({ method: st.method === i ? null : i })),
+          return { name: n, active, desc: this.METHODS[i][1], toggle: () => this.setState(st => ({ method: st.method === i ? null : i })),
             bg: active ? 'var(--color-accent-2-600)' : 'var(--color-accent)', fg: '#ffffff', rot: active ? 'rotate(45deg)' : 'none' };
         }),
       })),
