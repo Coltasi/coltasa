@@ -224,6 +224,7 @@ button,input,textarea,select{font-family:var(--font-body)}
                     <p style="margin:0 0 6px;font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-accent-400)">Right for you if</p>
                     <p style="margin:0;font-size:15px;line-height:1.55">{{ it.d.fit }}</p>
                   </div>
+                  <sc-if value="{{ it.d.read }}" hint-placeholder-val="{{ false }}"><p style="margin:0;font-size:15px;line-height:1.5">Related reading: <a href="{{ it.d.readHref }}" style="color:var(--color-accent-400)">{{ it.d.readTitle }}</a></p></sc-if>
                   <a class="btn btn-primary" href="#contact" style="justify-self:start;min-width:200px;justify-content:space-between;padding:12px 16px">Talk about this <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
                 </div>
               </sc-if>
@@ -248,6 +249,7 @@ button,input,textarea,select{font-family:var(--font-body)}
         <p style="margin:0 0 6px;font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-accent-400)">Right for you if</p>
         <p style="margin:0;font-size:15px;line-height:1.55;color:color-mix(in srgb,var(--color-bg) 90%,transparent)">{{ svc.fit }}</p>
       </div>
+      <sc-if value="{{ svc.read }}" hint-placeholder-val="{{ false }}"><p style="margin:0;font-size:15px;line-height:1.5">Related reading: <a href="{{ svc.readHref }}" style="color:var(--color-accent-400)">{{ svc.readTitle }}</a></p></sc-if>
       <a class="btn btn-primary" href="#contact" style="justify-self:start;min-width:200px;justify-content:space-between;padding:12px 16px;margin-top:4px">Talk about this <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
     </div>
   </div>
@@ -486,6 +488,18 @@ class Component extends DCLogic {
     'Negotiation': [['Negotiation prep and give-get plans', 'Executive and procurement role-play', 'Live support through close'], 'you are giving away margin to get deals signed.'],
     'Fractional VP Sales': [['Part-time sales leadership', 'Team management and pipeline ownership', 'Hiring your full-time head of sales'], "you need sales leadership now but aren't ready for a full-time VP."],
   };
+  READ = {
+    'Sales strategy & GTM plan': ['pick-one-segment', 'Pick one segment and win it first'],
+    'Pricing & packaging': ['stop-discounting', 'Never give a discount. Trade it.'],
+    'Sales methodology': ['first-sales-playbook', 'Write the playbook before you hire the team'],
+    'Pipeline & forecasting': ['forecast-evidence', 'A forecast is evidence, not optimism'],
+    'Outbound campaigns': ['signal-over-noise', 'The contract between buyers and sellers is broken'],
+    'First sales hires': ['founder-led-sales-handoff', 'When to stop selling and hand it to your first rep'],
+    'Founder-led sales coaching': ['discovery-call', 'Running a discovery call that earns the second meeting'],
+    'Enterprise deal support': ['mutual-success-plans', 'The key tenets of a mutual success plan'],
+    'Negotiation': ['working-with-procurement', 'Working with procurement, not around it'],
+    'Fractional VP Sales': ['pipeline-coverage', 'How much pipeline do you actually need?'],
+  };
   SVC = [
     { name: 'Strategy', items: [
       ['Sales strategy & GTM plan', 'Your ICP, segments, sales motions and targets, tied to the plan for your next round.'],
@@ -626,6 +640,7 @@ class Component extends DCLogic {
   }
   componentDidUpdate() { this.applyFont(); }
   componentWillUnmount() { clearInterval(this.timer); clearInterval(this.refTimer); }
+  readOf(title) { const r = this.READ[title]; return r ? { read: true, readHref: '/insights/' + r[0], readTitle: r[1] } : { read: false, readHref: '', readTitle: '' }; }
   renderVals() {
     const s = this.state;
     return {
@@ -636,7 +651,7 @@ class Component extends DCLogic {
         const svcGroups = this.SVC.map((g, gi) => ({ name: g.name, items: g.items.map(([title, desc], ii) => {
           const id = gi + '-' + ii, active = id === cur;
           const more = this.SVC_MORE[title] || [[], ''];
-          const d = { group: g.name, title, desc, gets: more[0], fit: more[1] ? more[1].charAt(0).toUpperCase() + more[1].slice(1) : '' };
+          const d = { group: g.name, title, desc, gets: more[0], fit: more[1] ? more[1].charAt(0).toUpperCase() + more[1].slice(1) : '', ...this.readOf(title) };
           if (active) svc = d;
           const mobile = () => window.matchMedia('(max-width:760px)').matches;
           return { title, active, d,
@@ -645,7 +660,7 @@ class Component extends DCLogic {
             bg: active ? 'var(--color-surface)' : 'transparent', fg: active ? 'var(--color-text)' : 'color-mix(in srgb, var(--color-text) 72%, transparent)',
             bar: active ? 'var(--color-accent-2)' : 'transparent', arrow: active ? 1 : 0 };
         }) }));
-        if (!svc) { const g0 = this.SVC[0], m0 = this.SVC_MORE[g0.items[0][0]] || [[], '']; svc = { group: g0.name, title: g0.items[0][0], desc: g0.items[0][1], gets: m0[0], fit: m0[1] ? m0[1].charAt(0).toUpperCase() + m0[1].slice(1) : '' }; }
+        if (!svc) { const g0 = this.SVC[0], m0 = this.SVC_MORE[g0.items[0][0]] || [[], '']; svc = { group: g0.name, title: g0.items[0][0], desc: g0.items[0][1], gets: m0[0], fit: m0[1] ? m0[1].charAt(0).toUpperCase() + m0[1].slice(1) : '', ...this.readOf(g0.items[0][0]) }; }
         return { svcGroups, svc };
       })(),
       ...(() => {
@@ -703,5 +718,17 @@ class Component extends DCLogic {
   }
 }
 </script>
+<noscript id="static-services"><h2>Services and related reading</h2><ul>
+<li>Sales strategy &amp; GTM plan: <a href="/insights/pick-one-segment">Pick one segment and win it first</a></li>
+<li>Pricing &amp; packaging: <a href="/insights/stop-discounting">Never give a discount. Trade it.</a></li>
+<li>Sales methodology: <a href="/insights/first-sales-playbook">Write the playbook before you hire the team</a></li>
+<li>Pipeline &amp; forecasting: <a href="/insights/forecast-evidence">A forecast is evidence, not optimism</a></li>
+<li>Outbound campaigns: <a href="/insights/signal-over-noise">The contract between buyers and sellers is broken</a></li>
+<li>First sales hires: <a href="/insights/founder-led-sales-handoff">When to stop selling and hand it to your first rep</a></li>
+<li>Founder-led sales coaching: <a href="/insights/discovery-call">Running a discovery call that earns the second meeting</a></li>
+<li>Enterprise deal support: <a href="/insights/mutual-success-plans">The key tenets of a mutual success plan</a></li>
+<li>Negotiation: <a href="/insights/working-with-procurement">Working with procurement, not around it</a></li>
+<li>Fractional VP Sales: <a href="/insights/pipeline-coverage">How much pipeline do you actually need?</a></li>
+</ul><p><a href="/insights">All insights</a></p></noscript>
 </body>
 </html>

@@ -17,10 +17,11 @@ Files:
 3. Research for 10 minutes with web search: what people search for on this topic, what the top results and AI answers say, and what they miss. Use this to pick the search query the post targets and the angle that adds something.
 4. Write the post as `editorial/drafts/<post-id>.json` (format in `publish.py`). Follow the voice, structure and checklist below.
 5. `python3 editorial/publish.py add editorial/drafts/<post-id>.json`
-6. `PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers python3 editorial/check.py` (setup steps are at the top of `check.py`). Fix anything that fails.
-7. Tick the topic in `topics.md`, adding the post id and date.
-8. Commit and push to `main`. Vercel deploys production automatically in about a minute.
-9. Confirm the live URL returns the post (WebFetch `https://www.coltasa.com/insights/<post-id>` and check the headline is in the raw HTML).
+6. Link the new post from one or two older related posts: in each, wrap an existing phrase (or extend one sentence minimally) with `<a href="/insights/<new-id>">`. Edit only inside that post's article body.
+7. `PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers python3 editorial/check.py` (setup steps are at the top of `check.py`). Fix anything that fails.
+8. Tick the topic in `topics.md`, adding the post id and date.
+9. Commit and push to `main`. Vercel deploys production automatically in about a minute.
+10. Confirm the live URL returns the post (WebFetch `https://www.coltasa.com/insights/<post-id>` and check the headline is in the raw HTML).
 
 ## Voice
 
@@ -39,7 +40,11 @@ Files:
 - 4 to 7 `<h2>` sections. Phrase at least half as the questions a buyer of consulting would type or ask an AI ("How do you...", "When should you...", "What is...").
 - Each section opens with its answer in the first sentence, then explains.
 - At least one concrete list a reader can act on (steps, checklist, questions to ask).
-- Link naturally to 1 or 2 existing posts with `<a href="/insights/<id>">`.
+- Link naturally to 2 or 3 existing posts with `<a href="/insights/<id>">`, on descriptive phrases (never "click here").
+- Cite 2 to 4 credible external sources inline, where they support a specific claim: research firms (Gartner, Forrester, McKinsey), official documentation, original studies or data reports, and the recognised home of any framework you name (for example meddicc.com for MEDDPICC). Prefer the primary source over articles that summarise it. Avoid competitor consultancies and vendor listicles.
+- Open every source page during the run and check the figure or claim is on it before citing. Never cite a URL you have not opened, and never cite from memory. If a source cannot be verified, drop the claim.
+- External link format: `<a href="https://..." target="_blank" rel="noopener">descriptive text</a>`. A short quote from a source must be under 15 words and in quotation marks.
+- Finish `body_html` with a `Sources and further reading` `<h2>` and a `<ul>` listing each external source once as `Publisher (year): Title`, linked the same way. The FAQ is added after it automatically.
 - End with a short practical close (what to do this week). The site already adds the diagnostic and booking CTAs, so do not add your own.
 - 3 to 4 FAQ entries in `faq`: real follow-up questions, 40 to 80 word answers that stand alone when quoted.
 
