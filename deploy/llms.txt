@@ -1,0 +1,22 @@
+# Coltasa
+
+> Coltasa is the B2B sales strategy and execution consultancy of Colin Constantine. It helps B2B tech companies build repeatable enterprise sales: playbooks, pipeline, outbound, negotiation and forecasting.
+
+- [Home](https://www.coltasa.com/): services, background and how to work with Colin
+- [Insights](https://www.coltasa.com/insights): all articles
+
+## Insights
+
+- [When to stop selling and hand it to your first rep](https://www.coltasa.com/insights/founder-led-sales-handoff): How to know your B2B startup is ready to hand off founder-led sales, who to hire first, and a three-stage handoff that keeps deals moving.
+- [The contract between buyers and sellers is broken](https://www.coltasa.com/insights/signal-over-noise): Mass AI outbound has buried buyers in noise. Here are practical ways to create signal again: insight people can use, handwritten notes and small events.
+- [AI SDRs are a waste of time. For now.](https://www.coltasa.com/insights/ai-sdrs): Why AI SDRs fall short in enterprise sales today, what would need to be true for that to change, and where AI actually helps your team.
+- [The key tenets of a mutual success plan](https://www.coltasa.com/insights/mutual-success-plans): Seven principles for building a plan with your buyer that keeps deals on track, from first interest through go-live.
+- [Write the playbook before you hire the team](https://www.coltasa.com/insights/first-sales-playbook): Hiring sellers before you can explain how your deals are won is the most expensive mistake in early-stage sales. Here is what to write down first.
+- [Never give a discount. Trade it.](https://www.coltasa.com/insights/stop-discounting): End-of-quarter discounting teaches buyers to wait. A practical approach to enterprise negotiation that protects price and still gets deals signed.
+- [A forecast is evidence, not optimism](https://www.coltasa.com/insights/forecast-evidence): Why most early-stage forecasts miss, and how exit criteria, deal reviews and a few honest questions make the number something you can trust.
+- [Pick one segment and win it first](https://www.coltasa.com/insights/pick-one-segment): Early sales teams spread across too many markets. How to choose a first segment, test it and know when to expand.
+- [How much pipeline do you actually need?](https://www.coltasa.com/insights/pipeline-coverage): A simple way to work out pipeline coverage from your own numbers, and what to do when you are short.
+- [Working with procurement, not around it](https://www.coltasa.com/insights/working-with-procurement): Procurement is part of every enterprise deal. How to bring them in early, understand what they need and keep the deal moving.
+- [Running a discovery call that earns the second meeting](https://www.coltasa.com/insights/discovery-call): A practical structure for first calls with enterprise buyers, the questions worth asking and how to end with a clear next step.
+- [Running a weekly forecast call in 30 minutes](https://www.coltasa.com/insights/weekly-forecast-call): A simple agenda for a weekly forecast meeting that keeps the number honest without taking over the team's week.
+- [Writing a cold email a senior buyer will read](https://www.coltasa.com/insights/cold-email-senior-buyers): A practical guide to short, specific outbound emails for enterprise buyers, with a simple structure and what to leave out.
