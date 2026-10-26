@@ -104,9 +104,12 @@ section.alt{background:var(--color-surface)}
 button.opt{font:inherit;font-size:17px;text-align:left;color:inherit;cursor:pointer;width:100%}
 button.opt:hover{background:var(--color-accent-100)}
 button.opt:focus-visible{outline:3px solid var(--color-accent-2);outline-offset:2px}
-.opt .more{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:15px;font-weight:700;color:var(--color-accent-2-700)}
-.opt .more::after{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-3px);transition:transform .2s}
-.q.open .opt .more::after{transform:rotate(-135deg);margin-top:6px}
+.opt.you{display:flex;flex-direction:column}
+.opt .more{display:flex;align-items:center;gap:10px;margin-top:auto;padding-top:14px;font-size:15px;font-weight:700;color:var(--color-accent-2-700);white-space:nowrap}
+.opt.you > .body{display:block;margin-bottom:14px}
+.opt.you > .more{border-top:1px solid var(--color-divider)}
+.opt .more::after{content:"";flex:none;width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-2px) rotate(45deg);transition:transform .2s}
+.q.open .opt .more::after{transform:translateY(2px) rotate(-135deg)}
 .analysis{display:none;margin-top:14px;padding-top:14px;border-top:1px solid var(--color-divider)}
 .q.open .analysis{display:block}
 .verdict{margin:0;font-size:19px}
@@ -401,13 +404,15 @@ footer.site a{color:var(--color-accent-400)}
             o.querySelector('.more').textContent = open ? 'Hide analysis' : 'See analysis';
           });
         }
-        o.appendChild(el('span', 'lv', LEVELS[oi]));
-        o.appendChild(document.createTextNode(label));
+        var t = mine ? el('span', 'body') : o;
+        if (mine) o.appendChild(t);
+        t.appendChild(el('span', 'lv', LEVELS[oi]));
+        t.appendChild(document.createTextNode(label));
         if (peersOn && tot) {
           var pc = Math.round(dist[oi] / tot * 100);
           var pb = el('span', 'pbar'); pb.style.display = 'block';
-          var pi = el('i'); pi.style.width = pc + '%'; pb.appendChild(pi); o.appendChild(pb);
-          o.appendChild(el('span', 'pct', pc + '% of respondents'));
+          var pi = el('i'); pi.style.width = pc + '%'; pb.appendChild(pi); t.appendChild(pb);
+          t.appendChild(el('span', 'pct', pc + '% of respondents'));
         }
         if (mine) o.appendChild(el('span', 'more', 'See analysis'));
         scale.appendChild(o);
