@@ -70,7 +70,6 @@ button{font-family:var(--font-body)}
     </a>
     <nav data-m="nav" style="display:flex;gap:28px;font-size:15px;flex-wrap:wrap">
       <a href="/#services" style="color:var(--color-text);text-decoration:none" style-hover="color:var(--color-accent-2-700)">Services</a>
-      <a href="/#about" style="color:var(--color-text);text-decoration:none" style-hover="color:var(--color-accent-2-700)">About</a>
       <a href="/insights" style="color:var(--color-accent-2-700);text-decoration:none;font-weight:600">Insights</a>
       <a href="/score" style="color:var(--color-text);text-decoration:none" style-hover="color:var(--color-accent-2-700)">Sales Score</a>
       <a href="/#contact" style="color:var(--color-text);text-decoration:none" style-hover="color:var(--color-accent-2-700)">Contact</a>
@@ -90,11 +89,17 @@ button{font-family:var(--font-body)}
     </div>
     <p style="margin:0;font-size:17px;line-height:1.6;max-width:42ch">Practical, opinionated writing on how B2B tech companies win and keep enterprise customers. By Colin Constantine.</p>
   </div>
-  <div role="group" aria-label="Filter by category" style="display:flex;flex-wrap:wrap;gap:8px;padding:20px 0;border-bottom:2px solid var(--color-divider)">
+  <div style="display:flex;flex-wrap:wrap;gap:12px 10px;align-items:center;padding:20px 0 16px">
+    <label for="post-search" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Search insights</label>
+    <input id="post-search" type="search" onInput="{{ onSearch }}" placeholder="Search insights" autocomplete="off" style="flex:1 1 260px;min-width:0;box-sizing:border-box;min-height:44px;padding:10px 14px;font-size:16px;color:var(--color-text);background:#ffffff;border:2px solid var(--color-divider);border-radius:0">
+    <button type="button" onClick="{{ toggleSort }}" aria-label="{{ sortAria }}" style="display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 16px;border:2px solid var(--color-text);background:transparent;color:var(--color-text);font-size:14px;font-weight:600;cursor:pointer;white-space:nowrap" style-hover="background:var(--color-text);color:var(--color-bg)">{{ sortLabel }} <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M7 4v16M3 16l4 4 4-4M17 20V4M13 8l4-4 4 4"></path></svg></button>
+  </div>
+  <div role="group" aria-label="Filter by category" style="display:flex;flex-wrap:wrap;gap:8px;padding:0 0 20px;border-bottom:2px solid var(--color-divider)">
     <sc-for list="{{ cats }}" as="c" hint-placeholder-count="7">
       <button type="button" onClick="{{ c.pick }}" aria-pressed="{{ c.on }}" style="min-height:44px;padding:8px 16px;border:2px solid {{ c.border }};background:{{ c.bg }};color:{{ c.fg }};font-size:14px;font-weight:600;cursor:pointer" style-hover="background:var(--color-accent-2-600);border-color:var(--color-accent-2-600);color:#ffffff">{{ c.name }}</button>
     </sc-for>
   </div>
+  <p aria-live="polite" style="margin:0;padding:14px 0 0;font-size:14px;color:color-mix(in srgb,var(--color-text) 70%,transparent)">{{ countLabel }}</p>
   <sc-for list="{{ shown }}" as="p" hint-placeholder-count="3">
     <a href="{{ p.href }}" onClick="{{ p.open }}" style="display:flex;flex-wrap:wrap;gap:12px 32px;align-items:baseline;padding:32px 0;border-bottom:2px solid var(--color-divider);text-decoration:none;color:var(--color-text)" style-hover="background:var(--color-accent-100)">
       <div style="flex:0 0 160px;display:flex;flex-wrap:wrap;column-gap:16px;row-gap:6px;font-size:14px">
@@ -109,7 +114,7 @@ button{font-family:var(--font-body)}
     </a>
   </sc-for>
   <sc-if value="{{ empty }}" hint-placeholder-val="{{ false }}">
-    <p style="margin:0;padding:40px 0;font-size:17px">Nothing in {{ catName }} yet. <a href="#" onClick="{{ clearCat }}">See all posts</a>.</p>
+    <p style="margin:0;padding:40px 0;font-size:17px">{{ emptyMsg }} <a href="#" onClick="{{ clearCat }}">See all posts</a>.</p>
   </sc-if>
 </section>
 </sc-if>
@@ -248,7 +253,7 @@ class Component extends DCLogic {
       dek: 'A practical guide to short, specific outbound emails for enterprise buyers, with a simple structure and what to leave out.' },
   ];
   CATS = ['All', 'Strategy', 'Pipeline', 'Negotiation', 'Methodology', 'Forecasting', 'Outbound'];
-  state = { view: 'index', cat: 'All' };
+  state = { view: 'index', cat: 'All', q: '', sort: 'new' };
   componentDidMount() {
     this.sync = () => {
       const h = (location.hash || '').slice(1);
@@ -299,7 +304,16 @@ class Component extends DCLogic {
     const { view, cat } = this.state;
     const post = this.POSTS.find(p => p.id === view);
     const link = p => ({ ...p, href: '/insights/' + p.id, open: undefined });
-    const shown = this.POSTS.filter(p => cat === 'All' || p.cat === cat).map(link);
+    const { q, sort } = this.state;
+    const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+    const when = s => { const [d, m, y] = s.split(' '); return Number(y) * 10000 + (MONTHS.indexOf(m) + 1) * 100 + Number(d); };
+    const terms = q.toLowerCase().split(/\s+/).filter(Boolean);
+    const hit = p => { const t = [p.title, p.seo, p.dek, p.cat].join(' ').toLowerCase(); return terms.every(w => t.includes(w)); };
+    const ordered = this.POSTS.map((p, i) => ({ p, i }))
+      .sort((a, b) => (when(b.p.date) - when(a.p.date)) || (a.i - b.i));
+    if (sort === 'old') ordered.reverse();
+    const shown = ordered.map(x => x.p).filter(p => (cat === 'All' || p.cat === cat) && hit(p)).map(link);
+    const where = cat === 'All' ? '' : ' in ' + cat;
     return {
       isIndex: !post, isPost: !!post,
       post: post || {},
@@ -312,7 +326,13 @@ class Component extends DCLogic {
           border: on ? 'var(--color-accent-2-700)' : 'var(--color-accent)' };
       }),
       shown, empty: shown.length === 0, catName: cat,
-      clearCat: (e) => { e.preventDefault(); this.setState({ cat: 'All' }); },
+      countLabel: shown.length === this.POSTS.length ? this.POSTS.length + ' posts' : shown.length + ' of ' + this.POSTS.length + ' posts',
+      emptyMsg: terms.length ? 'No posts match \u201c' + q.trim() + '\u201d' + where + '.' : 'Nothing in ' + cat + ' yet.',
+      onSearch: (e) => this.setState({ q: e.target.value }),
+      sortLabel: sort === 'old' ? 'Oldest first' : 'Newest first',
+      sortAria: sort === 'old' ? 'Sorted oldest first. Switch to newest first' : 'Sorted newest first. Switch to oldest first',
+      toggleSort: () => this.setState({ sort: sort === 'old' ? 'new' : 'old' }),
+      clearCat: (e) => { e.preventDefault(); const el = document.getElementById('post-search'); if (el) el.value = ''; this.setState({ cat: 'All', q: '' }); },
       others: post ? this.POSTS.filter(p => p.id !== post.id).slice(0, 3).map(link) : [],
     };
   }
