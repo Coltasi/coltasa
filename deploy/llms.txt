@@ -3,6 +3,7 @@
 > Coltasa is the B2B sales strategy and execution consultancy of Colin Constantine. It helps B2B tech companies build repeatable enterprise sales: playbooks, pipeline, outbound, negotiation and forecasting.
 
 - [Home](https://www.coltasa.com/): services, background and how to work with Colin
+- [Sales Engine Score](https://www.coltasa.com/score): a 5-minute assessment that scores a B2B sales engine out of 100 across pipeline, process, people, tools and metrics
 - [Insights](https://www.coltasa.com/insights): all articles
 
 ## Insights

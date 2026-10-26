@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sales Engine Score | Coltasa</title>
+<meta name="description" content="A 5-minute assessment that scores your B2B sales engine out of 100 across pipeline, process, people, tools and metrics, and shows the one area to fix first.">
+<link rel="canonical" href="https://www.coltasa.com/score">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Coltasa">
+<meta property="og:title" content="Sales Engine Score | Coltasa">
+<meta property="og:description" content="Score your B2B sales engine out of 100 in 5 minutes, and find the one area to fix first.">
+<meta property="og:url" content="https://www.coltasa.com/score">
+<meta property="og:image" content="https://www.coltasa.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#2b3034">
+<link rel="stylesheet" href="_ds/modernist-79edcdcb-3801-47e4-9539-e40b0265d990/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --color-bg:#f4f1ea; --color-surface:#e7e2d6; --color-text:#2b3034; --color-ink-2:#353b40;
+  --color-accent:#a0602f; --color-accent-2:#1e8fc4;
+  --color-divider:color-mix(in srgb,#2b3034 40%,transparent);
+  --color-accent-100:#f8eee5; --color-accent-200:#efdcc9; --color-accent-300:#e0be9f; --color-accent-400:#c99468;
+  --color-accent-500:#b1733f; --color-accent-600:#8a5127; --color-accent-700:#74431f; --color-accent-800:#573218; --color-accent-900:#3a2211;
+  --color-accent-2-100:#e6f4fb; --color-accent-2-200:#c4e5f5; --color-accent-2-300:#9fd3ec; --color-accent-2-500:#1e8fc4; --color-accent-2-600:#1877a5; --color-accent-2-700:#155f85; --color-accent-2-800:#10486a;
+  --font-heading:"Newsreader",Georgia,serif;--font-body:"Hanken Grotesk",system-ui,sans-serif;--heading-weight:600;
+  --pad:clamp(20px,5vw,72px);
+}
+html,body{overflow-x:clip}
+body{margin:0;background:var(--color-bg);color:var(--color-text);font-family:var(--font-body);text-wrap:pretty}
+h1,h2,h3{font-family:var(--font-heading);font-weight:var(--heading-weight)}
+a{color:var(--color-accent-2-700)}
+a:hover{color:var(--color-accent-2-600)}
+button,input,select{font-family:var(--font-body)}
+.btn,label,.input{font-family:var(--font-body);font-weight:600}
+.btn:hover,.btn:focus-visible{background:var(--color-accent-2-600)!important;border-color:var(--color-accent-2-600)!important;color:#fff!important}
+.btn:active{background:var(--color-accent-2-700)!important;border-color:var(--color-accent-2-700)!important}
+[hidden]{display:none!important}
+.wrap{max-width:1200px;margin:0 auto;padding:0 var(--pad)}
+
+/* header and footer, matching the homepage */
+.topbar{height:4px;background:var(--color-accent-2)}
+header.site{position:sticky;top:0;z-index:10;background:var(--color-bg);border-bottom:2px solid var(--color-divider)}
+header.site .wrap{padding-top:14px;padding-bottom:14px;display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--color-text);margin-right:auto}
+.logo-word{font-family:var(--font-heading);font-weight:800;font-size:32px;line-height:1;letter-spacing:-0.02em}
+.logo-word span,.foot-word span{color:var(--color-accent-2)}
+.logo-rule{width:2px;align-self:stretch;background:var(--color-divider)}
+.logo-sub{font-size:13px;line-height:1.25;letter-spacing:.1em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 75%,transparent)}
+nav.site{display:flex;gap:28px;font-size:15px;flex-wrap:wrap}
+nav.site a{color:var(--color-text);text-decoration:none}
+nav.site a:hover{color:var(--color-accent-2-700)}
+footer.site{background:var(--color-text);color:var(--color-bg);border-top:4px solid var(--color-accent)}
+footer.site .wrap{padding-top:24px;padding-bottom:24px;display:flex;flex-wrap:wrap;gap:12px 32px;align-items:center;font-size:14px}
+.foot-word{font-family:var(--font-heading);font-weight:800;font-size:20px;letter-spacing:-0.02em;margin-right:auto}
+footer.site a{color:var(--color-accent-400)}
+footer.site a:hover{color:var(--color-bg)}
+@media (max-width:640px){
+  header.site{position:static}
+  .logo-rule,.logo-sub{display:none}
+  nav.site{order:3;width:100%;justify-content:space-between;gap:4px}
+  nav.site a,footer.site a{display:inline-flex;align-items:center;min-height:44px}
+}
+
+/* page */
+.hero{background:var(--color-text);color:var(--color-bg)}
+.hero .wrap{padding-top:clamp(40px,6vw,72px);padding-bottom:clamp(40px,6vw,72px)}
+.kicker{display:flex;align-items:center;gap:10px;margin:0 0 20px;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--color-accent-400)}
+.kicker::before{content:"";width:10px;height:10px;background:var(--color-accent-2)}
+.hero h1{margin:0;font-size:clamp(40px,6vw,80px);line-height:1;letter-spacing:-0.03em;max-width:16ch}
+.hero p.lead{margin:24px 0 0;font-size:18px;line-height:1.6;max-width:52ch;color:color-mix(in srgb,var(--color-bg) 88%,transparent)}
+.areas{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));gap:0 24px;margin-top:36px;max-width:900px}
+.areas div{padding:14px 16px 0 0;border-top:2px solid var(--color-accent-2)}
+.areas b{display:block;font-family:var(--font-heading);font-size:22px;letter-spacing:-0.01em}
+.areas span{font-size:14px;color:color-mix(in srgb,var(--color-bg) 80%,transparent)}
+.btn-lg{min-height:52px;padding:14px 22px;font-size:16px;gap:12px}
+.hero .note{margin:14px 0 0;font-size:14px;color:color-mix(in srgb,var(--color-bg) 75%,transparent)}
+
+.stage{background:var(--color-surface);border-bottom:2px solid var(--color-divider);scroll-margin-top:72px}
+@media (max-width:640px){.stage{scroll-margin-top:0}}
+.stage .wrap{padding-top:clamp(36px,5vw,64px);padding-bottom:clamp(40px,6vw,72px)}
+.qgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(24px,4vw,64px);align-items:start}
+@media (max-width:820px){.qgrid{grid-template-columns:1fr}}
+.qmeta{margin:0 0 10px;font-size:14px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 70%,transparent)}
+.qmeta .area{color:var(--color-accent-700)}
+.bar{height:6px;background:color-mix(in srgb,var(--color-text) 14%,transparent);margin-bottom:24px}
+.bar i{display:block;height:100%;background:var(--color-accent-2);transition:width .25s}
+.qtext{margin:0;font-size:clamp(26px,3.2vw,38px);line-height:1.15;letter-spacing:-0.01em}
+.back{margin-top:20px;padding:8px 0;border:0;background:none;color:var(--color-accent-2-700);font-size:15px;font-weight:600;cursor:pointer}
+.opts{display:grid;gap:10px}
+.opt{display:flex;align-items:center;justify-content:space-between;gap:14px;width:100%;min-height:60px;padding:16px 20px;border:2px solid var(--color-accent);background:var(--color-accent);color:#fff;font-size:17px;font-weight:500;line-height:1.35;text-align:left;cursor:pointer;transition:background .15s,border-color .15s}
+.opt svg{flex:none}
+@media (hover:hover){.opt:hover{background:var(--color-accent-2-600);border-color:var(--color-accent-2-600)}}
+.opt:active{background:var(--color-accent-2-600);border-color:var(--color-accent-2-600)}
+.opt:focus-visible{outline:3px solid var(--color-accent-2);outline-offset:2px}
+
+/* result */
+.score-big{display:flex;align-items:baseline;gap:10px;margin:0}
+.score-big b{font-family:var(--font-heading);font-size:clamp(72px,10vw,120px);line-height:.9;letter-spacing:-0.04em;color:var(--color-text)}
+.score-big span{font-size:20px;font-weight:600;color:color-mix(in srgb,var(--color-text) 65%,transparent)}
+.band{margin:18px 0 0;font-family:var(--font-heading);font-size:clamp(26px,3vw,34px);line-height:1.1}
+.band-desc{margin:8px 0 0;font-size:17px;line-height:1.55;max-width:44ch}
+.weak{margin:24px 0 0;padding:16px 18px;background:var(--color-bg);border-left:4px solid var(--color-accent)}
+.weak p{margin:0;font-size:16px;line-height:1.5}
+.weak .lbl{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--color-accent-700);margin-bottom:4px}
+.gate{background:var(--color-bg);border:2px solid var(--color-text);padding:clamp(20px,3vw,32px)}
+.gate h2{margin:0;font-size:clamp(26px,3vw,32px);line-height:1.1}
+.gate .sub{margin:10px 0 20px;font-size:16px;line-height:1.55}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:560px){.fields{grid-template-columns:1fr}}
+.f label{display:block;font-size:14px;margin-bottom:6px}
+.f input[type=text],.f input[type=email]{box-sizing:border-box;width:100%;min-height:48px;padding:10px 12px;font-size:16px;color:var(--color-text);background:#fff;border:2px solid var(--color-divider);border-radius:0}
+.f input:focus-visible{border-color:var(--color-accent-2);outline:none}
+.check{display:flex;gap:12px;align-items:flex-start;margin-top:16px;font-size:15px;line-height:1.45;font-weight:500;cursor:pointer}
+.check input{width:20px;height:20px;margin:1px 0 0;flex:none;accent-color:var(--color-accent)}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.err{margin:14px 0 0;color:#9e3526;font-size:15px;font-weight:600}
+.submit{margin-top:20px;width:100%;justify-content:space-between}
+.fine{margin:12px 0 0;font-size:13px;line-height:1.5;color:color-mix(in srgb,var(--color-text) 70%,transparent)}
+
+.full h2{margin:0 0 6px;font-size:clamp(30px,3.6vw,44px);line-height:1.05;letter-spacing:-0.02em}
+.full .sent{margin:0 0 28px;font-size:17px}
+.rows{display:grid;gap:14px;margin-bottom:32px}
+.row{display:grid;grid-template-columns:110px 1fr 48px;gap:14px;align-items:center}
+.row .nm{font-weight:600}
+.row .tr{height:14px;background:color-mix(in srgb,var(--color-text) 14%,transparent)}
+.row .fl{display:block;height:100%;background:var(--color-accent-2)}
+.row.low .fl{background:var(--color-accent)}
+.row .v{font-weight:700;text-align:right;font-variant-numeric:tabular-nums}
+.recs{display:grid;gap:16px}
+.rec{background:var(--color-bg);padding:18px 20px;border-top:3px solid var(--color-accent)}
+.rec h3{margin:0 0 6px;font-size:22px}
+.rec p{margin:0 0 8px;font-size:16px;line-height:1.55}
+.rec a{font-weight:600}
+.cta{margin-top:32px;padding:clamp(20px,3vw,28px);background:var(--color-text);color:var(--color-bg)}
+.cta h3{margin:0 0 8px;font-size:clamp(24px,2.6vw,30px)}
+.cta p{margin:0 0 18px;font-size:16px;line-height:1.55;color:color-mix(in srgb,var(--color-bg) 85%,transparent)}
+.restart{margin-top:18px;padding:8px 0;border:0;background:none;color:var(--color-accent-2-700);font-size:15px;font-weight:600;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="topbar"></div>
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="/" aria-label="Coltasa home">
+      <span class="logo-word">coltasa<span>.</span></span>
+      <span class="logo-rule"></span>
+      <span class="logo-sub">B2B sales strategy<br>&amp; execution</span>
+    </a>
+    <nav class="site">
+      <a href="/#services">Services</a>
+      <a href="/#about">About</a>
+      <a href="/insights">Insights</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+    <a class="btn btn-primary" href="https://calendly.com/coltasahq/30min" target="_blank" rel="noopener">Book a call</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="intro">
+  <div class="wrap">
+    <p class="kicker">Sales Engine Score</p>
+    <h1>How repeatable is your sales engine?</h1>
+    <p class="lead">Fifteen questions, about five minutes. You get a score out of 100 across the five parts of a sales engine, and the one area to fix first.</p>
+    <div class="areas">
+      <div><b>Pipeline</b><span>Where deals come from</span></div>
+      <div><b>Process</b><span>How deals move</span></div>
+      <div><b>People</b><span>Who sells, and how fast they ramp</span></div>
+      <div><b>Tools</b><span>CRM and admin load</span></div>
+      <div><b>Metrics</b><span>What you measure and forecast</span></div>
+    </div>
+    <div style="margin-top:36px"><button type="button" class="btn btn-primary btn-lg" id="start">Start the assessment <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+    <p class="note">Free. Your overall score shows on screen, no email needed.</p>
+  </div>
+</section>
+
+<section class="stage" id="stage" hidden>
+  <div class="wrap">
+
+    <div id="ask" class="qgrid">
+      <div>
+        <p class="qmeta"><span id="qnum"></span> <span class="area" id="qarea"></span></p>
+        <div class="bar" aria-hidden="true"><i id="qbar"></i></div>
+        <h2 class="qtext" id="qtext" tabindex="-1"></h2>
+        <button type="button" class="back" id="back" hidden>&larr; Back</button>
+      </div>
+      <div class="opts" id="opts" role="group" aria-labelledby="qtext"></div>
+    </div>
+
+    <div id="teaser" class="qgrid" hidden>
+      <div>
+        <p class="qmeta">Your Sales Engine Score</p>
+        <p class="score-big"><b id="tScore"></b><span>/ 100</span></p>
+        <p class="band" id="tBand"></p>
+        <p class="band-desc" id="tBandDesc"></p>
+        <div class="weak"><p class="lbl">Fix first</p><p id="tWeak"></p></div>
+        <button type="button" class="restart" data-restart>Retake the assessment</button>
+      </div>
+      <form class="gate" id="gate" novalidate>
+        <h2>See your full breakdown</h2>
+        <p class="sub">Your score in each of the five areas, a specific recommendation for each weak spot, and the option of a 30-minute results review with Colin.</p>
+        <div class="fields">
+          <div class="f"><label for="fName">First name</label><input type="text" id="fName" name="first_name" autocomplete="given-name" required></div>
+          <div class="f"><label for="fEmail">Work email</label><input type="email" id="fEmail" name="email" autocomplete="email" required></div>
+          <div class="f"><label for="fCompany">Company</label><input type="text" id="fCompany" name="company" autocomplete="organization" required></div>
+          <div class="f"><label for="fRole">Your role</label><input type="text" id="fRole" name="role" autocomplete="organization-title" required></div>
+        </div>
+        <div class="hp" aria-hidden="true"><label for="fWebsite">Website</label><input type="text" id="fWebsite" name="website" tabindex="-1" autocomplete="off"></div>
+        <label class="check"><input type="checkbox" id="cResults" required> <span>Email me my results and a few follow-up notes from Colin about them.</span></label>
+        <label class="check"><input type="checkbox" id="cNews"> <span>Also send me the Coltasa newsletter. Optional.</span></label>
+        <p class="err" id="err" role="alert" hidden></p>
+        <button type="submit" class="btn btn-primary btn-lg submit" id="submit">Show my breakdown <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <p class="fine">Unsubscribe anytime. We never share your details. <a href="/privacy">Privacy policy</a>.</p>
+      </form>
+    </div>
+
+    <div id="full" class="full" hidden>
+      <div class="qgrid">
+        <div>
+          <h2 id="fHead"></h2>
+          <p class="sent" id="fSent"></p>
+          <div class="rows" id="rows"></div>
+          <button type="button" class="restart" data-restart>Retake the assessment</button>
+        </div>
+        <div>
+          <div class="recs" id="recs"></div>
+          <div class="cta">
+            <h3>Talk through your results</h3>
+            <p>A 30-minute review with Colin: what your score means for your stage, and the first three moves to make.</p>
+            <a class="btn btn-primary btn-lg" id="book" href="https://calendly.com/coltasahq/30min" target="_blank" rel="noopener">Book a 30-minute review <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span class="foot-word">coltasa<span>.</span></span>
+    <span>B2B sales strategy &amp; execution</span>
+    <a href="mailto:hello@coltasa.com">hello@coltasa.com</a>
+    <a href="/privacy">Privacy</a>
+    <span>© 2026 Coltasa</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  // Nitrosend website signup. The wpkey is a public key, made to live in website code:
+  // it can only add contacts to this brand's lists.
+  var NITRO = {
+    endpoint: 'https://api.nitrosend.com/v1/public/contacts',
+    publicKey: 'wpkey_live_3e108bf1f7b9b86f82223b795bf9ee66',
+    listId: 12845
+  };
+  var VERSION = 'v1';
+  // Set to true once the Nitrosend results email flow is live.
+  var EMAIL_LIVE = false;
+
+  var QUAL = [
+    { key: 'stage', q: 'What stage is your company?', o: ['Pre-seed', 'Seed', 'Series A', 'Series B or later', 'Bootstrapped'] },
+    { key: 'team_size', q: 'How many people sell today, founders included?', o: ['1', '2 to 3', '4 to 10', '11 or more'] },
+    { key: 'motion', q: 'Where do most of your deals start?', o: ['Inbound', 'Outbound', 'Product-led', 'Partners', 'Founder network'] }
+  ];
+
+  var AREAS = {
+    pipeline: 'Pipeline', process: 'Process', people: 'People', tools: 'Tools', metrics: 'Metrics'
+  };
+  // Order used to break ties for the weakest area.
+  var TIE = ['process', 'pipeline', 'metrics', 'people', 'tools'];
+
+  var SCORED = [
+    { a: 'pipeline', q: 'Where do most new deals come from?', o: ["The founder's network only", 'Referrals and inbound, with no repeatable outbound', 'Some outbound, run inconsistently', 'A repeatable mix, with known volume per channel'] },
+    { a: 'pipeline', q: "How much open pipeline do you have against next quarter's target?", o: ["We don't know", 'Under 1x the target', '1x to 3x', 'Over 3x'] },
+    { a: 'pipeline', q: 'How fast does a new inbound lead hear from a person?', o: ['Days, or never', 'Within 2 days', 'The same day', 'Within an hour'] },
+    { a: 'process', q: 'Is your sales process written down?', o: ["It lives in the founder's head", 'Rough stages in the CRM', 'Stages with exit criteria', 'Stages, exit criteria and a playbook reps actually use'] },
+    { a: 'process', q: 'How do you qualify deals?', o: ['Gut feel', 'We ask about budget and timing', 'A framework, used sometimes', 'A framework on every deal, reviewed weekly'] },
+    { a: 'process', q: 'How many follow-ups does a prospect get before you stop?', o: ['One or none', '2 to 3', '4 to 6, on one channel', '6 or more, across email, phone and LinkedIn'] },
+    { a: 'people', q: 'Who sells today?', o: ['Only the founder', 'The founder plus a first hire', 'A small team with a sales leader', 'Specialized roles with clear handoffs'] },
+    { a: 'people', q: 'How long until a new rep closes a first deal?', o: ["We've never hired a rep", '6 months or more', '3 to 6 months', 'Under 3 months, with a written onboarding plan'] },
+    { a: 'tools', q: 'How is your CRM used?', o: ['No CRM, or a spreadsheet', 'We have one, but the data is stale', 'Reps update it most of the time', "It's the source of truth, automated where possible"] },
+    { a: 'tools', q: 'How much rep time goes to admin: logging, research and follow-up?', o: ["We don't know", 'Over half', 'A quarter to a half', 'Under a quarter, mostly automated'] },
+    { a: 'metrics', q: 'Which numbers do you review every week?', o: ['Revenue only', 'Revenue and number of deals', 'Pipeline created, win rate and deal size', 'Conversion by stage and by channel'] },
+    { a: 'metrics', q: "How accurate was last quarter's forecast?", o: ["We don't forecast", 'Off by more than 30%', 'Within 15 to 30%', 'Within 15%'] }
+  ];
+
+  var BANDS = [
+    { min: 70, name: 'Repeatable', desc: 'You have a process other people can run. The work now is efficiency and scale.' },
+    { min: 40, name: 'Building', desc: 'The pieces exist but run inconsistently, so growth still depends on who is selling.' },
+    { min: 0, name: 'Founder-led', desc: "Sales runs on the founder's effort. Nothing is repeatable yet, which is normal at this stage." }
+  ];
+
+  var RECS = {
+    pipeline: { why: 'Pipeline that depends on referrals and luck makes every quarter a gamble.', fix: 'Pick one channel you can control, set a weekly volume target for it, and get first replies to inbound leads down to under an hour.', link: '/insights/pipeline-coverage', title: 'How much pipeline do you actually need?' },
+    process: { why: 'Without a written process, every rep sells differently and nobody can tell why deals stall.', fix: 'Write down your stages with clear exit criteria, pick one qualification framework, and plan at least six follow-ups across two channels.', link: '/insights/first-sales-playbook', title: 'Write the playbook before you hire the team' },
+    people: { why: 'When only the founder can close, growth stops at the founder’s calendar.', fix: 'Document how the founder wins deals, then give the first hire a 90-day onboarding plan with a target date for a first close.', link: '/insights/founder-led-sales-handoff', title: 'When to move on from founder-led sales' },
+    tools: { why: 'A stale CRM hides your pipeline, and admin work eats the time reps should spend selling.', fix: 'Make the CRM the only place deals live, cut required fields to the ones you review, and automate logging and research.', link: '/insights/ai-sdrs', title: 'AI SDRs are a waste of time. For now.' },
+    metrics: { why: 'If you only track revenue, you find out about a bad quarter when it is already over.', fix: 'Review pipeline created, win rate and stage conversion every week, and forecast on evidence rather than rep confidence.', link: '/insights/forecast-evidence', title: 'A forecast is evidence, not optimism' }
+  };
+
+  var STEPS = QUAL.map(function (x) { return { kind: 'qual', key: x.key, q: x.q, o: x.o }; })
+    .concat(SCORED.map(function (x, i) { return { kind: 'scored', n: i + 1, a: x.a, q: x.q, o: x.o }; }));
+
+  var answers = [];
+  var result = null;
+  var $ = function (id) { return document.getElementById(id); };
+  var arrow = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+
+  function show(id) {
+    ['ask', 'teaser', 'full'].forEach(function (s) { $(s).hidden = s !== id; });
+  }
+
+  function render() {
+    var i = answers.length;
+    if (i >= STEPS.length) { finish(); return; }
+    var s = STEPS[i];
+    show('ask');
+    $('qnum').textContent = 'Question ' + (i + 1) + ' of ' + STEPS.length;
+    $('qarea').textContent = s.kind === 'scored' ? '· ' + AREAS[s.a] : '· About you';
+    $('qbar').style.width = Math.round(i / STEPS.length * 100) + '%';
+    $('qtext').textContent = s.q;
+    $('back').hidden = i === 0;
+    var box = $('opts');
+    box.innerHTML = '';
+    s.o.forEach(function (label, oi) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'opt';
+      b.innerHTML = '<span></span>' + arrow;
+      b.firstChild.textContent = label;
+      b.addEventListener('click', function () { answers.push(oi); render(); focusQ(); });
+      box.appendChild(b);
+    });
+  }
+
+  function focusQ() {
+    var t = $('qtext');
+    if (!$('ask').hidden && t) t.focus({ preventScroll: true });
+    var top = $('stage').getBoundingClientRect().top;
+    if (top < 0 || top > window.innerHeight * 0.4) $('stage').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function score() {
+    var pts = {}, max = {};
+    Object.keys(AREAS).forEach(function (k) { pts[k] = 0; max[k] = 0; });
+    var total = 0;
+    SCORED.forEach(function (x, i) {
+      var v = answers[QUAL.length + i];
+      pts[x.a] += v; max[x.a] += 3; total += v;
+    });
+    var area = {};
+    Object.keys(AREAS).forEach(function (k) { area[k] = Math.round(pts[k] / max[k] * 100); });
+    var overall = Math.round(total / (SCORED.length * 3) * 100);
+    var weakest = TIE.slice().sort(function (a, b) { return area[a] - area[b] || TIE.indexOf(a) - TIE.indexOf(b); })[0];
+    var band = BANDS.filter(function (b) { return overall >= b.min; })[0];
+    var qual = {};
+    QUAL.forEach(function (x, i) { qual[x.key] = x.o[answers[i]]; });
+    return { overall: overall, area: area, weakest: weakest, band: band, qual: qual };
+  }
+
+  function finish() {
+    result = score();
+    $('tScore').textContent = result.overall;
+    $('tBand').textContent = result.band.name;
+    $('tBandDesc').textContent = result.band.desc;
+    $('tWeak').textContent = AREAS[result.weakest] + '. ' + RECS[result.weakest].why;
+    show('teaser');
+    $('stage').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function renderFull(first, emailed) {
+    $('fHead').textContent = (first ? first + ', your' : 'Your') + ' score is ' + result.overall + ': ' + result.band.name;
+    $('fSent').textContent = emailed && EMAIL_LIVE ? 'A copy is on its way to your inbox.' : '';
+    var rows = $('rows');
+    rows.innerHTML = '';
+    Object.keys(AREAS).forEach(function (k) {
+      var v = result.area[k];
+      var r = document.createElement('div');
+      r.className = 'row' + (v < 50 ? ' low' : '');
+      r.innerHTML = '<span class="nm"></span><span class="tr" role="img"><span class="fl"></span></span><span class="v"></span>';
+      r.querySelector('.nm').textContent = AREAS[k];
+      r.querySelector('.tr').setAttribute('aria-label', AREAS[k] + ' ' + v + ' out of 100');
+      r.querySelector('.fl').style.width = Math.max(v, 2) + '%';
+      r.querySelector('.v').textContent = v;
+      rows.appendChild(r);
+    });
+    var weak = Object.keys(AREAS).filter(function (k) { return result.area[k] < 50; })
+      .sort(function (a, b) { return result.area[a] - result.area[b] || TIE.indexOf(a) - TIE.indexOf(b); });
+    if (!weak.length) weak = [result.weakest];
+    var recs = $('recs');
+    recs.innerHTML = '';
+    weak.forEach(function (k) {
+      var d = RECS[k], el = document.createElement('div');
+      el.className = 'rec';
+      el.innerHTML = '<h3></h3><p></p><p></p><a></a>';
+      el.querySelector('h3').textContent = AREAS[k] + ': ' + result.area[k] + ' / 100';
+      el.querySelectorAll('p')[0].textContent = d.why;
+      el.querySelectorAll('p')[1].textContent = d.fix;
+      var a = el.querySelector('a');
+      a.href = d.link; a.textContent = 'Read: ' + d.title;
+      recs.appendChild(el);
+    });
+    show('full');
+    $('stage').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function fail(msg) {
+    var e = $('err');
+    e.textContent = msg;
+    e.hidden = false;
+  }
+
+  $('gate').addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    $('err').hidden = true;
+    var first = $('fName').value.trim(), email = $('fEmail').value.trim();
+    var company = $('fCompany').value.trim(), role = $('fRole').value.trim();
+    if (!first || !company || !role) return fail('Please fill in all four fields.');
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return fail('Please enter a valid work email.');
+    if (!$('cResults').checked) return fail('Please tick the first box so we can email your results.');
+    if ($('fWebsite').value) { renderFull(first, true); return; } // bot: drop silently
+
+    var btn = $('submit');
+    btn.disabled = true;
+    var now = new Date().toISOString();
+    var data = {
+      company: company,
+      role: role,
+      stage: result.qual.stage,
+      team_size: result.qual.team_size,
+      motion: result.qual.motion,
+      score_overall: result.overall,
+      score_pipeline: result.area.pipeline,
+      score_process: result.area.process,
+      score_people: result.area.people,
+      score_tools: result.area.tools,
+      score_metrics: result.area.metrics,
+      band: result.band.name,
+      weakest_area: AREAS[result.weakest],
+      answers: answers.slice(QUAL.length).join(','),
+      results_consent: true,
+      newsletter_opt_in: $('cNews').checked,
+      consent_at: now,
+      quiz_version: VERSION
+    };
+    fetch(NITRO.endpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + NITRO.publicKey },
+      body: JSON.stringify({ email: email, list_id: NITRO.listId, first_name: first, source: 'coltasa.com/score', data: data })
+    }).then(function (r) {
+      if (!r.ok) throw new Error('status ' + r.status);
+      renderFull(first, true);
+    }).catch(function () {
+      btn.disabled = false;
+      fail('Something went wrong sending your breakdown. Please try again, or email hello@coltasa.com.');
+    });
+  });
+
+  $('start').addEventListener('click', function () {
+    $('stage').hidden = false;
+    render();
+    focusQ();
+  });
+  $('back').addEventListener('click', function () { answers.pop(); render(); focusQ(); });
+  Array.prototype.forEach.call(document.querySelectorAll('[data-restart]'), function (b) {
+    b.addEventListener('click', function () { answers = []; result = null; $('submit').disabled = false; render(); focusQ(); });
+  });
+})();
+</script>
+</body>
+</html>
