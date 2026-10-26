@@ -260,6 +260,12 @@ footer.site a:hover{color:var(--color-bg)}
     publicKey: 'wpkey_live_3e108bf1f7b9b86f82223b795bf9ee66',
     listId: 12845
   };
+  // Supabase publishable key: safe in website code. It can only call submit_score;
+  // the table itself is locked.
+  var DB = {
+    url: 'https://flfqgoqkyszsmakyyzaj.supabase.co',
+    key: 'sb_publishable_73Iwy9ueZpwISXo-KL5Aig_AEtyitg2'
+  };
   var VERSION = 'v1';
   // Set to true once the Nitrosend results email flow is live.
   var EMAIL_LIVE = false;
@@ -450,14 +456,24 @@ footer.site a:hover{color:var(--color-bg)}
       consent_at: now,
       quiz_version: VERSION
     };
-    fetch(NITRO.endpoint, {
+    var toNitro = fetch(NITRO.endpoint, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + NITRO.publicKey },
       body: JSON.stringify({ email: email, list_id: NITRO.listId, first_name: first, source: 'coltasa.com/score', data: data })
-    }).then(function (r) {
-      if (!r.ok) throw new Error('status ' + r.status);
-      renderFull(first, true);
-    }).catch(function () {
+    }).then(function (r) { if (!r.ok) throw new Error('nitro ' + r.status); });
+    // Full answers go to the Coltasa database, which powers the private report and peer rankings.
+    // Scores are recomputed server-side from the raw answers.
+    var toDb = fetch(DB.url + '/rest/v1/rpc/submit_score', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'apikey': DB.key },
+      body: JSON.stringify({ p: {
+        email: email, first_name: first, company: company, role: role,
+        stage: result.qual.stage, team_size: result.qual.team_size, motion: result.qual.motion,
+        answers: answers.slice(QUAL.length), newsletter_opt_in: $('cNews').checked, quiz_version: VERSION
+      } })
+    }).then(function (r) { if (!r.ok) throw new Error('db ' + r.status); });
+    Promise.allSettled([toNitro, toDb]).then(function (res) {
+      if (res.some(function (x) { return x.status === 'fulfilled'; })) { renderFull(first, true); return; }
       btn.disabled = false;
       fail('Something went wrong sending your breakdown. Please try again, or email hello@coltasa.com.');
     });

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sales Engine Report | Coltasa</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#2b3034">
+<link rel="stylesheet" href="_ds/modernist-79edcdcb-3801-47e4-9539-e40b0265d990/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --color-bg:#f4f1ea; --color-surface:#e7e2d6; --color-text:#2b3034;
+  --color-accent:#a0602f; --color-accent-2:#1e8fc4;
+  --color-divider:color-mix(in srgb,#2b3034 40%,transparent);
+  --color-accent-100:#f8eee5; --color-accent-400:#c99468; --color-accent-700:#74431f;
+  --color-accent-2-100:#e6f4fb; --color-accent-2-600:#1877a5; --color-accent-2-700:#155f85;
+  --muted:color-mix(in srgb,#2b3034 68%,transparent);
+  --track:color-mix(in srgb,#2b3034 13%,transparent);
+  --font-heading:"Newsreader",Georgia,serif;--font-body:"Hanken Grotesk",system-ui,sans-serif;
+  --pad:clamp(16px,5vw,72px);
+}
+html,body{overflow-x:clip}
+body{margin:0;background:var(--color-bg);color:var(--color-text);font-family:var(--font-body);text-wrap:pretty;line-height:1.5}
+h1,h2,h3{font-family:var(--font-heading);font-weight:600;letter-spacing:-0.01em}
+a{color:var(--color-accent-2-700)}
+[hidden]{display:none!important}
+.wrap{max-width:1100px;margin:0 auto;padding:0 var(--pad)}
+.topbar{height:4px;background:var(--color-accent-2)}
+header.site{background:var(--color-bg);border-bottom:2px solid var(--color-divider)}
+header.site .wrap{padding-top:14px;padding-bottom:14px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.logo{text-decoration:none;color:var(--color-text);margin-right:auto;font-family:var(--font-heading);font-weight:800;font-size:28px;letter-spacing:-0.02em}
+.logo span,.foot-word span{color:var(--color-accent-2)}
+.tools{display:flex;gap:10px;flex-wrap:wrap}
+.btn-ghost{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:2px solid var(--color-text);background:none;color:var(--color-text);font:600 15px var(--font-body);cursor:pointer;text-decoration:none}
+.btn-ghost:hover{background:var(--color-text);color:var(--color-bg)}
+.btn-solid{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 20px;background:var(--color-accent);color:#fff;font:600 16px var(--font-body);text-decoration:none;border:0}
+.btn-solid:hover{background:var(--color-accent-2-600);color:#fff}
+
+.hero{background:var(--color-text);color:var(--color-bg)}
+.hero .wrap{padding-top:clamp(36px,5vw,64px);padding-bottom:clamp(36px,5vw,64px);display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:end}
+@media (max-width:820px){.hero .wrap{grid-template-columns:1fr}}
+.kicker{display:flex;align-items:center;gap:10px;margin:0 0 16px;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--color-accent-400)}
+.kicker::before{content:"";width:10px;height:10px;background:var(--color-accent-2)}
+.hero h1{margin:0;font-size:clamp(34px,5vw,60px);line-height:1.02;letter-spacing:-0.03em}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 0;padding:0;list-style:none}
+.meta li{padding:6px 10px;border:1px solid color-mix(in srgb,var(--color-bg) 35%,transparent);font-size:14px}
+.big{display:flex;align-items:baseline;gap:8px;margin:0}
+.big b{font-family:var(--font-heading);font-size:clamp(84px,12vw,140px);line-height:.85;letter-spacing:-0.04em}
+.big span{font-size:20px;color:color-mix(in srgb,var(--color-bg) 70%,transparent)}
+.band{margin:12px 0 0;font-family:var(--font-heading);font-size:28px}
+.band-desc{margin:6px 0 0;color:color-mix(in srgb,var(--color-bg) 85%,transparent);max-width:44ch}
+.rank{margin:16px 0 0;padding:12px 14px;background:color-mix(in srgb,var(--color-bg) 10%,transparent);border-left:4px solid var(--color-accent-2);font-size:15px}
+
+section.block{border-bottom:2px solid var(--color-divider)}
+section.block .wrap{padding-top:clamp(36px,5vw,60px);padding-bottom:clamp(36px,5vw,60px)}
+section.alt{background:var(--color-surface)}
+.sec-h{margin:0 0 6px;font-size:clamp(28px,3.4vw,40px);line-height:1.05}
+.sec-sub{margin:0 0 28px;color:var(--muted);max-width:62ch}
+
+/* area bars */
+.areas{display:grid;gap:18px}
+.area{display:grid;grid-template-columns:120px minmax(0,1fr) 120px;gap:16px;align-items:center}
+@media (max-width:600px){.area{grid-template-columns:1fr auto}.area .track{grid-column:1/-1;order:3}}
+.area .nm{font-weight:700;font-size:17px}
+.track{position:relative;height:18px;background:var(--track)}
+.track .fill{position:absolute;inset:0 auto 0 0;background:var(--color-accent-2)}
+.area.low .track .fill{background:var(--color-accent)}
+.track .peer{position:absolute;top:-5px;bottom:-5px;width:3px;background:var(--color-text)}
+.area .val{text-align:right;font-variant-numeric:tabular-nums}
+.area .val b{font-size:22px;font-family:var(--font-heading)}
+.area .val small{display:block;font-size:13px;color:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:18px;margin:20px 0 0;font-size:14px;color:var(--muted)}
+.legend i{display:inline-block;width:14px;height:10px;margin-right:6px;vertical-align:middle}
+
+.notice{padding:14px 16px;background:var(--color-accent-2-100);border-left:4px solid var(--color-accent-2);font-size:15px;max-width:70ch}
+
+/* questions */
+.qarea{margin:36px 0 12px;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--color-accent-700)}
+.qarea:first-of-type{margin-top:0}
+.q{background:var(--color-bg);padding:clamp(16px,2.5vw,24px);margin-bottom:14px;border-top:3px solid var(--color-divider);break-inside:avoid}
+.q.low{border-top-color:var(--color-accent)}
+.q.top{border-top-color:var(--color-accent-2)}
+.q h3{margin:0 0 14px;font-size:clamp(20px,2.2vw,24px);line-height:1.2}
+.q h3 em{font-style:normal;color:var(--muted);font-family:var(--font-body);font-size:14px;font-weight:600;margin-right:8px}
+.scale{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+@media (max-width:700px){.scale{grid-template-columns:1fr}}
+.opt{position:relative;padding:10px 12px 12px;border:2px solid transparent;background:var(--color-surface);font-size:14px;line-height:1.35;min-height:64px}
+.opt .lv{display:block;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.opt.you{border-color:var(--color-text);background:#fff}
+.opt.you .lv{color:var(--color-text)}
+.opt.you .lv::after{content:" · You";color:var(--color-accent-700)}
+.opt .pbar{margin-top:8px;height:5px;background:var(--track)}
+.opt .pbar i{display:block;height:100%;background:var(--color-text)}
+.opt .pct{display:block;margin-top:4px;font-size:12px;color:var(--muted)}
+.stat{margin:14px 0 0;padding:12px 14px;border-left:4px solid var(--color-accent-2);background:var(--color-accent-2-100);font-size:15px}
+.stat .src{display:block;margin-top:4px;font-size:13px;color:var(--muted)}
+.ask{margin:10px 0 0;padding:10px 14px;border:2px dashed var(--color-accent);font-size:15px}
+.ask b{color:var(--color-accent-700)}
+
+/* priorities */
+.recs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}
+.rec{background:var(--color-bg);padding:20px;border-top:4px solid var(--color-accent);break-inside:avoid}
+.rec .n{font-family:var(--font-heading);font-size:40px;line-height:1;color:var(--color-accent)}
+.rec h3{margin:6px 0 8px;font-size:22px}
+.rec p{margin:0 0 10px}
+.rec a{font-weight:600}
+
+.cta{background:var(--color-text);color:var(--color-bg)}
+.cta .wrap{padding-top:clamp(36px,5vw,56px);padding-bottom:clamp(36px,5vw,56px);display:grid;grid-template-columns:auto minmax(0,1fr);gap:24px;align-items:center}
+@media (max-width:600px){.cta .wrap{grid-template-columns:1fr}}
+.cta img{width:96px;height:96px;object-fit:cover;border-radius:50%}
+.cta h2{margin:0 0 8px;font-size:clamp(26px,3vw,34px)}
+.cta p{margin:0 0 18px;color:color-mix(in srgb,var(--color-bg) 85%,transparent);max-width:60ch}
+
+.sources ol{margin:0;padding-left:20px;font-size:14px;color:var(--muted)}
+.sources li{margin-bottom:6px}
+.method{font-size:14px;color:var(--muted);max-width:75ch}
+
+.state{padding:96px var(--pad);text-align:center}
+.state h1{font-size:clamp(30px,4vw,44px);margin:0 0 10px}
+
+footer.site{background:var(--color-text);color:var(--color-bg);border-top:4px solid var(--color-accent)}
+footer.site .wrap{padding-top:20px;padding-bottom:20px;display:flex;flex-wrap:wrap;gap:10px 28px;align-items:center;font-size:14px}
+.foot-word{font-family:var(--font-heading);font-weight:800;font-size:20px;margin-right:auto}
+footer.site a{color:var(--color-accent-400)}
+
+@media print{
+  @page{margin:14mm}
+  body{background:#fff;font-size:12px}
+  .tools,.ask,footer.site{display:none!important}
+  header.site{border:0}
+  .hero,.cta{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  section.alt,.opt,.stat,.track,.fill,.notice,.rec,.q{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  section.block .wrap{padding-top:20px;padding-bottom:20px}
+  .page-break{break-before:page}
+}
+</style>
+</head>
+<body>
+<div class="topbar"></div>
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="/">coltasa<span>.</span></a>
+    <div class="tools" id="tools" hidden>
+      <button type="button" class="btn-ghost" id="print">Save as PDF</button>
+      <a class="btn-ghost" href="https://calendly.com/coltasahq/30min" target="_blank" rel="noopener">Book a review</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="state" id="loading"><h1>Loading your report…</h1></div>
+  <div class="state" id="missing" hidden>
+    <h1>This report link isn't valid</h1>
+    <p>Check the link in your email, or contact <a href="mailto:hello@coltasa.com">hello@coltasa.com</a>.</p>
+    <p><a href="/score">Take the Sales Engine Score</a></p>
+  </div>
+
+  <div id="report" hidden>
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <p class="kicker">Sales Engine Report</p>
+          <h1 id="hTitle"></h1>
+          <ul class="meta" id="hMeta"></ul>
+        </div>
+        <div>
+          <p class="big"><b id="hScore"></b><span>/ 100</span></p>
+          <p class="band" id="hBand"></p>
+          <p class="band-desc" id="hBandDesc"></p>
+          <p class="rank" id="hRank"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="wrap">
+        <h2 class="sec-h">Your five areas</h2>
+        <p class="sec-sub">Each area scored 0 to 100. Under 50 is flagged as a weak spot.</p>
+        <div class="areas" id="areas"></div>
+        <div class="legend" id="legend"></div>
+        <p class="notice" id="peerNote" style="margin-top:24px" hidden></p>
+      </div>
+    </section>
+
+    <section class="block alt">
+      <div class="wrap">
+        <h2 class="sec-h">Question by question</h2>
+        <p class="sec-sub" id="qSub">Your answer is outlined. The right-hand option is what a repeatable sales engine looks like. Where good research exists, the benchmark sits underneath.</p>
+        <div id="questions"></div>
+      </div>
+    </section>
+
+    <section class="block page-break">
+      <div class="wrap">
+        <h2 class="sec-h">Where to start</h2>
+        <p class="sec-sub">Your weakest areas first, in the order we'd tackle them.</p>
+        <div class="recs" id="recs"></div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap">
+        <img src="assets/colin.jpg" alt="Colin Constantine">
+        <div>
+          <h2>Talk it through with Colin</h2>
+          <p>A 30-minute review: what your score means for a company at your stage, and the first three moves to make. Colin has spent over a decade in enterprise sales at Salesforce, Sitecore, Algolia and Bloomberg.</p>
+          <a class="btn-solid" href="https://calendly.com/coltasahq/30min" target="_blank" rel="noopener">Book a 30-minute review</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="block sources">
+      <div class="wrap">
+        <h2 class="sec-h" style="font-size:24px">Sources and method</h2>
+        <p class="method" id="method"></p>
+        <ol id="sources"></ol>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span class="foot-word">coltasa<span>.</span></span>
+    <span>B2B sales strategy &amp; execution</span>
+    <a href="mailto:hello@coltasa.com">hello@coltasa.com</a>
+    <a href="/privacy">Privacy</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var DB = { url: 'https://flfqgoqkyszsmakyyzaj.supabase.co', key: 'sb_publishable_73Iwy9ueZpwISXo-KL5Aig_AEtyitg2' };
+  var STAGE_MIN = 15; // stage-level ranking needs at least this many peers at the same stage
+
+  var AREAS = { pipeline: 'Pipeline', process: 'Process', people: 'People', tools: 'Tools', metrics: 'Metrics' };
+  var TIE = ['process', 'pipeline', 'metrics', 'people', 'tools'];
+  var LEVELS = ['Missing', 'Basic', 'Developing', 'Repeatable'];
+
+  var BANDS = {
+    'Repeatable': 'You have a process other people can run. The work now is efficiency and scale.',
+    'Building': 'The pieces exist but run inconsistently, so growth still depends on who is selling.',
+    'Founder-led': "Sales runs on the founder's effort. Nothing is repeatable yet, which is normal at this stage."
+  };
+
+  // Sources: only primary, traceable research. Vendor datasets are labelled as such.
+  var SRC = {
+    hbr: { t: 'Oldroyd, McElheran & Elkington, "The Short Life of Online Sales Leads", Harvard Business Review, March 2011', u: 'https://scholarsarchive.byu.edu/facpub/9711' },
+    ebsta: { t: 'Ebsta, B2B Sales Benchmarks, H1 2024 update (vendor analysis of its customers’ deal data)', u: 'https://ebsta.com/wp-content/uploads/2024/07/H1-Update-2024-B2B-Sales-Benchmarks.pdf' },
+    gartner24: { t: 'Gartner press release, 18 Dec 2024 (survey of 234 sales leaders, May to June 2024)', u: 'https://www.gartner.com/en/newsroom/press-releases/2024-12-18-gartner-survey-reveals-only-eleven-percent-of-sales-organizations-are-able-to-drive-commercial-success-while-executing-a-transformation' },
+    rain: { t: 'RAIN Group Center for Sales Research, prospecting study, Jan 2018 (488 buyers, 489 sellers)', u: 'https://customerthink.com/new-rain-group-center-for-sales-research-study-debunks-common-myths-about-sales-prospecting/' },
+    bridge: { t: 'The Bridge Group, AE Models, Motions & Metrics 2026 (158 B2B companies)', u: 'https://www.bridgegroupinc.com/research/2026-ae-models-motions-metrics' },
+    validity: { t: 'Validity, The State of CRM Data Management in 2024 (600+ CRM admins)', u: 'https://www.validity.com/resource-center/the-state-of-crm-data-management-in-2024/' },
+    sfdc: { t: 'Salesforce, State of Sales, 5th edition (7,775 sales professionals, surveyed Aug to Sep 2022)', u: 'https://www.salesforce.com/news/stories/sales-research-2023/' },
+    gartner20: { t: 'Gartner press release, 12 Feb 2020, State of Sales Operations survey', u: 'https://www.gartner.com/en/newsroom/press-releases/2020-02-12-gartner-says-less-than-50--of-sales-leaders-and-selle' }
+  };
+
+  // s: benchmark (with source key); ask: Colin's call prompt, shown only with &call=1
+  var QS = [
+    { a: 'pipeline', q: 'Where do most new deals come from?', o: ["The founder's network only", 'Referrals and inbound, no repeatable outbound', 'Some outbound, run inconsistently', 'A repeatable mix, with known volume per channel'],
+      s: 'Only 18% of the pipeline in Ebsta’s 2024 dataset matched the seller’s ideal customer profile, and deals that did match won 3.1x more often. Where pipeline comes from matters less than whether it fits.', src: 'ebsta',
+      ask: 'Which channel produced your last five closed deals? Could you make that channel twice as big next quarter?' },
+    { a: 'pipeline', q: "How much open pipeline do you have against next quarter's target?", o: ["We don't know", 'Under 1x the target', '1x to 3x', 'Over 3x'],
+      s: 'The common rule of thumb is 3x coverage. It is a convention, not a research finding: the right number is 1 divided by your real win rate.', src: null,
+      ask: 'What is your actual win rate from qualified opportunity to close? That sets your true coverage target.' },
+    { a: 'pipeline', q: 'How fast does a new inbound lead hear from a person?', o: ['Days, or never', 'Within 2 days', 'The same day', 'Within an hour'],
+      s: 'An audit of 2,241 US companies found 23% never replied to a web inquiry and the average reply took 42 hours. Firms that tried to reach a lead within an hour were nearly 7x more likely to qualify it than those that waited longer. (US data from 2011; an association, not proof of cause.)', src: 'hbr',
+      ask: 'Who owns a new inbound lead in the first hour, and what happens at 6pm on a Friday?' },
+    { a: 'process', q: 'Is your sales process written down?', o: ["It lives in the founder's head", 'Rough stages in the CRM', 'Stages with exit criteria', 'Stages, exit criteria and a playbook reps use'],
+      s: 'Sales organizations that use data to tie seller actions to specific stages of the sales process were 2.5x more likely to be top performers.', src: 'gartner24',
+      ask: 'If a new rep joined Monday, what would they read to learn how you sell?' },
+    { a: 'process', q: 'How do you qualify deals?', o: ['Gut feel', 'We ask about budget and timing', 'A framework, used sometimes', 'A framework on every deal, reviewed weekly'],
+      s: 'In Ebsta’s 2024 deal data, top-performing reps were 357% more likely than others to use a qualification methodology.', src: 'ebsta',
+      ask: 'Walk me through the last deal you lost late. When could you have known?' },
+    { a: 'process', q: 'How many follow-ups does a prospect get before you stop?', o: ['One or none', '2 to 3', '4 to 6, on one channel', '6 or more, across email, phone and LinkedIn'],
+      s: '52% of sellers say it takes 5 to 10 touches just to first connect with a new prospect.', src: 'rain',
+      ask: 'What does touch number four look like today, and who sends it?' },
+    { a: 'people', q: 'Who sells today?', o: ['Only the founder', 'The founder plus a first hire', 'A small team with a sales leader', 'Specialized roles with clear handoffs'],
+      s: 'In Ebsta’s 2024 data, 16% of reps generated 83% of revenue. Most teams depend on a few people, which is a risk until the way they win is written down.', src: 'ebsta',
+      ask: 'How many hours a week does the founder spend selling? What would they do with them back?' },
+    { a: 'people', q: 'How long until a new rep closes a first deal?', o: ["We've never hired a rep", '6 months or more', '3 to 6 months', 'Under 3 months, with a written onboarding plan'],
+      s: 'Average AE ramp to full productivity is 6.2 months, the longest the study has recorded, and only 48% of reps are at quota.', src: 'bridge',
+      ask: 'What would a new rep need to close their first deal in 90 days?' },
+    { a: 'tools', q: 'How is your CRM used?', o: ['No CRM, or a spreadsheet', 'We have one, but the data is stale', 'Reps update it most of the time', "It's the source of truth, automated where possible"],
+      s: '24% of CRM admins say less than half of their CRM data is accurate and complete.', src: 'validity',
+      ask: 'If you had to forecast from the CRM alone today, how far off would you be?' },
+    { a: 'tools', q: 'How much rep time goes to admin: logging, research and follow-up?', o: ["We don't know", 'Over half', 'A quarter to a half', 'Under a quarter, mostly automated'],
+      s: 'Sales reps spend 28% of their week selling. Most of the rest goes to deal admin and data entry.', src: 'sfdc',
+      ask: 'Which admin task would your reps happily never do again?' },
+    { a: 'metrics', q: 'Which numbers do you review every week?', o: ['Revenue only', 'Revenue and number of deals', 'Pipeline created, win rate and deal size', 'Conversion by stage and by channel'],
+      s: 'Opportunities that were updated weekly were 17% more likely to close-won in Ebsta’s 2024 deal data.', src: 'ebsta',
+      ask: 'What number would have warned you about your worst quarter, a month early?' },
+    { a: 'metrics', q: "How accurate was last quarter's forecast?", o: ["We don't forecast", 'Off by more than 30%', 'Within 15 to 30%', 'Within 15%'],
+      s: 'Only 45% of sales leaders and sellers have high confidence in their organization’s forecast accuracy.', src: 'gartner20',
+      ask: 'What do you look at to decide whether a deal is in the forecast?' }
+  ];
+
+  var RECS = {
+    pipeline: { why: 'Pipeline that depends on referrals and luck makes every quarter a gamble.', fix: 'Pick one channel you can control, set a weekly volume target for it, and get first replies to inbound leads under an hour.', link: '/insights/pipeline-coverage', title: 'How much pipeline do you actually need?' },
+    process: { why: 'Without a written process, every rep sells differently and nobody can tell why deals stall.', fix: 'Write down your stages with clear exit criteria, pick one qualification framework, and plan at least six follow-ups across two channels.', link: '/insights/first-sales-playbook', title: 'Write the playbook before you hire the team' },
+    people: { why: 'When only the founder can close, growth stops at the founder’s calendar.', fix: 'Document how the founder wins deals, then give the first hire a 90-day onboarding plan with a target date for a first close.', link: '/insights/founder-led-sales-handoff', title: 'When to move on from founder-led sales' },
+    tools: { why: 'A stale CRM hides your pipeline, and admin work eats the time reps should spend selling.', fix: 'Make the CRM the only place deals live, cut required fields to the ones you review, and automate logging and research.', link: '/insights/ai-sdrs', title: 'AI SDRs are a waste of time. For now.' },
+    metrics: { why: 'If you only track revenue, you find out about a bad quarter when it is already over.', fix: 'Review pipeline created, win rate and stage conversion every week, and forecast on evidence rather than rep confidence.', link: '/insights/forecast-evidence', title: 'A forecast is evidence, not optimism' }
+  };
+
+  var $ = function (id) { return document.getElementById(id); };
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function ord(n) { var s = ['th', 'st', 'nd', 'rd'], v = n % 100; return n + (s[(v - 20) % 10] || s[v] || s[0]); }
+  function topPct(p) { return Math.max(1, 100 - p); }
+
+  var params = new URLSearchParams(location.search);
+  var token = (params.get('t') || '').trim();
+  var callMode = params.get('call') === '1';
+
+  function missing() { $('loading').hidden = true; $('missing').hidden = false; }
+  if (!/^[0-9a-f]{32}$/.test(token)) { missing(); return; }
+
+  fetch(DB.url + '/rest/v1/rpc/get_report', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'apikey': DB.key },
+    body: JSON.stringify({ p_token: token })
+  }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (d) { if (!d || !d.respondent) return missing(); render(d); })
+    .catch(missing);
+
+  function render(d) {
+    var me = d.respondent, c = d.cohort, sc = me.scores;
+    var peersOn = c.n >= c.min_n;
+    var stageOn = peersOn && c.n_stage >= STAGE_MIN;
+    var date = new Date(me.created_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+
+    document.title = 'Sales Engine Report: ' + me.company + ' | Coltasa';
+    $('hTitle').textContent = me.company + ', prepared for ' + me.first_name;
+    [me.stage, me.team_size + (me.team_size === '1' ? ' person selling' : ' people selling'), me.motion + ' led', date]
+      .forEach(function (t) { $('hMeta').appendChild(el('li', null, t)); });
+    $('hScore').textContent = sc.overall;
+    $('hBand').textContent = me.band;
+    $('hBandDesc').textContent = BANDS[me.band] || '';
+    if (peersOn) {
+      var line = 'Higher than ' + c.percentile.overall + '% of the ' + c.n + ' companies that have taken the assessment';
+      if (stageOn) line += ', and ' + c.percentile.stage + '% of the ' + c.n_stage + ' ' + me.stage + ' companies';
+      $('hRank').textContent = line + '.';
+    } else {
+      $('hRank').textContent = 'The weakest area to fix first: ' + me.weakest_area + '.';
+    }
+
+    // Areas
+    Object.keys(AREAS).forEach(function (k) {
+      var v = sc[k], row = el('div', 'area' + (v < 50 ? ' low' : ''));
+      row.appendChild(el('span', 'nm', AREAS[k]));
+      var tr = el('span', 'track');
+      tr.setAttribute('role', 'img');
+      tr.setAttribute('aria-label', AREAS[k] + ': ' + v + ' out of 100' + (peersOn ? ', peer average ' + c.avg[k] : ''));
+      var f = el('span', 'fill'); f.style.width = Math.max(v, 1.5) + '%'; tr.appendChild(f);
+      if (peersOn) { var p = el('span', 'peer'); p.style.left = 'calc(' + c.avg[k] + '% - 1px)'; tr.appendChild(p); }
+      row.appendChild(tr);
+      var val = el('span', 'val'); val.appendChild(el('b', null, v));
+      if (peersOn) val.appendChild(el('small', null, 'Top ' + topPct(c.percentile[k]) + '% · avg ' + c.avg[k]));
+      row.appendChild(val);
+      $('areas').appendChild(row);
+    });
+    var lg = $('legend');
+    lg.innerHTML = '<span><i style="background:var(--color-accent-2)"></i>Your score</span><span><i style="background:var(--color-accent)"></i>Weak spot (under 50)</span>' +
+      (peersOn ? '<span><i style="background:var(--color-text);width:3px;height:14px"></i>Average of all respondents</span>' : '');
+    if (!peersOn) {
+      $('peerNote').hidden = false;
+      $('peerNote').textContent = 'Peer comparisons switch on once ' + c.min_n + ' companies have taken the assessment (' + c.n + ' so far). Until then this report compares you against published research only, so the rankings you see later are real.';
+    }
+
+    // Questions
+    if (peersOn) $('qSub').textContent += ' The bar under each option shows how many of the ' + c.n + ' respondents chose it.';
+    var box = $('questions'), lastArea = null;
+    QS.forEach(function (x, i) {
+      if (x.a !== lastArea) { box.appendChild(el('h3', 'qarea', AREAS[x.a] + ' · ' + sc[x.a] + ' / 100')); lastArea = x.a; }
+      var ans = me.answers[i];
+      var card = el('div', 'q' + (ans <= 1 ? ' low' : ans === 3 ? ' top' : ''));
+      var h = el('h3'); h.appendChild(el('em', null, 'Q' + (i + 1))); h.appendChild(document.createTextNode(x.q)); card.appendChild(h);
+      var scale = el('div', 'scale');
+      var dist = c.distribution && c.distribution[i] ? c.distribution[i] : [0, 0, 0, 0];
+      var tot = dist.reduce(function (s, n) { return s + n; }, 0);
+      x.o.forEach(function (label, oi) {
+        var o = el('div', 'opt' + (oi === ans ? ' you' : ''));
+        o.appendChild(el('span', 'lv', LEVELS[oi]));
+        o.appendChild(document.createTextNode(label));
+        if (peersOn && tot) {
+          var pc = Math.round(dist[oi] / tot * 100);
+          var pb = el('span', 'pbar'); pb.style.display = 'block';
+          var pi = el('i'); pi.style.width = pc + '%'; pb.appendChild(pi); o.appendChild(pb);
+          o.appendChild(el('span', 'pct', pc + '% of respondents'));
+        }
+        scale.appendChild(o);
+      });
+      card.appendChild(scale);
+      if (peersOn && tot) {
+        var better = 0; for (var j = ans + 1; j < 4; j++) better += dist[j];
+        card.appendChild(el('p', 'pct', Math.round(better / tot * 100) + '% of respondents answered above you on this question.'))
+          .style.margin = '10px 0 0';
+      }
+      if (x.s) {
+        var st = el('p', 'stat');
+        st.appendChild(el('b', null, x.src ? 'Benchmark: ' : 'Rule of thumb: '));
+        st.appendChild(document.createTextNode(x.s));
+        if (x.src) { var s = el('span', 'src'); s.textContent = 'Source: ' + SRC[x.src].t.split(',')[0] + ' [' + (Object.keys(SRC).indexOf(x.src) + 1) + ']'; st.appendChild(s); }
+        card.appendChild(st);
+      }
+      if (callMode && x.ask) {
+        var ak = el('p', 'ask'); ak.appendChild(el('b', null, 'Ask: ')); ak.appendChild(document.createTextNode(x.ask)); card.appendChild(ak);
+      }
+      box.appendChild(card);
+    });
+
+    // Priorities
+    var weak = Object.keys(AREAS).filter(function (k) { return sc[k] < 50; })
+      .sort(function (a, b) { return sc[a] - sc[b] || TIE.indexOf(a) - TIE.indexOf(b); });
+    if (!weak.length) weak = TIE.slice().sort(function (a, b) { return sc[a] - sc[b] || TIE.indexOf(a) - TIE.indexOf(b); }).slice(0, 2);
+    weak.slice(0, 3).forEach(function (k, i) {
+      var r = RECS[k], card = el('div', 'rec');
+      card.appendChild(el('div', 'n', String(i + 1)));
+      card.appendChild(el('h3', null, AREAS[k] + ' · ' + sc[k] + ' / 100'));
+      card.appendChild(el('p', null, r.why));
+      var fx = el('p'); fx.appendChild(el('b', null, 'First move: ')); fx.appendChild(document.createTextNode(r.fix)); card.appendChild(fx);
+      var a = el('a', null, 'Read: ' + r.title); a.href = r.link; card.appendChild(a);
+      $('recs').appendChild(card);
+    });
+
+    // Sources
+    $('method').textContent = 'Scores come from your 12 answers, each worth 0 to 3 points. Area scores are points over the maximum for that area; the overall score is total points over 36. ' +
+      (peersOn ? 'Peer figures compare you with the ' + c.n + ' companies that have completed the assessment (latest answer per person, test entries excluded). ' : '') +
+      'Benchmarks come from published research; vendor datasets are labelled. Research figures describe the companies studied and are not a guarantee for yours.';
+    Object.keys(SRC).forEach(function (k) {
+      var li = el('li'), a = el('a', null, SRC[k].t); a.href = SRC[k].u; a.target = '_blank'; a.rel = 'noopener'; li.appendChild(a); $('sources').appendChild(li);
+    });
+
+    $('loading').hidden = true;
+    $('report').hidden = false;
+    $('tools').hidden = false;
+    $('print').addEventListener('click', function () { window.print(); });
+  }
+})();
+</script>
+</body>
+</html>
