@@ -24,7 +24,7 @@
   --pad:clamp(16px,5vw,72px);
 }
 html,body{overflow-x:clip}
-body{margin:0;background:var(--color-bg);color:var(--color-text);font-family:var(--font-body);text-wrap:pretty;line-height:1.5}
+body{margin:0;background:var(--color-bg);color:var(--color-text);font-family:var(--font-body);text-wrap:pretty;line-height:1.55;font-size:18px}
 h1,h2,h3{font-family:var(--font-heading);font-weight:600;letter-spacing:-0.01em}
 a{color:var(--color-accent-2-700)}
 [hidden]{display:none!important}
@@ -35,77 +35,88 @@ header.site .wrap{padding-top:14px;padding-bottom:14px;display:flex;align-items:
 .logo{text-decoration:none;color:var(--color-text);margin-right:auto;font-family:var(--font-heading);font-weight:800;font-size:28px;letter-spacing:-0.02em}
 .logo span,.foot-word span{color:var(--color-accent-2)}
 .tools{display:flex;gap:10px;flex-wrap:wrap}
-.btn-ghost{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:2px solid var(--color-text);background:none;color:var(--color-text);font:600 15px var(--font-body);cursor:pointer;text-decoration:none}
+.btn-ghost{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border:2px solid var(--color-text);background:none;color:var(--color-text);font:600 16px var(--font-body);cursor:pointer;text-decoration:none}
 .btn-ghost:hover{background:var(--color-text);color:var(--color-bg)}
-.btn-solid{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 20px;background:var(--color-accent);color:#fff;font:600 16px var(--font-body);text-decoration:none;border:0}
+.btn-solid{display:inline-flex;align-items:center;gap:10px;min-height:54px;padding:0 24px;background:var(--color-accent);color:#fff;font:600 18px var(--font-body);text-decoration:none;border:0}
 .btn-solid:hover{background:var(--color-accent-2-600);color:#fff}
 
 .hero{background:var(--color-text);color:var(--color-bg)}
 .hero .wrap{padding-top:clamp(36px,5vw,64px);padding-bottom:clamp(36px,5vw,64px);display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:end}
 @media (max-width:820px){.hero .wrap{grid-template-columns:1fr}}
-.kicker{display:flex;align-items:center;gap:10px;margin:0 0 16px;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--color-accent-400)}
+.kicker{display:flex;align-items:center;gap:10px;margin:0 0 16px;font-size:15px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--color-accent-400)}
 .kicker::before{content:"";width:10px;height:10px;background:var(--color-accent-2)}
 .hero h1{margin:0;font-size:clamp(34px,5vw,60px);line-height:1.02;letter-spacing:-0.03em}
 .meta{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 0;padding:0;list-style:none}
-.meta li{padding:6px 10px;border:1px solid color-mix(in srgb,var(--color-bg) 35%,transparent);font-size:14px}
+.meta li{padding:8px 12px;border:1px solid color-mix(in srgb,var(--color-bg) 35%,transparent);font-size:16px}
 .big{display:flex;align-items:baseline;gap:8px;margin:0}
 .big b{font-family:var(--font-heading);font-size:clamp(84px,12vw,140px);line-height:.85;letter-spacing:-0.04em}
 .big span{font-size:20px;color:color-mix(in srgb,var(--color-bg) 70%,transparent)}
-.band{margin:12px 0 0;font-family:var(--font-heading);font-size:28px}
-.band-desc{margin:6px 0 0;color:color-mix(in srgb,var(--color-bg) 85%,transparent);max-width:44ch}
-.rank{margin:16px 0 0;padding:12px 14px;background:color-mix(in srgb,var(--color-bg) 10%,transparent);border-left:4px solid var(--color-accent-2);font-size:15px}
+.band{margin:12px 0 0;font-family:var(--font-heading);font-size:34px}
+.band-desc{margin:6px 0 0;font-size:19px;color:color-mix(in srgb,var(--color-bg) 85%,transparent);max-width:44ch}
+.rank{margin:16px 0 0;padding:12px 14px;background:color-mix(in srgb,var(--color-bg) 10%,transparent);border-left:4px solid var(--color-accent-2);font-size:18px}
 
 section.block{border-bottom:2px solid var(--color-divider)}
 section.block .wrap{padding-top:clamp(36px,5vw,60px);padding-bottom:clamp(36px,5vw,60px)}
 section.alt{background:var(--color-surface)}
 .sec-h{margin:0 0 6px;font-size:clamp(28px,3.4vw,40px);line-height:1.05}
-.sec-sub{margin:0 0 28px;color:var(--muted);max-width:62ch}
+.sec-sub{margin:0 0 28px;color:var(--muted);max-width:62ch;font-size:19px}
 
 /* area bars */
 .areas{display:grid;gap:18px}
-.area{display:grid;grid-template-columns:120px minmax(0,1fr) 120px;gap:16px;align-items:center}
+.area{display:grid;grid-template-columns:130px minmax(0,1fr) 150px;gap:16px;align-items:center}
 @media (max-width:600px){.area{grid-template-columns:1fr auto}.area .track{grid-column:1/-1;order:3}}
-.area .nm{font-weight:700;font-size:17px}
-.track{position:relative;height:18px;background:var(--track)}
+.area .nm{font-weight:700;font-size:20px}
+.track{position:relative;height:22px;background:var(--track)}
 .track .fill{position:absolute;inset:0 auto 0 0;background:var(--color-accent-2)}
 .area.low .track .fill{background:var(--color-accent)}
 .track .peer{position:absolute;top:-5px;bottom:-5px;width:3px;background:var(--color-text)}
 .area .val{text-align:right;font-variant-numeric:tabular-nums}
-.area .val b{font-size:22px;font-family:var(--font-heading)}
-.area .val small{display:block;font-size:13px;color:var(--muted)}
-.legend{display:flex;flex-wrap:wrap;gap:18px;margin:20px 0 0;font-size:14px;color:var(--muted)}
+.area .val b{font-size:28px;font-family:var(--font-heading)}
+.area .val small{display:block;font-size:15px;color:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:20px;margin:22px 0 0;font-size:16px;color:var(--muted)}
 .legend i{display:inline-block;width:14px;height:10px;margin-right:6px;vertical-align:middle}
 
-.notice{padding:14px 16px;background:var(--color-accent-2-100);border-left:4px solid var(--color-accent-2);font-size:15px;max-width:70ch}
+.notice{padding:16px 18px;background:var(--color-accent-2-100);border-left:4px solid var(--color-accent-2);font-size:18px;max-width:70ch}
 
 /* questions */
-.qarea{margin:36px 0 12px;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--color-accent-700)}
+.qarea{margin:40px 0 14px;font-size:16px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--color-accent-700)}
 .qarea:first-of-type{margin-top:0}
 .q{background:var(--color-bg);padding:clamp(16px,2.5vw,24px);margin-bottom:14px;border-top:3px solid var(--color-divider);break-inside:avoid}
 .q.low{border-top-color:var(--color-accent)}
 .q.top{border-top-color:var(--color-accent-2)}
-.q h3{margin:0 0 14px;font-size:clamp(20px,2.2vw,24px);line-height:1.2}
-.q h3 em{font-style:normal;color:var(--muted);font-family:var(--font-body);font-size:14px;font-weight:600;margin-right:8px}
+.q h3{margin:0 0 16px;font-size:clamp(22px,2.5vw,28px);line-height:1.2}
+.q h3 em{font-style:normal;color:var(--muted);font-family:var(--font-body);font-size:16px;font-weight:600;margin-right:8px}
 .scale{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
 @media (max-width:700px){.scale{grid-template-columns:1fr}}
-.opt{position:relative;padding:10px 12px 12px;border:2px solid transparent;background:var(--color-surface);font-size:14px;line-height:1.35;min-height:64px}
-.opt .lv{display:block;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.opt{position:relative;padding:12px 14px 14px;border:2px solid transparent;background:var(--color-surface);font-size:17px;line-height:1.35;min-height:72px}
+.opt .lv{display:block;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
 .opt.you{border-color:var(--color-text);background:#fff}
 .opt.you .lv{color:var(--color-text)}
 .opt.you .lv::after{content:" · You";color:var(--color-accent-700)}
 .opt .pbar{margin-top:8px;height:5px;background:var(--track)}
 .opt .pbar i{display:block;height:100%;background:var(--color-text)}
-.opt .pct{display:block;margin-top:4px;font-size:12px;color:var(--muted)}
-.stat{margin:14px 0 0;padding:12px 14px;border-left:4px solid var(--color-accent-2);background:var(--color-accent-2-100);font-size:15px}
-.stat .src{display:block;margin-top:4px;font-size:13px;color:var(--muted)}
-.ask{margin:10px 0 0;padding:10px 14px;border:2px dashed var(--color-accent);font-size:15px}
+.opt .pct{display:block;margin-top:6px;font-size:14px;color:var(--muted)}
+.stat{margin:16px 0 0;padding:14px 16px;border-left:4px solid var(--color-accent-2);background:var(--color-accent-2-100);font-size:18px}
+.stat .src{display:block;margin-top:6px;font-size:15px;color:var(--muted)}
+.stat .src a{color:var(--muted)}
+.ask{margin:12px 0 0;padding:12px 16px;border:2px dashed var(--color-accent);font-size:18px}
 .ask b{color:var(--color-accent-700)}
+button.opt{font:inherit;font-size:17px;text-align:left;color:inherit;cursor:pointer;width:100%}
+button.opt:hover{background:var(--color-accent-100)}
+button.opt:focus-visible{outline:3px solid var(--color-accent-2);outline-offset:2px}
+.opt .more{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:15px;font-weight:700;color:var(--color-accent-2-700)}
+.opt .more::after{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-3px);transition:transform .2s}
+.q.open .opt .more::after{transform:rotate(-135deg);margin-top:6px}
+.analysis{display:none;margin-top:14px;padding-top:14px;border-top:1px solid var(--color-divider)}
+.q.open .analysis{display:block}
+.verdict{margin:0;font-size:19px}
+.peerline{margin:10px 0 0;font-size:17px;color:var(--muted)}
 
 /* priorities */
 .recs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}
 .rec{background:var(--color-bg);padding:20px;border-top:4px solid var(--color-accent);break-inside:avoid}
 .rec .n{font-family:var(--font-heading);font-size:40px;line-height:1;color:var(--color-accent)}
-.rec h3{margin:6px 0 8px;font-size:22px}
+.rec h3{margin:6px 0 10px;font-size:26px}
 .rec p{margin:0 0 10px}
 .rec a{font-weight:600}
 
@@ -113,25 +124,24 @@ section.alt{background:var(--color-surface)}
 .cta .wrap{padding-top:clamp(36px,5vw,56px);padding-bottom:clamp(36px,5vw,56px);display:grid;grid-template-columns:auto minmax(0,1fr);gap:24px;align-items:center}
 @media (max-width:600px){.cta .wrap{grid-template-columns:1fr}}
 .cta img{width:96px;height:96px;object-fit:cover;border-radius:50%}
-.cta h2{margin:0 0 8px;font-size:clamp(26px,3vw,34px)}
-.cta p{margin:0 0 18px;color:color-mix(in srgb,var(--color-bg) 85%,transparent);max-width:60ch}
+.cta h2{margin:0 0 10px;font-size:clamp(28px,3.4vw,40px)}
+.cta p{margin:0 0 20px;font-size:19px;color:color-mix(in srgb,var(--color-bg) 85%,transparent);max-width:60ch}
 
-.sources ol{margin:0;padding-left:20px;font-size:14px;color:var(--muted)}
-.sources li{margin-bottom:6px}
-.method{font-size:14px;color:var(--muted);max-width:75ch}
 
 .state{padding:96px var(--pad);text-align:center}
 .state h1{font-size:clamp(30px,4vw,44px);margin:0 0 10px}
 
 footer.site{background:var(--color-text);color:var(--color-bg);border-top:4px solid var(--color-accent)}
-footer.site .wrap{padding-top:20px;padding-bottom:20px;display:flex;flex-wrap:wrap;gap:10px 28px;align-items:center;font-size:14px}
+footer.site .wrap{padding-top:20px;padding-bottom:20px;display:flex;flex-wrap:wrap;gap:10px 28px;align-items:center;font-size:16px}
 .foot-word{font-family:var(--font-heading);font-weight:800;font-size:20px;margin-right:auto}
 footer.site a{color:var(--color-accent-400)}
 
 @media print{
   @page{margin:14mm}
-  body{background:#fff;font-size:12px}
+  body{background:#fff;font-size:14px}
   .tools,.ask,footer.site{display:none!important}
+  .analysis{display:block!important}
+  .opt .more{display:none!important}
   header.site{border:0}
   .hero,.cta{-webkit-print-color-adjust:exact;print-color-adjust:exact}
   section.alt,.opt,.stat,.track,.fill,.notice,.rec,.q{-webkit-print-color-adjust:exact;print-color-adjust:exact}
@@ -190,7 +200,7 @@ footer.site a{color:var(--color-accent-400)}
     <section class="block alt">
       <div class="wrap">
         <h2 class="sec-h">Question by question</h2>
-        <p class="sec-sub" id="qSub">Your answer is outlined. The right-hand option is what a repeatable sales engine looks like. Where good research exists, the benchmark sits underneath.</p>
+        <p class="sec-sub" id="qSub">Your answer is outlined. Click it to see what it means and how you compare. The right-hand option is what a repeatable sales engine looks like.</p>
         <div id="questions"></div>
       </div>
     </section>
@@ -214,13 +224,6 @@ footer.site a{color:var(--color-accent-400)}
       </div>
     </section>
 
-    <section class="block sources">
-      <div class="wrap">
-        <h2 class="sec-h" style="font-size:24px">Sources and method</h2>
-        <p class="method" id="method"></p>
-        <ol id="sources"></ol>
-      </div>
-    </section>
   </div>
 </main>
 
@@ -250,14 +253,14 @@ footer.site a{color:var(--color-accent-400)}
 
   // Sources: only primary, traceable research. Vendor datasets are labelled as such.
   var SRC = {
-    hbr: { t: 'Oldroyd, McElheran & Elkington, "The Short Life of Online Sales Leads", Harvard Business Review, March 2011', u: 'https://scholarsarchive.byu.edu/facpub/9711' },
-    ebsta: { t: 'Ebsta, B2B Sales Benchmarks, H1 2024 update (vendor analysis of its customers’ deal data)', u: 'https://ebsta.com/wp-content/uploads/2024/07/H1-Update-2024-B2B-Sales-Benchmarks.pdf' },
-    gartner24: { t: 'Gartner press release, 18 Dec 2024 (survey of 234 sales leaders, May to June 2024)', u: 'https://www.gartner.com/en/newsroom/press-releases/2024-12-18-gartner-survey-reveals-only-eleven-percent-of-sales-organizations-are-able-to-drive-commercial-success-while-executing-a-transformation' },
-    rain: { t: 'RAIN Group Center for Sales Research, prospecting study, Jan 2018 (488 buyers, 489 sellers)', u: 'https://customerthink.com/new-rain-group-center-for-sales-research-study-debunks-common-myths-about-sales-prospecting/' },
-    bridge: { t: 'The Bridge Group, AE Models, Motions & Metrics 2026 (158 B2B companies)', u: 'https://www.bridgegroupinc.com/research/2026-ae-models-motions-metrics' },
-    validity: { t: 'Validity, The State of CRM Data Management in 2024 (600+ CRM admins)', u: 'https://www.validity.com/resource-center/the-state-of-crm-data-management-in-2024/' },
-    sfdc: { t: 'Salesforce, State of Sales, 5th edition (7,775 sales professionals, surveyed Aug to Sep 2022)', u: 'https://www.salesforce.com/news/stories/sales-research-2023/' },
-    gartner20: { t: 'Gartner press release, 12 Feb 2020, State of Sales Operations survey', u: 'https://www.gartner.com/en/newsroom/press-releases/2020-02-12-gartner-says-less-than-50--of-sales-leaders-and-selle' }
+    hbr: { n: 'Harvard Business Review, 2011', t: 'Oldroyd, McElheran & Elkington, "The Short Life of Online Sales Leads", Harvard Business Review, March 2011', u: 'https://scholarsarchive.byu.edu/facpub/9711' },
+    ebsta: { n: 'Ebsta deal data, 2024 (vendor)', t: 'Ebsta, B2B Sales Benchmarks, H1 2024 update (vendor analysis of its customers’ deal data)', u: 'https://ebsta.com/wp-content/uploads/2024/07/H1-Update-2024-B2B-Sales-Benchmarks.pdf' },
+    gartner24: { n: 'Gartner, 2024', t: 'Gartner press release, 18 Dec 2024 (survey of 234 sales leaders, May to June 2024)', u: 'https://www.gartner.com/en/newsroom/press-releases/2024-12-18-gartner-survey-reveals-only-eleven-percent-of-sales-organizations-are-able-to-drive-commercial-success-while-executing-a-transformation' },
+    rain: { n: 'RAIN Group, 2018', t: 'RAIN Group Center for Sales Research, prospecting study, Jan 2018 (488 buyers, 489 sellers)', u: 'https://customerthink.com/new-rain-group-center-for-sales-research-study-debunks-common-myths-about-sales-prospecting/' },
+    bridge: { n: 'The Bridge Group, 2026', t: 'The Bridge Group, AE Models, Motions & Metrics 2026 (158 B2B companies)', u: 'https://www.bridgegroupinc.com/research/2026-ae-models-motions-metrics' },
+    validity: { n: 'Validity, 2024', t: 'Validity, The State of CRM Data Management in 2024 (600+ CRM admins)', u: 'https://www.validity.com/resource-center/the-state-of-crm-data-management-in-2024/' },
+    sfdc: { n: 'Salesforce State of Sales', t: 'Salesforce, State of Sales, 5th edition (7,775 sales professionals, surveyed Aug to Sep 2022)', u: 'https://www.salesforce.com/news/stories/sales-research-2023/' },
+    gartner20: { n: 'Gartner, 2020', t: 'Gartner press release, 12 Feb 2020, State of Sales Operations survey', u: 'https://www.gartner.com/en/newsroom/press-releases/2020-02-12-gartner-says-less-than-50--of-sales-leaders-and-selle' }
   };
 
   // s: benchmark (with source key); ask: Colin's call prompt, shown only with &call=1
@@ -383,8 +386,21 @@ footer.site a{color:var(--color-accent-400)}
       var scale = el('div', 'scale');
       var dist = c.distribution && c.distribution[i] ? c.distribution[i] : [0, 0, 0, 0];
       var tot = dist.reduce(function (s, n) { return s + n; }, 0);
+      var panel = el('div', 'analysis');
+      panel.id = 'an' + i;
       x.o.forEach(function (label, oi) {
-        var o = el('div', 'opt' + (oi === ans ? ' you' : ''));
+        var mine = oi === ans;
+        var o = el(mine ? 'button' : 'div', 'opt' + (mine ? ' you' : ''));
+        if (mine) {
+          o.type = 'button';
+          o.setAttribute('aria-expanded', 'false');
+          o.setAttribute('aria-controls', panel.id);
+          o.addEventListener('click', function () {
+            var open = card.classList.toggle('open');
+            o.setAttribute('aria-expanded', open ? 'true' : 'false');
+            o.querySelector('.more').textContent = open ? 'Hide analysis' : 'See analysis';
+          });
+        }
         o.appendChild(el('span', 'lv', LEVELS[oi]));
         o.appendChild(document.createTextNode(label));
         if (peersOn && tot) {
@@ -393,24 +409,38 @@ footer.site a{color:var(--color-accent-400)}
           var pi = el('i'); pi.style.width = pc + '%'; pb.appendChild(pi); o.appendChild(pb);
           o.appendChild(el('span', 'pct', pc + '% of respondents'));
         }
+        if (mine) o.appendChild(el('span', 'more', 'See analysis'));
         scale.appendChild(o);
       });
       card.appendChild(scale);
+
+      // Analysis, revealed by clicking your answer
+      var verdict = el('p', 'verdict');
+      if (ans === 3) verdict.textContent = 'This is what a repeatable sales engine looks like here. Protect it as you grow.';
+      else {
+        verdict.appendChild(el('b', null, ans === 2 ? 'Close. ' : 'A gap. '));
+        verdict.appendChild(document.createTextNode('Best practice: ' + x.o[3].charAt(0).toLowerCase() + x.o[3].slice(1) + '.'));
+      }
+      panel.appendChild(verdict);
       if (peersOn && tot) {
         var better = 0; for (var j = ans + 1; j < 4; j++) better += dist[j];
-        card.appendChild(el('p', 'pct', Math.round(better / tot * 100) + '% of respondents answered above you on this question.'))
-          .style.margin = '10px 0 0';
+        panel.appendChild(el('p', 'peerline', Math.round(better / tot * 100) + '% of respondents answered above you on this question.'));
       }
       if (x.s) {
         var st = el('p', 'stat');
         st.appendChild(el('b', null, x.src ? 'Benchmark: ' : 'Rule of thumb: '));
         st.appendChild(document.createTextNode(x.s));
-        if (x.src) { var s = el('span', 'src'); s.textContent = 'Source: ' + SRC[x.src].t.split(',')[0] + ' [' + (Object.keys(SRC).indexOf(x.src) + 1) + ']'; st.appendChild(s); }
-        card.appendChild(st);
+        if (x.src) {
+          var s = el('span', 'src'), sa = el('a', null, SRC[x.src].n);
+          sa.href = SRC[x.src].u; sa.target = '_blank'; sa.rel = 'noopener'; sa.title = SRC[x.src].t;
+          s.appendChild(sa); st.appendChild(s);
+        }
+        panel.appendChild(st);
       }
       if (callMode && x.ask) {
-        var ak = el('p', 'ask'); ak.appendChild(el('b', null, 'Ask: ')); ak.appendChild(document.createTextNode(x.ask)); card.appendChild(ak);
+        var ak = el('p', 'ask'); ak.appendChild(el('b', null, 'Ask: ')); ak.appendChild(document.createTextNode(x.ask)); panel.appendChild(ak);
       }
+      card.appendChild(panel);
       box.appendChild(card);
     });
 
@@ -426,14 +456,6 @@ footer.site a{color:var(--color-accent-400)}
       var fx = el('p'); fx.appendChild(el('b', null, 'First move: ')); fx.appendChild(document.createTextNode(r.fix)); card.appendChild(fx);
       var a = el('a', null, 'Read: ' + r.title); a.href = r.link; card.appendChild(a);
       $('recs').appendChild(card);
-    });
-
-    // Sources
-    $('method').textContent = 'Scores come from your 12 answers, each worth 0 to 3 points. Area scores are points over the maximum for that area; the overall score is total points over 36. ' +
-      (peersOn ? 'Peer figures compare you with the ' + c.n + ' companies that have completed the assessment (latest answer per person, test entries excluded). ' : '') +
-      'Benchmarks come from published research; vendor datasets are labelled. Research figures describe the companies studied and are not a guarantee for yours.';
-    Object.keys(SRC).forEach(function (k) {
-      var li = el('li'), a = el('a', null, SRC[k].t); a.href = SRC[k].u; a.target = '_blank'; a.rel = 'noopener'; li.appendChild(a); $('sources').appendChild(li);
     });
 
     $('loading').hidden = true;
