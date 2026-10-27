@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+  <title>Coltasa Insights</title>
+  <link>https://www.coltasa.com/insights</link>
+  <atom:link href="https://www.coltasa.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>Practical writing on B2B sales strategy, pipeline, outbound, negotiation and forecasting from Colin Constantine.</description>
+  <language>en</language>
+  <lastBuildDate>Tue, 27 Oct 2026 09:00:00 +0000</lastBuildDate>
+  <item>
+    <title>No champion, no deal: how to find one and make them count</title>
+    <link>https://www.coltasa.com/insights/enterprise-sales-champion</link>
+    <guid isPermaLink="true">https://www.coltasa.com/insights/enterprise-sales-champion</guid>
+    <pubDate>Tue, 27 Oct 2026 09:00:00 +0000</pubDate>
+    <category>Methodology</category>
+    <dc:creator>Colin Constantine</dc:creator>
+    <description>How to find and build a champion in enterprise sales: what a real champion is, five tests that separate them from friendly coaches, and how to equip them.</description>
+  </item>
+  <item>
+    <title>When to stop selling and hand it to your first rep</title>
+    <link>https://www.coltasa.com/insights/founder-led-sales-handoff</link>
+    <guid isPermaLink="true">https://www.coltasa.com/insights/founder-led-sales-handoff</guid>
+    <pubDate>Sun, 25 Oct 2026 09:00:00 +0000</pubDate>
+    <category>Strategy</category>
+    <dc:creator>Colin Constantine</dc:creator>
+    <description>How to know your B2B startup is ready to hand off founder-led sales, who to hire first, and a three-stage handoff that keeps deals moving.</description>
+  </item>
+  <item>
+    <title>The contract between buyers and sellers is broken</title>
+    <link>https://www.coltasa.com/insights/signal-over-noise</link>
+    <guid isPermaLink="true">https://www.coltasa.com/insights/signal-over-noise</guid>
+    <pubDate>Mon, 05 Oct 2026 09:00:00 +0000</pubDate>
+    <category>Outbound</category>
+    <dc:creator>Colin Constantine</dc:creator>
+    <description>Mass AI outbound has buried buyers in noise. Here are practical ways to create signal again: insight people can use, handwritten notes and small events.</description>
+  </item>
+  <item>
+    <title>AI SDRs are a waste of time. For now.</title>
+    <link>https://www.coltasa.com/insights/ai-sdrs</link>
+    <guid isPermaLink="true">https://www.coltasa.com/insights/ai-sdrs</guid>
+    <pubDate>Mon, 05 Oct 2026 09:00:00 +0000</pubDate>
+    <category>Pipeline</category>
+    <dc:creator>Colin Constantine</dc:creator>
+    <description>Why AI SDRs fall short in enterprise sales today, what would need to be true for that to change, and where AI actually helps your team.</description>
+  </item>
+  <item>
+    <title>The key tenets of a mutual success plan</title>
+    <link>https://www.coltasa.com/insights/mutual-success-plans</link>
+    <guid isPermaLink="true">https://www.coltasa.com/insights/mutual-success-plans</guid>
+    <pubDate>Mon, 05 Oct 2026 09:00:00 +0000</pubDate>
+    <category>Methodology</category>
+    <dc:creator>Colin Constantine</dc:creator>
+    <description>Seven principles for building a plan with your buyer that keeps deals on track, from first interest through go-live.</description>
+  </item>
+  <item>
+    <title>Write the playbook before you hire the team</title>
+    <link>https://www.coltasa.com/insights/first-sales-playbook</link>
+    <guid isPermaLink="true">https://www.coltasa.com/insights/first-sales-playbook</guid>
+    <pubDate>Mon, 05 Oct 2026 09:00:00 +0000</pubDate>
+    <category>Strategy</category>
+    <dc:creator>Colin Constantine</dc:creator>
+    <description>Hiring sellers before you can explain how your deals are won is the most expensive mistake in early-stage sales. Here is what to write down first.</description>
+  </item>
+  <item>
+    <title>Never give a discount. Trade it.</title>
+    <link>https://www.coltasa.com/insights/stop-discounting</link>
+    <guid isPermaLink="true">https://www.coltasa.com/insights/stop-discounting</guid>
+    <pubDate>Mon, 05 Oct 2026 09:00:00 +0000</pubDate>
+    <category>Negotiation</category>
+    <dc:creator>Colin Constantine</dc:creator>
+    <description>End-of-quarter discounting teaches buyers to wait. A practical approach to enterprise negotiation that protects price and still gets deals signed.</description>
+  </item>
+  <item>
+    <title>A forecast is evidence, not optimism</title>
+    <link>https://www.coltasa.com/insights/forecast-evidence</link>
+    <guid isPermaLink="true">https://www.coltasa.com/insights/forecast-evidence</guid>
+    <pubDate>Mon, 05 Oct 2026 09:00:00 +0000</pubDate>
+    <category>Forecasting</category>
+    <dc:creator>Colin Constantine</dc:creator>
+    <description>Why most early-stage forecasts miss, and how exit criteria, deal reviews and a few honest questions make the number something you can trust.</description>
+  </item>
+  <item>
+    <title>Pick one segment and win it first</title>
+    <link>https://www.coltasa.com/insights/pick-one-segment</link>
+    <guid isPermaLink="true">https://www.coltasa.com/insights/pick-one-segment</guid>
+    <pubDate>Mon, 05 Oct 2026 09:00:00 +0000</pubDate>
+    <category>Strategy</category>
+    <dc:creator>Colin Constantine</dc:creator>
+    <description>Early sales teams spread across too many markets. How to choose a first segment, test it and know when to expand.</description>
+  </item>
+  <item>
+    <title>How much pipeline do you actually need?</title>
+    <link>https://www.coltasa.com/insights/pipeline-coverage</link>
+    <guid isPermaLink="true">https://www.coltasa.com/insights/pipeline-coverage</guid>
+    <pubDate>Mon, 05 Oct 2026 09:00:00 +0000</pubDate>
+    <category>Pipeline</category>
+    <dc:creator>Colin Constantine</dc:creator>
+    <description>A simple way to work out pipeline coverage from your own numbers, and what to do when you are short.</description>
+  </item>
+  <item>
+    <title>Working with procurement, not around it</title>
+    <link>https://www.coltasa.com/insights/working-with-procurement</link>
+    <guid isPermaLink="true">https://www.coltasa.com/insights/working-with-procurement</guid>
+    <pubDate>Mon, 05 Oct 2026 09:00:00 +0000</pubDate>
+    <category>Negotiation</category>
+    <dc:creator>Colin Constantine</dc:creator>
+    <description>Procurement is part of every enterprise deal. How to bring them in early, understand what they need and keep the deal moving.</description>
+  </item>
+  <item>
+    <title>Running a discovery call that earns the second meeting</title>
+    <link>https://www.coltasa.com/insights/discovery-call</link>
+    <guid isPermaLink="true">https://www.coltasa.com/insights/discovery-call</guid>
+    <pubDate>Mon, 05 Oct 2026 09:00:00 +0000</pubDate>
+    <category>Methodology</category>
+    <dc:creator>Colin Constantine</dc:creator>
+    <description>A practical structure for first calls with enterprise buyers, the questions worth asking and how to end with a clear next step.</description>
+  </item>
+  <item>
+    <title>Running a weekly forecast call in 30 minutes</title>
+    <link>https://www.coltasa.com/insights/weekly-forecast-call</link>
+    <guid isPermaLink="true">https://www.coltasa.com/insights/weekly-forecast-call</guid>
+    <pubDate>Mon, 05 Oct 2026 09:00:00 +0000</pubDate>
+    <category>Forecasting</category>
+    <dc:creator>Colin Constantine</dc:creator>
+    <description>A simple agenda for a weekly forecast meeting that keeps the number honest without taking over the team&#x27;s week.</description>
+  </item>
+  <item>
+    <title>Writing a cold email a senior buyer will read</title>
+    <link>https://www.coltasa.com/insights/cold-email-senior-buyers</link>
+    <guid isPermaLink="true">https://www.coltasa.com/insights/cold-email-senior-buyers</guid>
+    <pubDate>Mon, 05 Oct 2026 09:00:00 +0000</pubDate>
+    <category>Outbound</category>
+    <dc:creator>Colin Constantine</dc:creator>
+    <description>A practical guide to short, specific outbound emails for enterprise buyers, with a simple structure and what to leave out.</description>
+  </item>
+</channel>
+</rss>

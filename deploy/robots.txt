@@ -1,6 +1,25 @@
+# Search engines and AI answer engines are welcome to crawl and cite this site.
 User-agent: *
 Allow: /
-Disallow: /map.html
-Disallow: /report
+
+# AI search and assistant crawlers, named explicitly so the intent is clear
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: Bingbot
+User-agent: DuckAssistBot
+User-agent: meta-externalagent
+User-agent: MistralAI-User
+Allow: /
+
+# Private score reports and the embedded map carry an X-Robots-Tag: noindex header instead of a
+# Disallow, so crawlers can see it and drop them from results.
 
 Sitemap: https://www.coltasa.com/sitemap.xml

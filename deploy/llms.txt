@@ -22,3 +22,8 @@
 - [Running a discovery call that earns the second meeting](https://www.coltasa.com/insights/discovery-call): A practical structure for first calls with enterprise buyers, the questions worth asking and how to end with a clear next step.
 - [Running a weekly forecast call in 30 minutes](https://www.coltasa.com/insights/weekly-forecast-call): A simple agenda for a weekly forecast meeting that keeps the number honest without taking over the team's week.
 - [Writing a cold email a senior buyer will read](https://www.coltasa.com/insights/cold-email-senior-buyers): A practical guide to short, specific outbound emails for enterprise buyers, with a simple structure and what to leave out.
+
+## Optional
+
+- [Full text of every article](https://www.coltasa.com/llms-full.txt): all Insights posts in plain Markdown
+- [RSS feed](https://www.coltasa.com/feed.xml)

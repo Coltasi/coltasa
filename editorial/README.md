@@ -6,6 +6,7 @@ A scheduled Claude task follows it once a week. Anyone (or any Claude session) c
 Files:
 - `topics.md`: the topic backlog. Take the first unchecked topic, tick it when published.
 - `publish.py`: adds a post to the site (post page, blog list in every file, sitemap, llms.txt, structured data).
+- `prerender.py`: renders the home page, Insights list and every post into static HTML for crawlers. Run after any page change.
 - `check.py`: renders every page in headless Chromium and fails on anything broken.
 - `drafts/<post-id>.json`: the source for each post. Keep them; they are the record of what was published.
 - `faq/<post-id>.json`: FAQ entries per post, used for FAQ structured data.
@@ -18,7 +19,7 @@ Files:
 4. Write the post as `editorial/drafts/<post-id>.json` (format in `publish.py`). Follow the voice, structure and checklist below.
 5. `python3 editorial/publish.py add editorial/drafts/<post-id>.json`
 6. Link the new post from one or two older related posts: in each, wrap an existing phrase (or extend one sentence minimally) with `<a href="/insights/<new-id>">`. Edit only inside that post's article body.
-7. `PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers python3 editorial/check.py` (setup steps are at the top of `check.py`). Fix anything that fails.
+7. `PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers python3 editorial/prerender.py`, then `PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers python3 editorial/check.py` (setup steps are at the top of `check.py`). Fix anything that fails. The prerender writes a static copy of every page so AI crawlers, which do not run JavaScript, can read the post. Never skip it: a post without it is invisible to ChatGPT, Claude and Perplexity.
 8. Tick the topic in `topics.md`, adding the post id and date.
 9. Commit and push to `main`. Vercel deploys production automatically in about a minute.
 10. Confirm the live URL returns the post (WebFetch `https://www.coltasa.com/insights/<post-id>` and check the headline is in the raw HTML).
@@ -64,4 +65,4 @@ HTML in `body_html` uses exactly these patterns (copied from existing posts):
 - Definitions are stated plainly ("A mutual action plan is..."), because AI engines quote definitions.
 - Specific, extractable answers: numbers, steps, named frameworks, clear recommendations.
 - Categories rotate: do not publish two posts in a row in the same category. Categories are fixed: Strategy, Pipeline, Negotiation, Methodology, Forecasting, Outbound.
-- `publish.py` handles canonical, Open Graph, BlogPosting, BreadcrumbList and FAQPage structured data, sitemap and llms.txt. Do not hand-edit those.
+- `publish.py` handles canonical, Open Graph, Twitter cards, BlogPosting, BreadcrumbList and FAQPage structured data, the home page's static head, sitemap, RSS feed (`feed.xml`), `llms.txt` and `llms-full.txt`. Do not hand-edit those.

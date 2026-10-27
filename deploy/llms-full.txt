@@ -1,0 +1,1078 @@
+# Coltasa Insights: full text
+
+> Articles by Colin Constantine, Principal at Coltasa, on B2B sales strategy and execution for Seed to Series B tech companies.
+
+## About Coltasa
+
+Coltasa helps Seed to Series B tech companies build repeatable B2B sales: playbooks, pipeline, outbound, negotiation, forecasting and sales hiring. Led by Colin Constantine.
+
+Services: Sales strategy & GTM plan, Pricing & packaging, Sales methodology, Pipeline & forecasting, Outbound campaigns, First sales hires, Founder-led sales coaching, Enterprise deal support, Negotiation, Fractional VP Sales.
+
+Website: https://www.coltasa.com/ · Sales Engine Score: https://www.coltasa.com/sales-engine-score · Contact: hello@coltasa.com
+
+---
+
+# No champion, no deal: how to find one and make them count
+
+URL: https://www.coltasa.com/insights/enterprise-sales-champion  
+Author: Colin Constantine  
+Published: 2026-10-27  
+Category: Methodology
+
+> How to find and build a champion in enterprise sales: what a real champion is, five tests that separate them from friendly coaches, and how to equip them.
+
+To find and build a champion in an enterprise deal, look past the friendliest contact and test for three things: power and influence inside the buying organisation, a personal stake in your solution succeeding, and a willingness to sell it internally when you are not in the room. Most people who like you will fail at least one of those tests. The ones who pass need to be equipped, coached and kept close, because they are the person who wins the deal for you in meetings you never attend.
+
+Getting this wrong is the most common reason a promising enterprise deal stalls after a strong start. The seller had a contact who was enthusiastic, responsive and helpful. That contact was a coach, not a champion, and when the decision moved into a room with budget holders and competing priorities, nobody in that room was arguing for you.
+
+## What is a champion in enterprise sales?
+
+A champion is a person inside the buyer's organisation who has power and influence, has a vested interest in your success, and is actively selling your solution internally on your behalf. That is the definition used by the people behind MEDDICC, who set out exactly those three criteria and are clear that a friendly main point of contact does not meet the bar (see [No Champion, No Deal on meddicc.com](https://meddicc.com/resources/no-champion-no-deal)).
+
+It helps to separate the champion from the other people you meet in a deal:
+
+- Coach: gives you information and advice, but will not spend their own credibility on you.
+- User or fan: likes the product, often loudly, but has little say over the decision.
+- Economic buyer: controls the budget and signs. They can be your champion, but usually are not, because they are weighing your project against everything else asking for money.
+- Champion: has the standing to move the decision and chooses to use it for you, because your success is also their success.
+Everyone in that list matters. Only one of them closes the gap between a good evaluation and a signed contract.
+
+## Why does every enterprise deal need a champion?
+
+Every enterprise deal needs a champion because the real decision is made by a group, in conversations you are not part of, and someone inside that group has to build agreement for you. A Gartner survey of 632 B2B buyers, published in 2025, found that 74 percent of buyer teams showed unhealthy conflict during the decision, and that buying groups which reached consensus were 2.5 times more likely to report a high-quality deal ([Gartner, 2025](https://www.gartner.com/en/newsroom/press-releases/2025-05-07-gartner-sales-survey-finds-74-percent-of-b2b-buyer-teams-demonstrate-unhealthy-conflict-during-the-decision-process)).
+
+You cannot create that consensus from outside the building. You can supply evidence, answer questions and run good meetings, but the argument that settles the decision happens on an internal call or in a budget review. Without a champion, the outcome rests on whoever argues hardest in that room, and it is rarely the person who thinks your product is nice.
+
+## How do you find a potential champion?
+
+You find a potential champion by looking for the person who owns the problem and has something to gain from solving it, not the person who is easiest to talk to. In Harvard Business Review, the authors of The End of Solution Sales found that star sellers preferred "skeptical change agents over friendly informants" ([Adamson, Dixon and Toman, 2012](https://hbr.org/2012/07/the-end-of-solution-sales)). The sceptic who pushes back on your claims is often a better candidate than the contact who agrees with everything.
+
+Signs worth noticing in your first few conversations:
+
+- They describe the problem in terms of its cost to the business and to their own goals, not just as an annoyance.
+- They ask hard, specific questions about how your solution would work in their environment.
+- They have led a change like this before, or are clearly being judged on fixing this one.
+- Colleagues defer to them in group meetings, or mention them by name when describing how decisions get made.
+- They offer introductions and context without being asked.
+A well-run [discovery call](https://www.coltasa.com/insights/discovery-call) is where most of this shows up. Ask what happens to them personally if the problem is still there in a year. The answer tells you more than any job title.
+
+## How do you test whether someone is really your champion?
+
+You test a champion by asking them to do something that costs them a little effort or credibility, and watching what happens. Enthusiasm in a meeting is cheap. Action between meetings is the evidence. Use these five tests:
+
+- Access: ask them to arrange a meeting with the economic buyer. A champion can make it happen, or tells you exactly why not and what would change that.
+- Information: ask about budget, competing projects and who might oppose the purchase. A champion shares what a coach keeps to themselves.
+- Effort: ask them to circulate a summary, gather requirements or book a meeting with another team. See whether it gets done, and how quickly.
+- Advocacy: ask what they will say about you in the next internal meeting, and whether they will put their name to a recommendation.
+- Personal win: ask what success looks like for them. If they cannot say, their interest may not survive the first difficult conversation.
+Score each test honestly. As an illustration, if a contact passes access and information but goes quiet on effort and advocacy, you have a well-placed coach. Treat the deal accordingly, and keep looking.
+
+## How do you build and equip a champion?
+
+You build a champion by making it easy and safe for them to sell for you: give them the material to make the case, coach them through their own buying process, and make sure they get the credit when it works. Most champions have never bought something this large or this complex, and they are taking a personal risk by backing you.
+
+- Write the case in their words. A one-page summary of the problem, the cost of doing nothing and the expected result, which they can forward without editing.
+- Prepare them for the objections. Walk through what finance, security, IT and their own boss are likely to ask, and agree the answers together.
+- Build the plan with them. A [mutual success plan](https://www.coltasa.com/insights/mutual-success-plans) gives your champion a timeline and a set of commitments to point to internally.
+- Rehearse the big meetings. Before they present to the economic buyer, run through it with them. Offer to join, but let them lead.
+- Make them look good. Credit their thinking in front of colleagues. Never let them be surprised by something you knew.
+Keep a regular rhythm of contact, such as a short weekly check-in through the late stages. Champions are busy, and a deal that is not on their mind is a deal that is not being sold.
+
+## What should you do if your champion leaves or goes quiet?
+
+If your champion leaves, changes role or stops responding, treat it as a material change to the deal and act within the week. The MEDDICC article cited above quotes a well-known line from the sales training firm SMG that puts the stakes plainly: "No Champion, no deal." A deal that has lost its champion should not stay at the same stage or the same probability in your forecast.
+
+- Ask your champion, before they move on if possible, to introduce you to whoever inherits the project.
+- Re-run the five tests on the new contact rather than assuming they share the same commitment.
+- Revisit the economic buyer to confirm the priority still stands.
+- [Update the forecast on evidence](https://www.coltasa.com/insights/forecast-evidence): move the deal back a stage until a new champion is confirmed.
+The best protection is never relying on one person. Having two or three relationships in the account means losing one is a setback rather than the end of the deal.
+
+This week, list your five largest open deals and write the champion's name next to each. Then mark which of the five tests that person has passed. Any deal with a blank or with fewer than three passes needs a different next step from the one currently in your CRM.
+
+## Sources and further reading
+
+- [MEDDICC (2026): No Champion, No Deal](https://meddicc.com/resources/no-champion-no-deal)
+- [Gartner (2025): Sales survey finds 74% of B2B buyer teams demonstrate unhealthy conflict during the decision process](https://www.gartner.com/en/newsroom/press-releases/2025-05-07-gartner-sales-survey-finds-74-percent-of-b2b-buyer-teams-demonstrate-unhealthy-conflict-during-the-decision-process)
+- [Harvard Business Review (2012): The End of Solution Sales](https://hbr.org/2012/07/the-end-of-solution-sales)
+
+## Frequently asked questions
+
+### What is the difference between a champion and a coach in sales?
+
+A coach gives you information and advice about the buying organisation but will not spend their own credibility on your behalf. A champion has power and influence, has a personal stake in your success, and actively sells your solution internally. The simplest test is action: ask a contact to arrange a meeting with the economic buyer or to put their name to a recommendation. A coach hesitates. A champion does it.
+
+### Can the economic buyer be the champion?
+
+Yes, but it is uncommon in larger enterprise deals. The economic buyer controls the budget and is usually weighing your project against several others competing for the same money, so they tend to stay neutral. A champion more often sits one or two levels below, owns the problem directly, and builds the case that the economic buyer then approves. If the economic buyer is genuinely championing you, still find a second strong relationship.
+
+### How many champions should you have in an enterprise deal?
+
+Aim for one clear champion who leads the internal case, supported by two or three other strong relationships in the account. A single champion is a single point of failure: if they change role, leave or lose influence, the deal can stall overnight. Additional relationships across finance, IT or the user team make the deal more resilient and give your champion allies in internal meetings.
+
+### How early in a deal should you identify a champion?
+
+Start looking in the first discovery conversations and aim to have a tested champion before the deal reaches a formal evaluation or proposal stage. Early on you are looking for candidates: people who own the problem and gain from solving it. By the time you are discussing commercial terms, you should have seen that person take real action for you, such as securing access to the economic buyer.
+
+---
+
+# When to stop selling and hand it to your first rep
+
+URL: https://www.coltasa.com/insights/founder-led-sales-handoff  
+Author: Colin Constantine  
+Published: 2026-10-25  
+Category: Strategy
+
+> How to know your B2B startup is ready to hand off founder-led sales, who to hire first, and a three-stage handoff that keeps deals moving.
+
+Founders should hand off sales once they can win deals the same way more than once, can write down how, and are spending so much time selling that the product or company is suffering. That point usually arrives somewhere between your first five and fifteen paying customers. The handoff itself should take a quarter, not a week, and the founder should stay in the deal room as an executive sponsor long after they stop running deals.
+
+Most founders get the timing roughly right and the handoff wrong. They hire a seller, give them a login and a list of leads, and step away. Six months later the pipeline has dried up and the conclusion is that the hire was bad. Often the hire was fine. The handoff was the problem.
+
+## When should you stop doing founder-led sales?
+
+You are ready to hand off when the evidence says your sales motion is repeatable, not when you are tired of selling. Look for these signs:
+
+- You have won several deals with a similar buyer, a similar problem and a similar path to signature.
+- You can explain why you win and why you lose without referring to who you know.
+- Deals are coming from more than your personal network, through referrals, inbound interest or outbound you did not send yourself.
+- Selling is taking time you need for product, hiring or fundraising, and you can see it in what is not getting done.
+If the first two are missing, hiring a seller will not fix it. A new rep cannot discover your market for you. They can only run a motion that already exists. That is why it pays to [pick one segment](https://www.coltasa.com/insights/pick-one-segment) and win it before you hire anyone.
+
+## What should you have in place before the first sales hire starts?
+
+Before day one, write down what you have been doing by instinct. It does not need to be polished. It needs to be specific enough that someone else could follow it. At minimum:
+
+- Who you sell to: the type of company, the team and the job title that signs.
+- The problem you solve for them, in the buyer's words, taken from real calls.
+- The stages a deal goes through and what has to be true to move from one to the next.
+- The three or four objections you hear most, and how you answer them.
+- Pricing, discount limits and who approves exceptions.
+- A list of every closed deal with a short note on how it was won.
+This is the start of a playbook, and it is the most useful thing you can give a new seller. There is more on what to include in [writing the playbook before you hire the team](https://www.coltasa.com/insights/first-sales-playbook).
+
+## Who should your first sales hire be?
+
+Hire a builder who can sell, not a manager who used to. Your first seller will work without a brand, without a full product and without a team around them. They need to be comfortable running a deal end to end, including the parts that bigger companies hand to someone else, such as qualifying their own leads and writing their own proposals.
+
+Many founders hire two sellers at once so they can compare results. That is reasonable advice, because one hire on their own leaves you unable to tell whether a bad quarter is the person or the motion. If budget allows only one, set clear early milestones so you can judge the motion separately from the individual.
+
+Avoid hiring a VP of Sales first. A senior leader needs a working motion and a team to lead. Without either, they will spend their time trying to build both, and you will pay a leadership salary for individual work.
+
+Not everyone agrees on timing. [SaaStr’s guide to the transition](https://www.saastr.com/the-founders-guide-to-transitioning-from-founder-led-sales-why-most-get-it-wrong-and-how-to-get-it-right) argues founders should stay hands-on for much longer, in some cases until around $10M in annual recurring revenue, with a few account executives first and a head of sales later. The common ground is the sequence: sellers before a sales leader, and the founder still in the most important deals.
+
+## How do you hand off deals without losing momentum?
+
+Hand off in three stages over roughly one quarter, moving to the next stage only when the current one is working.
+
+- Shadow. The new seller joins your calls and takes notes. After each call, spend ten minutes on why you asked what you asked and what you would do next. This is where the unwritten parts of your process come out.
+- Co-sell. The seller runs the calls and you join. Agree beforehand which parts are theirs. Resist the urge to take over when a call gets difficult. Debrief afterwards instead.
+- Lead. The seller owns the deals. You join only for specific moments: an executive meeting, a pricing conversation or a deal at risk. The seller decides when to bring you in.
+Hand over new opportunities first. Deals that are already deep in a relationship with you can stay with you to close, with the seller alongside. Moving a buyer to a new contact late in a deal is one of the easiest ways to lose it.
+
+## What role should the founder keep after the handoff?
+
+The founder stops running deals but stays the most senior voice in them. Enterprise buyers want to meet the person who built the company, especially early on. Keep three jobs:
+
+- Executive sponsor on large or strategic deals, meeting your counterpart at the buyer once or twice per deal.
+- The weekly [deal review](https://www.coltasa.com/insights/forecast-evidence), where you ask questions about the evidence behind each deal rather than taking it over.
+- The feedback loop to product, so what sellers hear from buyers reaches the people building the product.
+What you give up is control of the calendar and the first call. That is the point.
+
+## How do you know the handoff is working?
+
+Judge the handoff on leading indicators in the first quarter, not on closed revenue. Enterprise sales cycles are long enough that a new seller may not close anything they sourced for months. Watch instead for:
+
+- Meetings booked and held each week against a target you agreed up front.
+- How many first meetings turn into qualified opportunities, compared with your own rate when you were selling.
+- Deals moving between stages on time, with the exit criteria met.
+- Whether the seller can explain each deal: who the buyer is, why they would buy and what happens next.
+If these look healthy, revenue usually follows. If they do not, look at the motion and the handoff before you look at the person.
+
+## What to do this week
+
+Write a one-page summary of how your last five deals were won: who bought, why, how long it took and what nearly stopped it. If you can write it easily, you are close to ready to hire. If you cannot, that page is your next priority, because it is the first thing your new seller will need.
+
+## Sources and further reading
+
+- [SaaStr: How to transition from founder-led sales](https://www.saastr.com/the-founders-guide-to-transitioning-from-founder-led-sales-why-most-get-it-wrong-and-how-to-get-it-right)
+
+## Frequently asked questions
+
+### How many customers should a founder close before hiring a salesperson?
+
+There is no fixed number, but most B2B founders are ready somewhere between five and fifteen paying customers. What matters more than the count is whether those deals look alike: a similar buyer, a similar problem and a similar path to signature. If every deal was different, keep selling until a pattern appears.
+
+### Should my first sales hire be a VP of Sales?
+
+Usually not. A VP of Sales needs a working sales motion and a team to lead. Your first hire should be an experienced individual seller who is comfortable building process as they go. Hire a sales leader once you have a few sellers hitting their numbers and need someone to scale what works.
+
+### How long should the transition from founder-led sales take?
+
+Plan for about one quarter. Move through three stages: the new seller shadows your calls, then runs calls with you present, then owns deals and brings you in only for key moments. Move on from each stage when it is working, not on a fixed date.
+
+### Should founders stay involved in sales after hiring a sales team?
+
+Yes, as an executive sponsor rather than the person running deals. Founders should meet senior buyers on large or strategic deals, lead or attend the weekly deal review, and make sure what sellers hear from customers reaches the product team.
+
+---
+
+# The contract between buyers and sellers is broken
+
+URL: https://www.coltasa.com/insights/signal-over-noise  
+Author: Colin Constantine  
+Published: 2026-10-05  
+Category: Outbound
+
+> Mass AI outbound has buried buyers in noise. Here are practical ways to create signal again: insight people can use, handwritten notes and small events.
+
+Open your inbox and count the cold emails from the last week. Now count how many you read past the first line. If you buy anything for a living, the second number is probably close to zero, and you are not unusual.
+
+Outbound used to work on a simple, unwritten contract. The seller did the homework, and in return the buyer gave them a few minutes of attention. The seller earned the right to interrupt by showing up with something relevant. That contract is broken, and the sellers broke it.
+
+## How we got here
+
+AI outbound tools made it close to free to send a thousand "personalised" emails a day. Every company in the market bought the same tools, plugged in the same data providers, and pointed them at the same list of VPs. The emails mention your latest funding round, a podcast you were on, or your job change. Buyers have seen every variation, and they can spot the template within a sentence.
+
+The result is noise. Reply rates fall, so teams send more. Domains get flagged, so they buy more domains, while mailbox providers tighten the rules: Google's [sender guidelines](https://support.google.com/mail/answer/14229414?hl=en-GB) ask senders to keep reported spam below 0.1 percent. The cost of sending went to zero, but the cost of being ignored keeps climbing. Each bad email also makes it harder for the next seller, including the good ones, to get a hearing.
+
+If everyone can send at volume, volume is no longer an advantage. The advantage goes to whoever can create signal: outreach that proves a human thought about this specific buyer.
+
+## What signal looks like
+
+Signal is anything a buyer can tell was expensive for you to produce. Expensive in time and thought, not money. Here are the approaches I have seen work in enterprise deals.
+
+1. Insight they can use without buying from you. Send a short, specific observation about their business. Compare their checkout flow to two competitors. Point out a gap in their hiring plan against their stated product roadmap. Share a benchmark from companies of their size. If the buyer would forward it to a colleague, it is signal. If it only makes sense as a lead-in to a demo, it is noise.
+
+2. Handwritten notes. It sounds old-fashioned, and that is the point. A handwritten card to a senior buyer, with two lines that reference something real, almost always gets opened and often gets a reply. Ten of these a week, to accounts you have actually researched, will outperform a thousand automated emails.
+
+3. Small, curated events. A dinner for eight people in the same role, in the same city, with a useful topic and no pitch. Buyers want peers more than vendors. Host the room well, make the introductions, and the relationship starts on your terms. Follow up with something from the conversation, not a deck.
+
+4. Warm paths, done properly. Ask customers, investors and former colleagues for a specific introduction, with a reason the buyer should care. "Would you introduce me to your CMO because we helped a similar team cut their content launch time in half" is a request people can act on. "Can you connect me with anyone relevant" is not.
+
+5. Fewer accounts, deeper work. Pick 25 to 50 accounts that genuinely fit, and learn them properly: who the buying committee is, what changed recently, what they have tried before. Give each account the attention you used to give a whole territory.
+
+## A practical weekly rhythm
+
+For a seller or founder running outbound, a week built around signal might look like this:
+
+- Monday: research five accounts in depth and write one specific insight for each.
+
+- Tuesday: send those five insights [by email](https://www.coltasa.com/insights/cold-email-senior-buyers) or LinkedIn, from a real person, with no attachment and no calendar link.
+
+- Wednesday: write and post ten handwritten notes to senior buyers you have already researched.
+
+- Thursday: ask two customers or investors for one named introduction each.
+
+- Friday: review what got a response, and why. Keep what worked and drop what did not.
+
+That is roughly 20 to 30 touches a week. It will feel slow next to a tool that sends 1,000. But measure meetings with the right people, not activity, and the comparison changes quickly.
+
+## Where tools still help
+
+I am not arguing against technology, though I am sceptical of [AI SDRs](https://www.coltasa.com/insights/ai-sdrs) in enterprise sales. Use it to research faster, to find who changed jobs, to keep account notes in order, and to remind you to follow up. Just stop using it to fake the part that has to be human. The research can be automated. The judgement about what this buyer needs to hear cannot.
+
+## Rewriting the contract
+
+Buyers have not stopped buying. They are doing more of it on their own: in Gartner's 2026 survey, [67 percent of B2B buyers said they prefer a rep-free buying experience](https://www.gartner.com/en/newsroom/press-releases/2026-03-09-gartner-sales-survey-finds-67-percent-of-b2b-buyers-prefer-a-rep-free-experience), and 45 percent had used AI during a recent purchase. They have stopped listening to people who did not do the work. The sellers who win the next few years will be the ones who go back to the original deal: earn attention by bringing something worth the buyer's time.
+
+If your pipeline depends on volume, now is a good time to test the alternative. Pick ten accounts this month and try it.
+
+## Sources and further reading
+
+- [Google: Gmail email sender guidelines FAQ](https://support.google.com/mail/answer/14229414?hl=en-GB)
+- [Gartner (2026): Sales survey finds 67% of B2B buyers prefer a rep-free experience](https://www.gartner.com/en/newsroom/press-releases/2026-03-09-gartner-sales-survey-finds-67-percent-of-b2b-buyers-prefer-a-rep-free-experience)
+
+---
+
+# AI SDRs are a waste of time. For now.
+
+URL: https://www.coltasa.com/insights/ai-sdrs  
+Author: Colin Constantine  
+Published: 2026-10-05  
+Category: Pipeline
+
+> Why AI SDRs fall short in enterprise sales today, what would need to be true for that to change, and where AI actually helps your team.
+
+Every few weeks a founder asks me whether they should replace their SDR team with an AI SDR. The pitch is attractive: an agent that researches prospects, writes emails, handles replies and books meetings around the clock, at a fraction of the cost of a person. My answer, today, is no. Here is why, and what would need to change for that answer to change.
+
+## What an SDR is actually for
+
+The job of an SDR is not to send emails. It is to start conversations with the right people at the right companies, and to qualify whether there is a real opportunity worth an account executive's time. Sending is the easy part. The hard parts are judgement and trust: knowing which account is worth pursuing, what to say to this particular buyer, and when to stop.
+
+AI SDRs automate the easy part extremely well. They mostly fail at the hard parts.
+
+## Why they fall short today
+
+They add to the noise. When every vendor can deploy an agent that sends thousands of personalised emails, buyers learn to ignore all of them. Many would rather skip sellers entirely: in Gartner's 2026 survey, [67 percent of B2B buyers said they prefer a rep-free buying experience](https://www.gartner.com/en/newsroom/press-releases/2026-03-09-gartner-sales-survey-finds-67-percent-of-b2b-buyers-prefer-a-rep-free-experience). The tactic stops working for everyone, including the companies using it. Volume is not a moat when everyone has it.
+
+The personalisation is shallow. Mentioning a prospect's recent post or funding round is not insight. Senior buyers can tell in one sentence when an email was assembled from a data feed. It signals the opposite of what you intend: that nobody at your company thought about them.
+
+They damage your brand quietly. A human SDR who sends a bad email embarrasses themselves. An agent that sends ten thousand mediocre emails trains your entire market to associate your name with spam. That cost does not show up on the dashboard, but it shows up later when your AEs try to get a meeting.
+
+They cannot qualify well. Real qualification is a conversation. It involves reading hesitation, asking a follow-up that was not in the script, and recognising when "send me more information" means "go away". Agents book meetings, but many of those meetings are with people who were never going to buy. Your AEs pay for that in wasted calls.
+
+They hurt deliverability. High volume, low engagement and lots of new sending domains is exactly the pattern spam filters are designed to catch. Google's [sender guidelines](https://support.google.com/mail/answer/14229414?hl=en-GB) ask senders to keep reported spam below 0.1 percent and never reach 0.3 percent. Teams end up buying domains and warming inboxes to keep the machine running, which is effort spent fighting a problem they created.
+
+The economics look better than they are. Compare cost per qualified opportunity, not cost per email or per meeting booked. Once you include unqualified meetings, burned accounts and the time spent managing the tool, the gap with a good human SDR is much smaller, and often goes the other way.
+
+## What would need to be true
+
+I do not think this stays true forever. I would change my view if AI SDRs could reliably do the following:
+
+- Produce genuine insight about a prospect's business, the kind a buyer would forward to a colleague, not a rephrased LinkedIn summary.
+
+- Hold a qualifying conversation that a senior buyer would rate as useful, including knowing when to stop.
+
+- Improve conversion to [qualified pipeline](https://www.coltasa.com/insights/pipeline-coverage), measured over a full sales cycle, not just meetings booked.
+
+- Operate at low volume with high accuracy, rather than relying on sending more to hit targets.
+
+- Do all of this without buyers feeling deceived when they learn they were talking to software.
+
+Some of this will arrive. When it does, I will happily recommend these tools. Until then, the burden of proof sits with the vendor.
+
+## What to do instead
+
+Use AI where it makes your people better, not where it replaces the part buyers value.
+
+- Research: let tools gather company news, org charts and trigger events so your SDRs start with context.
+
+- Preparation: use AI to draft account briefs and call plans that a human then edits.
+
+- Admin: automate CRM updates, call notes and follow-up reminders.
+
+- Coaching: review recorded calls to spot where conversations stall.
+
+Then point your human SDRs at fewer, better accounts and hold them to a quality bar: meetings that turn into real opportunities. There is a practical weekly rhythm for this in [the contract between buyers and sellers is broken](https://www.coltasa.com/insights/signal-over-noise).
+
+## If you are going to try one anyway
+
+Run it as a controlled test. Give it a separate segment, a separate domain and a fixed time window. Measure qualified opportunities and pipeline value against a human-led control group over at least one full sales cycle. Read a sample of what it sends every week. If you would be embarrassed for your best customer to receive it, stop.
+
+Buying decisions in enterprise sales are still made by people who want to deal with people who understand their problem. Build your pipeline around that, and use the tools to help.
+
+## Sources and further reading
+
+- [Gartner (2026): Sales survey finds 67% of B2B buyers prefer a rep-free experience](https://www.gartner.com/en/newsroom/press-releases/2026-03-09-gartner-sales-survey-finds-67-percent-of-b2b-buyers-prefer-a-rep-free-experience)
+- [Google: Gmail email sender guidelines FAQ](https://support.google.com/mail/answer/14229414?hl=en-GB)
+
+---
+
+# The key tenets of a mutual success plan
+
+URL: https://www.coltasa.com/insights/mutual-success-plans  
+Author: Colin Constantine  
+Published: 2026-10-05  
+Category: Methodology
+
+> Seven principles for building a plan with your buyer that keeps deals on track, from first interest through go-live.
+
+Most enterprise deals that slip do not fail because the buyer stopped wanting the product. They fail because nobody mapped out what had to happen between "yes, we're interested" and a signed contract. Legal review took three weeks longer than expected. Security found a gap. A budget holder nobody had met asked to restart the evaluation. The forecast said this quarter. The deal closed two quarters later, or never. It is a common story: [Ebsta’s 2024 benchmarks](https://ebsta.com/wp-content/uploads/2024/07/H1-Update-2024-B2B-Sales-Benchmarks.pdf) found that between 34 and 46 percent of deals slipped past their close date each quarter in the first half of that year.
+
+A mutual success plan fixes this. It is a shared document, built with the buyer, that lays out every step needed to reach a decision and a successful go-live, who owns each step and when it will happen. Done well, it is the most useful tool in an enterprise deal. Done badly, it is a spreadsheet nobody opens.
+
+These are the tenets that separate the two.
+
+## 1. Anchor it to the buyer's goal, not your close date
+
+The plan should start from the outcome the buyer is trying to achieve and the date that matters to them: a product launch, a peak season, a board meeting, a contract renewal with an incumbent. Work backwards from that date. If the only date in the plan is the end of your quarter, the buyer will treat it as your plan, not theirs.
+
+## 2. Build it together
+
+A plan you write alone and send over is a proposal. A plan you build with [your champion](https://www.coltasa.com/insights/enterprise-sales-champion) on a call is a commitment. Walk through it line by line. Ask, "What have I missed? Who else needs to sign off? What happened the last time you bought software like this?" The answers will tell you more about the deal than any [discovery call](https://www.coltasa.com/insights/discovery-call). Gartner has described the B2B buying journey as [close to unnavigable without significant help](https://www.gartner.com/en/newsroom/press-releases/2018-08-08-gartner-says-b2b-buyers-want-more-simplicity-in-accessing-the-right-information-with-or-without-a-sales-rep), and a plan built together is exactly that help.
+
+## 3. Name an owner for every step, on both sides
+
+Every line needs a person, not a department. "Legal review" is not a step. "Sarah in procurement sends our MSA to legal by the 14th" is. Include the steps your side owns too: the security questionnaire, the reference call, the pricing approval. It shows the plan is mutual, and it keeps your own team accountable.
+
+## 4. Surface the hidden steps early
+
+The steps that delay deals are rarely the ones anyone talks about in the first meeting. Ask about them directly and put them in the plan from the start:
+
+- Security and IT review
+
+- Legal and [procurement](https://www.coltasa.com/insights/working-with-procurement), including redlines on your contract
+
+- Budget approval and who holds the final signature
+
+- Data privacy or regional compliance checks
+
+- Any internal business case or steering committee
+
+If your champion does not know how one of these works, that is a finding in itself. Ask them to find out, and put that on the plan too. The [MEDDPICC](https://www.meddicc.com/meddic) framework calls this the paper process: every step between a buyer saying yes and a signed contract.
+
+## 5. Go past the signature
+
+A plan that ends at "contract signed" is a closing plan. A success plan continues through onboarding, first value and the first review. Including implementation milestones tells the buyer you care about the result, and it gives their executives confidence that the project will land. It also sets up the expansion conversation a year later.
+
+## 6. Keep it short and live
+
+Fifteen to twenty-five lines is usually enough. Keep it in one shared place both sides can edit, and review it at the start of every call. Update dates as they move, and be honest when they do. A plan that is never revisited becomes fiction quickly, and so does the forecast built on it.
+
+## 7. Use it to qualify, not just to close
+
+A buyer's willingness to build the plan with you is a strong signal. If they engage, name owners and give you access to the people involved, the deal is real. If they will not commit to next steps or keep dates vague, you have learned something important early, while you can still do something about it. That makes the plan one of the best [forecasting tools](https://www.coltasa.com/insights/forecast-evidence) you have.
+
+## A simple structure to start with
+
+Each line in the plan needs five things:
+
+- Step: what needs to happen, in plain language.
+
+- Owner: one named person.
+
+- Side: buyer or seller.
+
+- Due date: agreed, not assumed.
+
+- Status: not started, in progress, done or at risk.
+
+Group the lines into phases: evaluation, business case, security and legal, commercial approval, signature, onboarding and first value. Put the buyer's goal and target date at the top, where nobody can miss it.
+
+## Where to start
+
+Pick your three largest open deals. For each one, book thirty minutes with your champion this week and build the plan together. You will find at least one step nobody had accounted for. Finding it now is much better than finding it in the last week of the quarter.
+
+## Sources and further reading
+
+- [Ebsta: H1 2024 B2B sales benchmarks (PDF)](https://ebsta.com/wp-content/uploads/2024/07/H1-Update-2024-B2B-Sales-Benchmarks.pdf)
+- [Gartner (2018): B2B buyers want more simplicity in accessing the right information](https://www.gartner.com/en/newsroom/press-releases/2018-08-08-gartner-says-b2b-buyers-want-more-simplicity-in-accessing-the-right-information-with-or-without-a-sales-rep)
+- [MEDDICC: What MEDDIC, MEDDICC and MEDDPICC stand for](https://www.meddicc.com/meddic)
+
+---
+
+# Write the playbook before you hire the team
+
+URL: https://www.coltasa.com/insights/first-sales-playbook  
+Author: Colin Constantine  
+Published: 2026-10-05  
+Category: Strategy
+
+> Hiring sellers before you can explain how your deals are won is the most expensive mistake in early-stage sales. Here is what to write down first.
+
+A familiar pattern: a company raises its round, the founder has closed the first twenty customers personally, and the board wants growth. So the company hires three account executives. Six months later, one is doing fine, one is struggling and one has left. Pipeline is flat and nobody can say exactly why.
+
+The problem is rarely the people. It is that the company hired sellers before it could explain how its deals are won. The founder knew, but the knowledge lived in their head. A playbook gets it out.
+
+## What a playbook is, and is not
+
+A playbook is not a 60-page document nobody reads. It is a short, practical description of who you sell to, why they buy, how a deal moves from first conversation to signature, and what good looks like at each step. A new seller should be able to read it in an afternoon and run a credible first call the next day.
+
+It also does not need to be perfect. Version one will be partly wrong. That is fine, because a written process can be tested and improved. One that lives in the founder's head cannot.
+
+## The six sections to write first
+
+1. Ideal customer profile. Describe the companies that buy fastest, pay the most and stay the longest. Use real data from your customer list: industry, size, region, tech stack, and the trigger that made them start looking. Be specific enough that a seller can rule an account out. If the list points to several groups, [pick one segment and win it first](https://www.coltasa.com/insights/pick-one-segment).
+
+2. Buyer personas. For each role involved in a decision, write down what they care about, what they are measured on and what they worry about. The economic buyer, the champion and the technical evaluator usually want different things from the same conversation.
+
+3. The problems you solve. List the three to five problems customers bring to you, in their words, not yours. For each, note the questions that uncover it and the cost of leaving it unsolved. This becomes the backbone of discovery.
+
+4. Sales stages with exit criteria. Define each stage of a deal by what the buyer has done, not what the seller has done. "Demo given" is a seller activity. "Champion has confirmed the problem, budget range and decision process" is evidence. Every stage needs a clear test for moving on. There is more on this in [a forecast is evidence, not optimism](https://www.coltasa.com/insights/forecast-evidence).
+
+5. Proof. Collect the case studies, numbers and references that move deals forward, and note which persona each one works best with. New sellers waste weeks hunting for these.
+
+6. Objections and answers. Write down the ten objections you hear most and how the best answers sound. Include competitive positioning: who you meet most often, where you win and where you should walk away.
+
+## How to build it in a month
+
+- Week 1: interview five recent customers about why they bought, and review your last ten wins and losses.
+
+- Week 2: have someone shadow or record the founder on three live deals and write down the questions and moves that work.
+
+- Week 3: draft the six sections. Keep each to one or two pages.
+
+- Week 4: test the draft on live deals. Note where it is wrong, and fix it.
+
+## Pick a methodology, then adapt it
+
+You do not need to invent a sales process. Frameworks like [MEDDPICC](https://www.meddicc.com/meddic), [Sandler](https://www.salesforce.com/blog/sandler-sales-methodology/) and [Challenger](https://challengerinc.com/what-is-challenger-sales-methodology/) exist because they work. Choose one that fits how your buyers make decisions, then adapt the language to your product. Enterprise deals with large buying committees usually benefit from MEDDPICC's rigour on qualification. Shorter, more transactional sales may need something lighter. What matters most is that the whole team uses the same language.
+
+## Then hire
+
+With a playbook in place, hiring gets easier, and you can [hand off deals in stages](https://www.coltasa.com/insights/founder-led-sales-handoff) rather than all at once. You know which skills your deals need, so you can write a sharper job description and test for those skills in interviews. Onboarding drops from months to weeks. And when a new seller struggles, you can see exactly which stage is the problem.
+
+Keep the playbook alive. Review it every quarter with the team, update it with what you have learned, and retire what no longer works. The best playbooks are written by the sellers who use them.
+
+## Sources and further reading
+
+- [MEDDICC: What MEDDIC, MEDDICC and MEDDPICC stand for](https://www.meddicc.com/meddic)
+- [Salesforce: The Sandler selling system, a step-by-step guide](https://www.salesforce.com/blog/sandler-sales-methodology/)
+- [Challenger: What is the Challenger sales methodology?](https://challengerinc.com/what-is-challenger-sales-methodology/)
+
+---
+
+# Never give a discount. Trade it.
+
+URL: https://www.coltasa.com/insights/stop-discounting  
+Author: Colin Constantine  
+Published: 2026-10-05  
+Category: Negotiation
+
+> End-of-quarter discounting teaches buyers to wait. A practical approach to enterprise negotiation that protects price and still gets deals signed.
+
+It is the last week of the quarter. The deal is late, the forecast is short, and the buyer has just asked for "a bit more flexibility on price". The seller offers fifteen percent off to get it signed by Friday. The buyer agrees. Everyone is relieved.
+
+Then next quarter, the same buyer waits until the last week again. So does their procurement team at renewal. And the sellers who watched it happen learn that discounting is how deals close.
+
+Discounts given away for nothing are the most expensive habit in B2B sales. They cut revenue, they train buyers to wait, and they signal that your price was never real. Price is also the strongest profit lever most companies have: a [McKinsey analysis](https://www.mckinsey.com/Business%20Functions/Marketing%20and%20Sales/Our%20Insights/The%20power%20of%20pricing) of the average S&P 1500 company estimated that a 1 percent price increase, with volume held steady, would lift operating profit by about 8 percent. Discounts work the same way in reverse. The alternative is simple to describe and hard to practise: never give a discount, trade it.
+
+## Why buyers ask
+
+Most buyers ask for a discount because it is their job to ask, not because the deal depends on it. Procurement teams are often measured on savings. Asking costs them nothing. If the answer is an instant yes, they learn the first number was padded, and they push for more.
+
+So the first rule is not to treat the request as a crisis. It is a normal part of the process, and you should plan for it before it arrives.
+
+## Prepare before you negotiate
+
+- Know your walk-away point. Decide in advance the lowest price and worst terms you will accept, and get them approved internally.
+
+- List your tradeables. Write down what you could give and what you want in return. Concessions are only useful if you have planned them.
+
+- Know their alternative. What happens if they do not buy from you? A competitor, building in-house, or doing nothing. The weaker their alternative, the stronger your position. Negotiators call this the [BATNA](https://en.wikipedia.org/wiki/Best_alternative_to_a_negotiated_agreement), the best alternative to a negotiated agreement.
+
+- Anchor on value early. If the buyer agreed the problem is worth solving and the cost of doing nothing is high, price becomes one part of a bigger conversation. Research summarised by the [Harvard Program on Negotiation](https://www.pon.harvard.edu/daily/negotiation-skills-daily/when-to-make-the-first-offer-in-negotiation) shows how strongly the first number anchors everything after it, so make sure the first number discussed is the cost of the problem, not your discount.
+
+## The rule: if, then
+
+Every concession should be conditional. Phrase it as: "If you can do this, then we can do that." It keeps the exchange balanced, and it tests whether the request is serious. Useful things to ask for in return:
+
+- A longer contract term, such as three years instead of one.
+
+- Payment upfront or annually in advance.
+
+- A larger initial commitment or more seats.
+
+- A signed case study, a reference call or a logo on your site.
+
+- Signature by a specific date, agreed in the [mutual success plan](https://www.coltasa.com/insights/mutual-success-plans).
+
+- Removing redlines from your standard contract.
+
+If the buyer will not give anything in return, the discount was not necessary to close the deal.
+
+## Concede slowly and in shrinking steps
+
+When you do move, move in decreasing amounts: a larger first step, a smaller second, a very small third. It signals you are approaching your limit. Large or growing concessions tell the buyer there is plenty left. And never split the difference by reflex. It rewards whoever started furthest away.
+
+## Stop the end-of-quarter cycle
+
+Most discounting happens because the seller needs the deal more than the buyer does, and the buyer knows it. The fix starts long before the negotiation:
+
+- Build a mutual success plan anchored to the buyer's deadline, not your quarter.
+
+- Surface [procurement](https://www.coltasa.com/insights/working-with-procurement), legal and security early so they do not land in the last week.
+
+- Keep [enough pipeline](https://www.coltasa.com/insights/pipeline-coverage) that no single deal feels like it must close at any price.
+
+- Give sellers a clear discount approval process so they cannot give away margin under pressure.
+
+## Be willing to say no
+
+The strongest position in any negotiation is being genuinely willing to walk away. That does not mean being difficult. It means being clear about your value and calm about your limits. Buyers respect sellers who hold their price for good reasons. They rarely respect the ones who fold.
+
+Protecting price is not about winning a negotiation. It is about building a business where your customers pay what the product is worth, and your renewals do not start with an argument.
+
+## Sources and further reading
+
+- [McKinsey Quarterly (2003): The power of pricing](https://www.mckinsey.com/Business%20Functions/Marketing%20and%20Sales/Our%20Insights/The%20power%20of%20pricing)
+- [Wikipedia: Best alternative to a negotiated agreement (BATNA)](https://en.wikipedia.org/wiki/Best_alternative_to_a_negotiated_agreement)
+- [Harvard Program on Negotiation: When to make the first offer in negotiation](https://www.pon.harvard.edu/daily/negotiation-skills-daily/when-to-make-the-first-offer-in-negotiation)
+
+---
+
+# A forecast is evidence, not optimism
+
+URL: https://www.coltasa.com/insights/forecast-evidence  
+Author: Colin Constantine  
+Published: 2026-10-05  
+Category: Forecasting
+
+> Why most early-stage forecasts miss, and how exit criteria, deal reviews and a few honest questions make the number something you can trust.
+
+Ask an early-stage sales team how their forecast is built and you will often hear some version of: "Each rep tells us what they think will close." That is not a forecast. It is a collection of hopes, weighted by each seller's optimism.
+
+A good forecast is a judgement built on evidence. It should tell you what will close, what might, and why, in a way anyone on the leadership team can check. Getting there does not need expensive software. It needs discipline about what counts as proof. The problem is widespread: in Gartner's State of Sales Operations survey, [only 45 percent of sales leaders and sellers](https://www.gartner.com/en/newsroom/press-releases/2020-02-12-gartner-says-less-than-50--of-sales-leaders-and-selle) said they had high confidence in their organisation's forecast accuracy.
+
+## Why forecasts miss
+
+- Stages are based on seller activity. A deal moves to "proposal" because a proposal was sent, not because the buyer agreed to anything.
+
+- Probability is assigned by stage. Every deal in stage three gets 40 percent, whatever the evidence says.
+
+- Close dates come from the quarter. The date is the end of the period, not a date the buyer has agreed to.
+
+- Nobody challenges the call. Pipeline reviews become status updates, so weak deals are never questioned until they slip.
+
+## Define stages by buyer evidence
+
+Rewrite every stage so it can only be passed when the buyer has done something verifiable. For example:
+
+- Qualified: the buyer has confirmed a problem worth solving and who else is involved.
+
+- Validated: the economic buyer has agreed the business case and a budget range.
+
+- Committed: the buyer has agreed a [mutual success plan](https://www.coltasa.com/insights/mutual-success-plans) with named owners and dates.
+
+- Contracting: procurement and legal are engaged and working from your paper.
+
+Now a stage means something. When a deal is in "committed", everyone knows what has actually happened.
+
+## Use three categories, not percentages
+
+For each deal expected this period, ask the seller to call it one of three things:
+
+- Commit: you would bet your bonus on it. Every step to signature is known and agreed.
+
+- Best case: it can close this period if specific, named things happen.
+
+- Pipeline: real, but not this period.
+
+Track how accurate each seller's commit calls are over time, and use the categories to keep [the weekly forecast call](https://www.coltasa.com/insights/weekly-forecast-call) short. Within two or three quarters you will know whose forecast to trust, and who needs coaching.
+
+## Run deal reviews, not pipeline reviews
+
+A pipeline review walks through every deal and asks "any update?" A deal review takes the few deals that matter most and tests them properly. Five questions do most of the work:
+
+- What problem is the buyer solving, and what happens if they do nothing?
+
+- Have we met the person who signs, and what did they say?
+
+- What are the remaining steps to signature, and who owns each one?
+
+- What could stop this deal, and what are we doing about it?
+
+- Where did the close date come from?
+
+If the seller cannot answer one, the deal is not in commit. That is not a criticism of the seller. It is useful information, found early enough to act on.
+
+## Watch the trends, not just the number
+
+Beyond the deals themselves, a few simple measures show whether the forecast is healthy: how many deals slip each period, how long deals spend in each stage, how much [pipeline you have against target](https://www.coltasa.com/insights/pipeline-coverage), and how accurate last quarter's commit was. A sudden rise in slipped deals or time in stage is an early warning, usually weeks before the number misses. Slippage is more common than most teams assume: [Ebsta’s 2024 benchmark data](https://ebsta.com/wp-content/uploads/2024/07/H1-Update-2024-B2B-Sales-Benchmarks.pdf) found that between 34 and 46 percent of deals slipped past their close date each quarter in the first half of that year.
+
+## Make honesty safe
+
+None of this works if sellers are punished for bad news. If moving a deal out of commit leads to a difficult conversation, sellers will keep it there until the last day. Reward accurate calls, including the ones that come down. A team that tells the truth early gives leadership time to fix things, and that is the whole point of a forecast.
+
+## Sources and further reading
+
+- [Gartner (2020): Less than 50% of sales leaders and sellers have high confidence in forecasting accuracy](https://www.gartner.com/en/newsroom/press-releases/2020-02-12-gartner-says-less-than-50--of-sales-leaders-and-selle)
+- [Ebsta: H1 2024 B2B sales benchmarks (PDF)](https://ebsta.com/wp-content/uploads/2024/07/H1-Update-2024-B2B-Sales-Benchmarks.pdf)
+
+---
+
+# Pick one segment and win it first
+
+URL: https://www.coltasa.com/insights/pick-one-segment  
+Author: Colin Constantine  
+Published: 2026-10-05  
+Category: Strategy
+
+> Early sales teams spread across too many markets. How to choose a first segment, test it and know when to expand.
+
+When a company has a product that works, it is tempting to sell it to anyone who will take a meeting. Early on that makes sense, because every deal teaches you something. By the time you are hiring sellers, though, selling to everyone starts to cost more than it returns. Messaging gets vague, case studies do not transfer, and each deal feels like starting from scratch.
+
+The fix is to choose one segment and become the obvious choice for it before you expand. Geoffrey Moore made the same case in Crossing the Chasm, describing a good beachhead as [“big enough to matter, small enough to lead”](https://lennysnewsletter.com/p/geoffrey-moore-on-finding-your-beachhead) and a good fit with what you do best.
+
+## What a segment is
+
+A segment is a group of companies that share the same problem, buy in roughly the same way and would recognise each other as peers. "Mid-market retail" is too broad. "Multi-brand retailers in North America running their own ecommerce stack" is closer. A good test is whether a case study from one customer would be persuasive to the others.
+
+## How to choose
+
+Start with the customers you already have. Score each one on:
+
+- How quickly they bought, from first meeting to signature.
+
+- Deal size compared with your average.
+
+- How easy they were to onboard.
+
+- Whether they have renewed or expanded.
+
+- Whether they would act as a reference.
+
+Group the high scorers and look for what they share: industry, size, region, technology and the trigger that made them start looking. That shared pattern is usually your first segment. If nothing stands out, look at your losses too. Patterns in why deals were lost are often clearer than patterns in why they were won.
+
+## Check it is big enough
+
+A focused segment still needs room to grow. Count the companies that match, estimate a typical deal size and multiply. If the result supports your revenue target for the next 18 to 24 months at a [realistic win rate](https://www.coltasa.com/insights/pipeline-coverage), it is big enough. If not, widen one criterion at a time, such as region or company size, until it is.
+
+## Make the focus real
+
+Choosing a segment only matters if it changes what the team does. In practice that means:
+
+- Rewriting the website and pitch for that buyer, in their language.
+
+- Building case studies and references from customers in the segment.
+
+- Pointing [outbound and events](https://www.coltasa.com/insights/signal-over-noise) at named accounts within it.
+
+- Giving sellers clear guidance on which deals outside the segment to take.
+
+The last point is the hardest. Turning down a reasonable deal feels wrong when targets are tight. A simple rule helps: take deals outside the segment only if they are inbound, close to your average size and need no custom work.
+
+## Measure it
+
+Give the segment two or three quarters and compare it with the rest of your pipeline on win rate, sales cycle length, average deal size and time to first value after signing. If the choice is right, these numbers should improve. If they do not, revisit the decision with what you have learned.
+
+## Knowing when to expand
+
+Expand when the segment produces predictable results and new sellers can ramp on it [without the founder’s help](https://www.coltasa.com/insights/founder-led-sales-handoff). Good signs include a steady win rate, a library of references and inbound interest you did not have to generate. Then pick the neighbouring segment that shares the most with the first, usually the same buyer in a related industry or the same industry in a new region, and repeat the process.
+
+Focus feels like a constraint at first. In practice it is what lets a small team compete with much larger ones.
+
+## Sources and further reading
+
+- [Lenny's Newsletter: Geoffrey Moore on finding your beachhead](https://lennysnewsletter.com/p/geoffrey-moore-on-finding-your-beachhead)
+
+---
+
+# How much pipeline do you actually need?
+
+URL: https://www.coltasa.com/insights/pipeline-coverage  
+Author: Colin Constantine  
+Published: 2026-10-05  
+Category: Pipeline
+
+> A simple way to work out pipeline coverage from your own numbers, and what to do when you are short.
+
+"Three times coverage" is one of the most repeated rules in B2B sales. It is a reasonable starting point, but it is a guess. The right number for your team depends on your own win rate, deal size and sales cycle, and you can work it out in an afternoon.
+
+## Start with your win rate
+
+Take every opportunity that reached a qualified stage in the last four quarters and divide the number you won by the total. Then do the same by value. If the value win rate is much lower, large deals close less often than small ones, which matters when you plan.
+
+If your win rate is 25 percent, you need four times your target in qualified pipeline to hit it on average. At 40 percent, you need two and a half times. That is your real coverage ratio. Benchmarks move, which is why your own numbers matter more: [Ebsta’s 2024 data](https://ebsta.com/wp-content/uploads/2024/07/H1-Update-2024-B2B-Sales-Benchmarks.pdf) showed win rates down 7 percent on the previous year while total pipeline grew 25 percent, exactly the kind of shift a fixed rule of thumb misses.
+
+## Account for timing
+
+Pipeline only counts if it can close in the period. Look at your average sales cycle from qualification to signature. A deal that entered pipeline more recently than that is unlikely to close this quarter, so count it toward next quarter instead.
+
+## Work backwards to activity
+
+Once you know how much pipeline you need, you can work out how much to create:
+
+- Divide the quarter's revenue target by your average deal size to get the number of deals to win.
+
+- Divide that by your win rate to get the qualified opportunities needed.
+
+- Divide that by your meeting-to-opportunity rate to get the first meetings needed.
+
+- Spread those meetings across the weeks available, allowing one sales cycle before quarter end.
+
+Do this for each source as well. If half your pipeline comes from inbound, a quarter from outbound and a quarter from partners, give each its own weekly number. It shows quickly which channel has to carry the load if another falls short.
+
+## Check the quality
+
+Coverage only helps if the pipeline is real. Each quarter, review the deals that were lost or slipped and ask whether they should have been counted at all. Common signs of inflated pipeline include:
+
+- No meeting yet with anyone who can make the decision.
+
+- A close date at the end of the quarter with no reason from the buyer.
+
+- No change of stage in twice the normal cycle time.
+
+- Deals kept open because closing them would hurt the number.
+
+Clearing these out lowers coverage on paper and makes the number far more useful.
+
+## When you are short
+
+If coverage is below what you need, there are three levers, and they work at different speeds:
+
+- Create more pipeline, ideally through [outreach buyers actually read](https://www.coltasa.com/insights/signal-over-noise). It is the slowest to pay off, so start now for next quarter.
+
+- Improve conversion on existing deals with better [deal reviews](https://www.coltasa.com/insights/forecast-evidence), [mutual success plans](https://www.coltasa.com/insights/mutual-success-plans) and executive involvement.
+
+- Increase deal size through multi-year terms ([a good trade for any discount](https://www.coltasa.com/insights/stop-discounting)), more seats or additional products where they fit.
+
+Tell leadership early. A shortfall flagged six weeks before quarter end can still be partly fixed. One flagged in the last week usually cannot.
+
+## Review it every week
+
+Track coverage weekly for this quarter and the next. Next quarter's number is your early warning. If it looks thin six weeks out, there is still time to act.
+
+## Sources and further reading
+
+- [Ebsta: H1 2024 B2B sales benchmarks (PDF)](https://ebsta.com/wp-content/uploads/2024/07/H1-Update-2024-B2B-Sales-Benchmarks.pdf)
+
+---
+
+# Working with procurement, not around it
+
+URL: https://www.coltasa.com/insights/working-with-procurement  
+Author: Colin Constantine  
+Published: 2026-10-05  
+Category: Negotiation
+
+> Procurement is part of every enterprise deal. How to bring them in early, understand what they need and keep the deal moving.
+
+Many sellers treat procurement as the last obstacle before signature, the team that appears late and asks for a discount. That view tends to make procurement harder to deal with. In most enterprise companies procurement has a clear job, and if you help them do it, deals move faster.
+
+## Understand their role
+
+Procurement is usually measured on three things: managing risk, getting fair commercial terms and following the company's buying process. They are rarely the people who decided the business needs your product. Their questions are about whether the purchase is safe, fair and compliant.
+
+Seen that way, most of what they ask for becomes predictable.
+
+## Bring them in early
+
+Ask [your champion](https://www.coltasa.com/insights/enterprise-sales-champion) about procurement in the first few meetings rather than after the business case is agreed. Useful questions include:
+
+- Who in procurement will be involved, and when do they usually join?
+
+- Is there a supplier onboarding process we need to complete?
+
+- Do you require your own contract terms or a master agreement?
+
+- What deal sizes trigger extra approvals?
+
+- How long did the last software purchase of this size take?
+
+Add each answer to the [mutual success plan](https://www.coltasa.com/insights/mutual-success-plans) with a named owner and a date. It removes most late surprises. The [MEDDPICC](https://www.meddicc.com/meddic) framework calls this the paper process: every step between a verbal yes and a signed contract.
+
+## Prepare what they will ask for
+
+Procurement teams tend to ask for the same documents. Having them ready can save weeks:
+
+- Security questionnaire answers and certifications.
+
+- Data processing and privacy terms.
+
+- Insurance certificates.
+
+- Company and banking details for supplier setup.
+
+- A clear pricing breakdown showing what is fixed and what can change.
+
+## Make the value easy to defend
+
+Procurement often has to justify the spend internally. Share the business case your champion agreed: the problem, the cost of leaving it unsolved and the expected return. When they can explain why the purchase is worth it, they are less likely to focus on price alone.
+
+## Negotiate with a plan
+
+Expect a request for a discount and decide in advance how you will respond. Know your walk-away position (which depends on your [BATNA](https://en.wikipedia.org/wiki/Best_alternative_to_a_negotiated_agreement), your best alternative if this deal falls through), what you can offer and what you want in return, such as a longer term, upfront payment or a fixed signature date. [Trade every concession](https://www.coltasa.com/insights/stop-discounting) for something.
+
+Keep the commercial discussion with procurement and the value discussion with your champion and economic buyer. If procurement starts questioning whether the project should go ahead at all, bring your champion back in.
+
+## Keep the champion involved
+
+Your champion has influence over the process. Ask them to tell procurement the date the business needs the solution in place, and why. A real deadline from inside the company does more to move a contract than any end-of-quarter offer.
+
+## Close the loop
+
+After signature, thank your procurement contact and ask what would make the process easier next time. Note what they needed and how long each step took. Renewals and expansions go through the same team, and a good relationship now shortens both.
+
+## Sources and further reading
+
+- [MEDDICC: What MEDDIC, MEDDICC and MEDDPICC stand for](https://www.meddicc.com/meddic)
+- [Wikipedia: Best alternative to a negotiated agreement (BATNA)](https://en.wikipedia.org/wiki/Best_alternative_to_a_negotiated_agreement)
+
+---
+
+# Running a discovery call that earns the second meeting
+
+URL: https://www.coltasa.com/insights/discovery-call  
+Author: Colin Constantine  
+Published: 2026-10-05  
+Category: Methodology
+
+> A practical structure for first calls with enterprise buyers, the questions worth asking and how to end with a clear next step.
+
+The first call with a new buyer decides most of what happens next. If it goes well, you leave with a real problem, a sense of who else is involved and a reason to meet again. If it goes badly, it turns into a demo nobody asked for and a polite "send me some information".
+
+Good discovery is a skill, and it can be planned.
+
+## Prepare properly
+
+Spend 20 minutes on research before the call. Look at recent company news, annual reports or funding announcements, the buyer's role and background, and any public signs of the problem you solve. Write down two or three hypotheses about what might be going on. You will test these during the call rather than present them.
+
+## Agree the agenda
+
+Open by agreeing how the time will be used. For example: "I'd like to understand what prompted you to take the call and what you're working on. If it looks like we could help, I can show you how. Either way, we can agree at the end whether a next step makes sense." It sets expectations and makes talking about next steps feel normal later.
+
+## Ask about the situation, then the problem
+
+Start broad and get more specific. Useful questions:
+
+- What prompted you to look at this now?
+
+- How does this work today, and who is involved?
+
+- What is not working the way you would like?
+
+- What have you tried already?
+
+- What happens if nothing changes over the next year?
+
+Follow up on anything vague. If the buyer says a process is slow, ask how slow, compared with what, and who notices. The detail is where the value is. Gong's analysis of 519,000 recorded discovery calls found that the most successful ones explored three or four business problems in depth and involved [11 to 14 questions](https://www.gong.io/resources/labs/deal-closing-discovery-call/), spread across the call rather than front-loaded.
+
+## Find the impact
+
+A problem becomes a project when it has a cost. Ask how the issue shows up in the numbers the business cares about, such as revenue, cost, risk or time, and who else feels it. If the buyer cannot describe the impact, the project will struggle to get budget.
+
+## Learn how they buy
+
+Before the call ends, get a first view of the decision process:
+
+- Who else would be involved in a decision like this?
+
+- How have you bought similar tools before?
+
+- Is there a date or event this needs to fit around?
+
+- Is budget set aside, or would it need to be found?
+
+You do not need complete answers on the first call. You need enough to know whether the opportunity is real and who to meet next. Frameworks such as [MEDDPICC](https://www.meddicc.com/meddic) give these questions a structure: the economic buyer, decision criteria, decision process and paper process all start here, and the paper process is where [procurement](https://www.coltasa.com/insights/working-with-procurement) comes in.
+
+## Let them do most of the talking
+
+Aim for the buyer to speak for most of the call. If you find yourself explaining the product in detail, pause and ask a question instead. Save the demo for a later meeting, built around what you learned. In the same Gong research, the strongest calls had frequent back-and-forth between buyer and seller, closer to a conversation than a presentation.
+
+## End with a clear next step
+
+Summarise what you heard in two or three sentences and check you have it right. Then propose a specific next step with a date, such as a tailored session with the people who would use the product or a call with the budget holder. Send the invitation before you hang up.
+
+## Write it down
+
+Record your notes the same day: the problem in the buyer's words, the impact, the people involved and the agreed next step. These notes become the starting point for the [mutual success plan](https://www.coltasa.com/insights/mutual-success-plans) and make every later conversation easier.
+
+## Sources and further reading
+
+- [Gong Labs: What 519,000 discovery calls reveal about closing deals](https://www.gong.io/resources/labs/deal-closing-discovery-call/)
+- [MEDDICC: What MEDDIC, MEDDICC and MEDDPICC stand for](https://www.meddicc.com/meddic)
+
+---
+
+# Running a weekly forecast call in 30 minutes
+
+URL: https://www.coltasa.com/insights/weekly-forecast-call  
+Author: Colin Constantine  
+Published: 2026-10-05  
+Category: Forecasting
+
+> A simple agenda for a weekly forecast meeting that keeps the number honest without taking over the team's week.
+
+Weekly forecast calls have a habit of growing. They start at 30 minutes and become a two-hour walk through every deal in the CRM. Sellers dread them, leaders leave without a clear number, and the real problems in the pipeline go unnoticed. It shows in the results: in Gartner's State of Sales Operations survey, [only 45 percent of sales leaders and sellers](https://www.gartner.com/en/newsroom/press-releases/2020-02-12-gartner-says-less-than-50--of-sales-leaders-and-selle) had high confidence in their forecast accuracy.
+
+A forecast call works best when it is short, structured and focused on the deals that move the number.
+
+## Prepare the day before
+
+Ask each seller to update their deals by the end of the previous day. Every deal expected to close in the period needs a category ([commit, best case or pipeline](https://www.coltasa.com/insights/forecast-evidence)), a close date and a one-line next step. The leader reviews the changes in advance, so the call is spent on discussion rather than data entry.
+
+## A 30-minute agenda
+
+- 5 minutes on the number: total commit, best case and gap to target, compared with last week.
+
+- 15 minutes on deals: only those that changed category, moved date or are large enough to change the outcome.
+
+- 5 minutes on risks: each seller names one deal at risk and what would help, such as an executive call or a pricing decision.
+
+- 5 minutes on next quarter: a quick look at [coverage](https://www.coltasa.com/insights/pipeline-coverage) for the following period.
+
+## Focus on what changed
+
+The most useful question in a forecast call is "what changed since last week?" A deal that moves from best case to commit should come with new evidence, such as an agreed contract date or confirmed budget. A deal that slips should come with a reason. Plan for slippage: [Ebsta’s 2024 benchmarks](https://ebsta.com/wp-content/uploads/2024/07/H1-Update-2024-B2B-Sales-Benchmarks.pdf) found that a third or more of deals slipped past their close date each quarter in the first half of that year. Deals that have not changed do not need discussion.
+
+## Ask the same questions every time
+
+Consistency makes the call faster and fairer. For each deal discussed:
+
+- What did the buyer do this week?
+
+- What is the next step, and is it in the calendar?
+
+- Who signs, and have we spoken to them?
+
+- What could stop this closing on time?
+
+## Keep coaching separate
+
+When a deal needs real work, such as rethinking the approach or preparing for a difficult negotiation, move it to a separate deal review. Coaching in the forecast call slows everything down and puts the seller on the spot in front of the team.
+
+## Record the numbers
+
+Write down commit and best case each week, by seller and in total. Over a few quarters this shows how accurate each person's calls are and whether the team leans optimistic or cautious. That history makes future forecasts much more reliable.
+
+## Make honesty easy
+
+The call only works if people raise bad news early. Thank sellers who move a deal down when the evidence changes. If moving a deal out of commit leads to a difficult conversation, people will hold off until it is too late to help.
+
+Run this way, the forecast call becomes a useful 30 minutes rather than the meeting everyone tries to avoid.
+
+## Sources and further reading
+
+- [Gartner (2020): Less than 50% of sales leaders and sellers have high confidence in forecasting accuracy](https://www.gartner.com/en/newsroom/press-releases/2020-02-12-gartner-says-less-than-50--of-sales-leaders-and-selle)
+- [Ebsta: H1 2024 B2B sales benchmarks (PDF)](https://ebsta.com/wp-content/uploads/2024/07/H1-Update-2024-B2B-Sales-Benchmarks.pdf)
+
+---
+
+# Writing a cold email a senior buyer will read
+
+URL: https://www.coltasa.com/insights/cold-email-senior-buyers  
+Author: Colin Constantine  
+Published: 2026-10-05  
+Category: Outbound
+
+> A practical guide to short, specific outbound emails for enterprise buyers, with a simple structure and what to leave out.
+
+Senior buyers receive dozens of sales emails a day, and most are deleted after the first line. The ones that get a reply usually have a few things in common: they are short, they are clearly written for that person, and they ask for very little. The bar keeps rising: in Gartner's 2026 survey, [67 percent of B2B buyers said they prefer a rep-free buying experience](https://www.gartner.com/en/newsroom/press-releases/2026-03-09-gartner-sales-survey-finds-67-percent-of-b2b-buyers-prefer-a-rep-free-experience), so an email has to earn the conversation.
+
+## Research first
+
+A good email starts before you write anything. Spend ten minutes on the account and the person. Look for something specific and recent, such as a new initiative, a hiring push, a product launch, a change in leadership or something they said publicly. You need one real reason to write to this person now.
+
+## A simple structure
+
+Most effective cold emails fit into four parts and under 100 words:
+
+- Why them: one sentence on what you noticed and why it matters.
+
+- The problem: one sentence on a challenge companies like theirs often face at this point.
+
+- The proof: one sentence on how you helped a similar company, with a specific result.
+
+- The ask: a low-effort question, such as whether this is a priority this year.
+
+## An example
+
+"Hi Sarah, I saw that you are moving three brands onto one ecommerce platform this year. Teams doing that often find content launches slow down for a few months during the migration. We helped a similar retailer cut launch time in half during their move. Is speeding up launches something you are looking at this year?"
+
+It is specific, it is about her, and the question is easy to answer.
+
+## What to leave out
+
+- Opening lines about yourself or your company.
+
+- Compliments that could apply to anyone.
+
+- Lists of features.
+
+- A request for 30 minutes in the first email.
+
+- Attachments and multiple links.
+
+## Subject lines
+
+Keep subject lines short and plain, a few words that relate to the content. "Brand migration" or "Content launches" works better than something clever. The aim is to look like a normal work email.
+
+## Follow up with something new
+
+Most replies come after the first email, so plan three or four messages over two or three weeks. Each follow-up should add something, such as a relevant article, a short observation about their market or a different angle on the problem. Avoid messages that only ask whether they saw the last one.
+
+## Use more than email
+
+Email works best alongside other touches. A LinkedIn connection request with a short note, [a handwritten card](https://www.coltasa.com/insights/signal-over-noise) or an introduction from a mutual contact all make your name familiar before or after the email arrives.
+
+## Measure the right things
+
+Track replies and meetings booked with the right people, not opens or emails sent. If a message is not working after 30 or 40 sends to well-chosen accounts, change the angle rather than the volume. Volume also carries a cost: Google's [sender guidelines](https://support.google.com/mail/answer/14229414?hl=en-GB) ask senders to keep reported spam below 0.1 percent, and every ignored, generic email makes that harder. A small number of well-researched emails will usually outperform a large number of generic ones. When someone does reply, the next job is [a first call that earns the second meeting](https://www.coltasa.com/insights/discovery-call).
+
+## Sources and further reading
+
+- [Gartner (2026): Sales survey finds 67% of B2B buyers prefer a rep-free experience](https://www.gartner.com/en/newsroom/press-releases/2026-03-09-gartner-sales-survey-finds-67-percent-of-b2b-buyers-prefer-a-rep-free-experience)
+- [Google: Gmail email sender guidelines FAQ](https://support.google.com/mail/answer/14229414?hl=en-GB)
+
