@@ -4,7 +4,7 @@ Work top to bottom. Tick a topic when it is published: `- [x] ... (post-id, D Mo
 Order already rotates categories. Add new topics anywhere; keep the rotation.
 
 - [x] Strategy: When to hand off founder-led sales to your first sales hire (founder-led-sales-handoff, 25 October 2026)
-- [ ] Methodology: How to find and build a champion in an enterprise deal
+- [x] Methodology: How to find and build a champion in an enterprise deal (enterprise-sales-champion, 27 October 2026)
 - [ ] Pipeline: Multithreading: how to reach more than one buyer in an account
 - [ ] Negotiation: How to handle "it is too expensive" in enterprise deals
 - [ ] Forecasting: Writing sales stage exit criteria your team will actually use
