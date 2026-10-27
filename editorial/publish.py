@@ -150,7 +150,7 @@ def refresh(posts):
     src = src.replace("</body>", nos + "</body>", 1)
     write(INDEX, src)
     # Sitemap
-    urls = [(f"{SITE}/", "2026-10-05"), (f"{SITE}/score", "2026-10-26"), (f"{SITE}/privacy", "2026-10-26"),
+    urls = [(f"{SITE}/", "2026-10-05"), (f"{SITE}/sales-engine-score", "2026-10-26"), (f"{SITE}/privacy", "2026-10-26"),
             (f"{SITE}/insights", iso(posts[0]["date"]))]
     urls += [(f"{SITE}/insights/{p['id']}", iso(p.get("modified", p["date"]))) for p in posts]
     write(os.path.join(DEPLOY, "sitemap.xml"),
@@ -162,7 +162,7 @@ def refresh(posts):
              "It helps B2B tech companies build repeatable enterprise sales: playbooks, pipeline, "
              "outbound, negotiation and forecasting.", "",
              f"- [Home]({SITE}/): services, background and how to work with Colin",
-             f"- [Sales Engine Score]({SITE}/score): a 5-minute assessment that scores a B2B sales engine out of 100 across pipeline, process, people, tools and metrics",
+             f"- [Sales Engine Score]({SITE}/sales-engine-score): a 5-minute assessment that scores a B2B sales engine out of 100 across pipeline, process, people, tools and metrics",
              f"- [Insights]({SITE}/insights): all articles", "", "## Insights", ""]
     lines += [f"- [{p['title']}]({SITE}/insights/{p['id']}): {p['dek']}" for p in posts]
     write(os.path.join(DEPLOY, "llms.txt"), "\n".join(lines) + "\n")
