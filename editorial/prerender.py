@@ -100,6 +100,8 @@ def main():
         for rel in pages():
             pg = context.new_page()
             pg.route(re.compile(r"^https://(?!127\.0\.0\.1)"), external)
+            # The globe iframe (map.html) loads its own CDN data; it is not part of the static copy.
+            pg.route(re.compile(r"/map(\.html)?$"), lambda r: r.fulfill(status=200, body="<!doctype html><title>map</title>", headers={"Content-Type": "text/html"}))
             errs = []
             pg.on("pageerror", lambda e: errs.append(str(e)))
             try:

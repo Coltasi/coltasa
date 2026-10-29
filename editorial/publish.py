@@ -342,7 +342,7 @@ def add(spec_path):
     write(os.path.join(POSTS_DIR, d["id"] + ".html"), t)
 
     # Prepend the POSTS entry in the index and every post file
-    for path in [INDEX] + [os.path.join(POSTS_DIR, f) for f in os.listdir(POSTS_DIR) if f.endswith(".html")]:
+    for path in [INDEX, os.path.join(DEPLOY, "index.html")] + [os.path.join(POSTS_DIR, f) for f in os.listdir(POSTS_DIR) if f.endswith(".html")]:
         s = read(path)
         s = s.replace("  POSTS = [\n", "  POSTS = [\n" + entry_js(d), 1)
         write(path, s)
