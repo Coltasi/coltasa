@@ -60,7 +60,7 @@ footer.site a{color:var(--color-accent-400)}
 footer.site a:hover{color:var(--color-bg)}
 @media (max-width:640px){
   header.site{position:static}
-  .logo-rule,.logo-sub{display:none}
+  .logo-rule,.logo-sub,.cta-long{display:none}
   nav.site{order:3;width:100%;justify-content:space-between;gap:4px}
   nav.site a,footer.site a{display:inline-flex;align-items:center;min-height:44px}
 }
@@ -119,10 +119,12 @@ footer.site a:hover{color:var(--color-bg)}
     <nav class="site">
       <a href="/#services">Services</a>
       <a href="/insights">Insights</a>
-      <a href="/sales-engine-score">Sales Score</a>
       <a href="/about">About</a>
     </nav>
-    <a class="btn btn-primary" href="https://calendly.com/coltasahq/30min" target="_blank" rel="noopener">Book a call</a>
+    <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+      <a class="btn btn-secondary" href="/sales-engine-score" style="border-color:var(--color-text);color:var(--color-text)"><span><span class="cta-long">Get your </span>Sales Score</span></a>
+      <a class="btn btn-primary" href="https://calendly.com/coltasahq/30min" target="_blank" rel="noopener">Book a call</a>
+    </div>
   </div>
 </header>
 
