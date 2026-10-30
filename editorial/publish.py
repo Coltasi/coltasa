@@ -86,7 +86,8 @@ def post_ld(p, faq):
         "@type": "BlogPosting", "headline": p["title"], "description": p["dek"],
         "datePublished": iso(p["date"]), "dateModified": iso(p.get("modified", p["date"])),
         "url": url, "mainEntityOfPage": url, "articleSection": p["cat"],
-        "image": f"{SITE}/assets/og-image.png", "inLanguage": "en",
+        "image": image_ld(p["id"], load_images()[p["id"]]) if p["id"] in load_images() else f"{SITE}/assets/og-image.png",
+        "inLanguage": "en",
         "author": {"@type": "Person", "@id": f"{SITE}/#colin", "name": "Colin Constantine",
                    "jobTitle": "Principal", "url": f"{SITE}/",
                    "sameAs": ["https://www.linkedin.com/in/colvcon"]},
@@ -106,6 +107,9 @@ def post_ld(p, faq):
 
 def head_block(title, desc, url, ld, kind, post=None):
     e = html.escape
+    img = load_images().get(post["id"]) if post else None
+    og = f"{SITE}/assets/insights/{post['id']}-og.jpg" if img else f"{SITE}/assets/og-image.png"
+    og_alt = img["alt"] if img else "Coltasa: B2B sales strategy and execution"
     article = ""
     if post:
         article = (f'<meta property="article:published_time" content="{iso(post["date"])}">\n'
@@ -123,15 +127,15 @@ def head_block(title, desc, url, ld, kind, post=None):
             f'<meta property="og:title" content="{e(title)}">\n'
             f'<meta property="og:description" content="{e(desc)}">\n'
             f'<meta property="og:url" content="{url}">\n'
-            f'<meta property="og:image" content="{SITE}/assets/og-image.png">\n'
+            f'<meta property="og:image" content="{og}">\n'
             f'<meta property="og:image:width" content="1200">\n'
             f'<meta property="og:image:height" content="630">\n'
-            f'<meta property="og:image:alt" content="Coltasa: B2B sales strategy and execution">\n'
+            f'<meta property="og:image:alt" content="{e(og_alt)}">\n'
             f'{article}'
             f'<meta name="twitter:card" content="summary_large_image">\n'
             f'<meta name="twitter:title" content="{e(title)}">\n'
             f'<meta name="twitter:description" content="{e(desc)}">\n'
-            f'<meta name="twitter:image" content="{SITE}/assets/og-image.png">\n'
+            f'<meta name="twitter:image" content="{og}">\n'
             f'<meta name="author" content="Colin Constantine">\n'
             f'<script type="application/ld+json" id="static-ld">{ld}</script>\n{END}\n')
 
@@ -253,9 +257,15 @@ def refresh(posts):
     urls = [(f"{SITE}/", "2026-10-27"), (f"{SITE}/sales-engine-score", "2026-10-27"), (f"{SITE}/privacy", "2026-10-26"),
             (f"{SITE}/insights", iso(posts[0]["date"]))]
     urls += [(f"{SITE}/insights/{p['id']}", iso(p.get("modified", p["date"]))) for p in posts]
+    imgs = load_images()
+
+    def img_tag(u):
+        pid = u.rsplit("/insights/", 1)[-1] if "/insights/" in u else None
+        return f"<image:image><image:loc>{SITE}/assets/insights/{pid}.jpg</image:loc></image:image>" if pid in imgs else ""
     write(os.path.join(DEPLOY, "sitemap.xml"),
-          '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-          + "".join(f"  <url><loc>{u}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls) + "</urlset>\n")
+          '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+          'xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'
+          + "".join(f"  <url><loc>{u}</loc><lastmod>{d}</lastmod>{img_tag(u)}</url>\n" for u, d in urls) + "</urlset>\n")
     # RSS feed
     e = html.escape
     items = "".join(
@@ -304,13 +314,44 @@ IMAGES = os.path.join(ROOT, "editorial", "images.json")
 FIG_RE = re.compile(r'\n    <figure data-post-image[^\n]*?</figure>')
 
 
-def figure(img):
+def load_images():
+    return json.loads(read(IMAGES)) if os.path.exists(IMAGES) else {}
+
+
+LICENCES = {"Pexels": "https://www.pexels.com/license/", "Unsplash": "https://unsplash.com/license"}
+
+
+def figure(pid, img):
+    """Header photo. Files are built by editorial/images.py into /assets/insights/."""
     a = lambda v: html.escape(v, quote=True)
+    b = f"/assets/insights/{pid}"
+    srcset = ", ".join(f"{b}-{w}.webp {w}w" for w in (640, 960, 1280))
+    sizes = "(min-width: 760px) 680px, calc(100vw - 40px)"
     return ('<figure data-post-image style="margin:0 0 8px">'
-            f'<img src="{a(img['src'])}" alt="{a(img['alt'])}" width="1280" height="853" loading="eager" decoding="async" '
-            'style="display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:4px" />'
-            '<figcaption style="margin-top:8px;font-size:13px;color:var(--color-text-muted, inherit);opacity:0.75">'
-            f'Photo: <a href="{a(img['url'])}" target="_blank" rel="noopener">{a(img['credit'])}</a> on {a(img['source'])}</figcaption></figure>')
+            f'<picture><source type="image/webp" srcset="{srcset}" sizes="{sizes}" />'
+            f'<img src="{b}.jpg" alt="{a(img["alt"])}" width="1280" height="853" decoding="async" fetchpriority="high" '
+            'style="display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:4px" /></picture>'
+            '<figcaption style="margin-top:8px;font-size:13px;color:var(--color-text-muted)">'
+            f'Photo: <a href="{a(img["url"])}" target="_blank" rel="noopener">{a(img["credit"])}</a> on {a(img["source"])}</figcaption></figure>')
+
+
+def image_ld(pid, img):
+    lic = LICENCES.get(img["source"])
+    base = {"@type": "ImageObject", "caption": img["alt"], "description": img["alt"],
+            "creditText": f"{img['credit']} / {img['source']}", "creator": {"@type": "Person", "name": img["credit"]},
+            "copyrightNotice": f"Photo by {img['credit']} on {img['source']}", "acquireLicensePage": img["url"]}
+    if lic:
+        base["license"] = lic
+    return [dict(base, url=f"{SITE}/assets/insights/{pid}.jpg", contentUrl=f"{SITE}/assets/insights/{pid}.jpg", width=1280, height=853),
+            dict(base, url=f"{SITE}/assets/insights/{pid}-og.jpg", contentUrl=f"{SITE}/assets/insights/{pid}-og.jpg", width=1200, height=630)]
+
+
+def social_image(src, pid, img):
+    """Point the page's link-preview tags (helmet and static head) at the post photo."""
+    og = f"{SITE}/assets/insights/{pid}-og.jpg"
+    s = re.sub(r'(<meta (?:property="og:image"|name="twitter:image") content=")[^"]*(">)', lambda m: m.group(1) + og + m.group(2), src)
+    s = re.sub(r'(<meta property="og:image:alt" content=")[^"]*(">)', lambda m: m.group(1) + html.escape(img["alt"]) + m.group(2), s)
+    return s
 
 
 def set_image(pid, img):
@@ -321,8 +362,8 @@ def set_image(pid, img):
     m = re.search(r'(  <sc-if value="\{\{ %s \}\}"[^\n]*\n    <div style="display:grid;gap:22px">)(.*?)\n  </sc-if>' % key, s, flags=re.S)
     assert m, f"no article body block for {pid} ({key})"
     body = FIG_RE.sub("", m.group(2))
-    s = s[:m.start()] + m.group(1) + "\n    " + figure(img) + body + "\n  </sc-if>" + s[m.end():]
-    write(path, s)
+    s = s[:m.start()] + m.group(1) + "\n    " + figure(pid, img) + body + "\n  </sc-if>" + s[m.end():]
+    write(path, social_image(s, pid, img))
 
 
 def apply_images():
@@ -383,6 +424,10 @@ def add(spec_path):
         s = s.replace("  POSTS = [\n", "  POSTS = [\n" + entry_js(d), 1)
         write(path, s)
     refresh(parse_posts(read(INDEX)))
+    if not d.get("image"):  # don't inherit the template post's link-preview photo
+        write(os.path.join(POSTS_DIR, d["id"] + ".html"),
+              re.sub(r'https://www\.coltasa\.com/assets/insights/[a-z0-9-]+-og\.jpg', f"{SITE}/assets/og-image.png",
+                     read(os.path.join(POSTS_DIR, d["id"] + ".html"))))
     if d.get("image"):
         imgs = json.loads(read(IMAGES)) if os.path.exists(IMAGES) else {}
         imgs[d["id"]] = d["image"]

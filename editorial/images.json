@@ -1,16 +1,100 @@
 {
-  "enterprise-sales-champion": {"src": "https://images.pexels.com/photos/7693153/pexels-photo-7693153.jpeg?auto=compress&cs=tinysrgb&w=1280", "alt": "Two colleagues shaking hands across a desk covered in papers and charts", "credit": "Yan Krukau", "source": "Pexels", "url": "https://www.pexels.com/photo/close-up-of-a-handshake-7693153"},
-  "founder-led-sales-handoff": {"src": "https://images.pexels.com/photos/10375957/pexels-photo-10375957.jpeg?auto=compress&cs=tinysrgb&w=1280", "alt": "One person handing a key to another", "credit": "RDNE Stock project", "source": "Pexels", "url": "https://www.pexels.com/photo/hands-exchanging-keys-10375957"},
-  "signal-over-noise": {"src": "https://images.pexels.com/photos/9786294/pexels-photo-9786294.jpeg?auto=compress&cs=tinysrgb&w=1280", "alt": "Fountain pen resting on a handwritten letter and envelopes", "credit": "Towfiqu barbhuiya", "source": "Pexels", "url": "https://www.pexels.com/photo/gold-and-wooden-fountain-pen-on-brown-envelope-9786294"},
-  "ai-sdrs": {"src": "https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=1280", "alt": "White humanoid robot holding a tablet", "credit": "Alex Knight", "source": "Pexels", "url": "https://www.pexels.com/photo/high-angle-photo-of-robot-2599244"},
-  "mutual-success-plans": {"src": "https://images.pexels.com/photos/7674617/pexels-photo-7674617.jpeg?auto=compress&cs=tinysrgb&w=1280", "alt": "Two people sketching a plan together in a notebook", "credit": "Pavel Danilyuk", "source": "Pexels", "url": "https://www.pexels.com/photo/people-drawing-on-white-notebook-7674617"},
-  "first-sales-playbook": {"src": "https://images.pexels.com/photos/5831663/pexels-photo-5831663.jpeg?auto=compress&cs=tinysrgb&w=1280", "alt": "Pen resting on an open notebook on a desk", "credit": "AlphaTradeZone", "source": "Pexels", "url": "https://www.pexels.com/photo/a-pen-on-an-open-notebook-5831663"},
-  "stop-discounting": {"src": "https://images.pexels.com/photos/7821676/pexels-photo-7821676.jpeg?auto=compress&cs=tinysrgb&w=1280", "alt": "Two people negotiating across a desk with documents and a calculator", "credit": "RDNE Stock project", "source": "Pexels", "url": "https://www.pexels.com/photo/a-person-passing-a-document-7821676"},
-  "forecast-evidence": {"src": "https://images.pexels.com/photos/7947669/pexels-photo-7947669.jpeg?auto=compress&cs=tinysrgb&w=1280", "alt": "Magnifying glass over a page of charts", "credit": "RDNE Stock project", "source": "Pexels", "url": "https://www.pexels.com/photo/a-magnifying-glass-on-a-page-of-various-charts-7947669"},
-  "pick-one-segment": {"src": "https://images.pexels.com/photos/6669448/pexels-photo-6669448.jpeg?auto=compress&cs=tinysrgb&w=1280", "alt": "Arrow in the centre of an archery target", "credit": "RDNE Stock project", "source": "Pexels", "url": "https://www.pexels.com/photo/arrow-on-target-6669448"},
-  "pipeline-coverage": {"src": "https://images.unsplash.com/photo-1752584157693-ca0e952cba00?w=1280&q=80&auto=format", "alt": "A pipeline running through green hills", "credit": "GWANGJIN GO", "source": "Unsplash", "url": "https://unsplash.com/photos/a-pipeline-runs-through-a-lush-green-mountain-QaiAaGH6tGQ"},
-  "working-with-procurement": {"src": "https://images.pexels.com/photos/8297031/pexels-photo-8297031.jpeg?auto=compress&cs=tinysrgb&w=1280", "alt": "Person reviewing documents with a calculator and pen", "credit": "Mikhail Nilov", "source": "Pexels", "url": "https://www.pexels.com/photo/person-in-long-sleeve-shirt-holding-a-calculator-8297031"},
-  "discovery-call": {"src": "https://images.pexels.com/photos/3874035/pexels-photo-3874035.jpeg?auto=compress&cs=tinysrgb&w=1280", "alt": "Two people in conversation across a table, one asking questions", "credit": "Gustavo Fring", "source": "Pexels", "url": "https://www.pexels.com/photo/man-being-interviewed-by-a-woman-3874035"},
-  "weekly-forecast-call": {"src": "https://images.pexels.com/photos/8134098/pexels-photo-8134098.jpeg?auto=compress&cs=tinysrgb&w=1280", "alt": "Small team standing around a laptop in a quick meeting", "credit": "Alena Darmel", "source": "Pexels", "url": "https://www.pexels.com/photo/group-of-businessmen-and-woman-looking-on-a-laptop-8134098"},
-  "cold-email-senior-buyers": {"src": "https://images.pexels.com/photos/30535783/pexels-photo-30535783.jpeg?auto=compress&cs=tinysrgb&w=1280", "alt": "Senior executive reading his phone at his desk", "credit": "Vitaly Gariev", "source": "Pexels", "url": "https://www.pexels.com/photo/elderly-businessman-using-smartphone-in-office-30535783"}
+  "enterprise-sales-champion": {
+    "src": "/assets/insights/enterprise-sales-champion.jpg",
+    "alt": "Two colleagues shaking hands across a desk covered in papers and charts",
+    "credit": "Yan Krukau",
+    "source": "Pexels",
+    "url": "https://www.pexels.com/photo/close-up-of-a-handshake-7693153"
+  },
+  "founder-led-sales-handoff": {
+    "src": "/assets/insights/founder-led-sales-handoff.jpg",
+    "alt": "One person handing a key to another",
+    "credit": "RDNE Stock project",
+    "source": "Pexels",
+    "url": "https://www.pexels.com/photo/hands-exchanging-keys-10375957"
+  },
+  "signal-over-noise": {
+    "src": "/assets/insights/signal-over-noise.jpg",
+    "alt": "Fountain pen resting on a handwritten letter and envelopes",
+    "credit": "Towfiqu barbhuiya",
+    "source": "Pexels",
+    "url": "https://www.pexels.com/photo/gold-and-wooden-fountain-pen-on-brown-envelope-9786294"
+  },
+  "ai-sdrs": {
+    "src": "/assets/insights/ai-sdrs.jpg",
+    "alt": "White humanoid robot holding a tablet",
+    "credit": "Alex Knight",
+    "source": "Pexels",
+    "url": "https://www.pexels.com/photo/high-angle-photo-of-robot-2599244"
+  },
+  "mutual-success-plans": {
+    "src": "/assets/insights/mutual-success-plans.jpg",
+    "alt": "Two people sketching a plan together in a notebook",
+    "credit": "Pavel Danilyuk",
+    "source": "Pexels",
+    "url": "https://www.pexels.com/photo/people-drawing-on-white-notebook-7674617"
+  },
+  "first-sales-playbook": {
+    "src": "/assets/insights/first-sales-playbook.jpg",
+    "alt": "Open notebook filled with a handwritten plan",
+    "credit": "Yen Vu",
+    "source": "Unsplash",
+    "url": "https://unsplash.com/photos/an-open-notebook-filled-with-handwritten-text-3NXtW3eXI2k"
+  },
+  "stop-discounting": {
+    "src": "/assets/insights/stop-discounting.jpg",
+    "alt": "Two people negotiating across a desk with documents and a calculator",
+    "credit": "RDNE Stock project",
+    "source": "Pexels",
+    "url": "https://www.pexels.com/photo/a-person-passing-a-document-7821676"
+  },
+  "forecast-evidence": {
+    "src": "/assets/insights/forecast-evidence.jpg",
+    "alt": "Magnifying glass over a page of charts",
+    "credit": "RDNE Stock project",
+    "source": "Pexels",
+    "url": "https://www.pexels.com/photo/a-magnifying-glass-on-a-page-of-various-charts-7947669"
+  },
+  "pick-one-segment": {
+    "src": "/assets/insights/pick-one-segment.jpg",
+    "alt": "Arrow in the centre of an archery target",
+    "credit": "RDNE Stock project",
+    "source": "Pexels",
+    "url": "https://www.pexels.com/photo/arrow-on-target-6669448"
+  },
+  "pipeline-coverage": {
+    "src": "/assets/insights/pipeline-coverage.jpg",
+    "alt": "A pipeline running through green hills",
+    "credit": "GWANGJIN GO",
+    "source": "Unsplash",
+    "url": "https://unsplash.com/photos/a-pipeline-runs-through-a-lush-green-mountain-QaiAaGH6tGQ"
+  },
+  "working-with-procurement": {
+    "src": "/assets/insights/working-with-procurement.jpg",
+    "alt": "Person reviewing documents with a calculator and pen",
+    "credit": "Mikhail Nilov",
+    "source": "Pexels",
+    "url": "https://www.pexels.com/photo/person-in-long-sleeve-shirt-holding-a-calculator-8297031"
+  },
+  "discovery-call": {
+    "src": "/assets/insights/discovery-call.jpg",
+    "alt": "Two people in conversation across a table, one asking questions",
+    "credit": "Gustavo Fring",
+    "source": "Pexels",
+    "url": "https://www.pexels.com/photo/man-being-interviewed-by-a-woman-3874035"
+  },
+  "weekly-forecast-call": {
+    "src": "/assets/insights/weekly-forecast-call.jpg",
+    "alt": "Small team standing around a laptop in a quick meeting",
+    "credit": "Alena Darmel",
+    "source": "Pexels",
+    "url": "https://www.pexels.com/photo/group-of-businessmen-and-woman-looking-on-a-laptop-8134098"
+  },
+  "cold-email-senior-buyers": {
+    "src": "/assets/insights/cold-email-senior-buyers.jpg",
+    "alt": "Executive at his desk looking at his phone",
+    "credit": "Vitaly Gariev",
+    "source": "Pexels",
+    "url": "https://www.pexels.com/photo/elderly-businessman-using-smartphone-in-office-30535783"
+  }
 }

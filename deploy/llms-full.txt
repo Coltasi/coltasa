@@ -21,6 +21,7 @@ Category: Methodology
 
 > How to find and build a champion in enterprise sales: what a real champion is, five tests that separate them from friendly coaches, and how to equip them.
 
+Photo: [Yan Krukau](https://www.pexels.com/photo/close-up-of-a-handshake-7693153) on Pexels
 To find and build a champion in an enterprise deal, look past the friendliest contact and test for three things: power and influence inside the buying organisation, a personal stake in your solution succeeding, and a willingness to sell it internally when you are not in the room. Most people who like you will fail at least one of those tests. The ones who pass need to be equipped, coached and kept close, because they are the person who wins the deal for you in meetings you never attend.
 
 Getting this wrong is the most common reason a promising enterprise deal stalls after a strong start. The seller had a contact who was enthusiastic, responsive and helpful. That contact was a coach, not a champion, and when the decision moved into a room with budget holders and competing priorities, nobody in that room was arguing for you.
@@ -125,6 +126,7 @@ Category: Strategy
 
 > How to know your B2B startup is ready to hand off founder-led sales, who to hire first, and a three-stage handoff that keeps deals moving.
 
+Photo: [RDNE Stock project](https://www.pexels.com/photo/hands-exchanging-keys-10375957) on Pexels
 Founders should hand off sales once they can win deals the same way more than once, can write down how, and are spending so much time selling that the product or company is suffering. That point usually arrives somewhere between your first five and fifteen paying customers. The handoff itself should take a quarter, not a week, and the founder should stay in the deal room as an executive sponsor long after they stop running deals.
 
 Most founders get the timing roughly right and the handoff wrong. They hire a seller, give them a login and a list of leads, and step away. Six months later the pipeline has dried up and the conclusion is that the hire was bad. Often the hire was fine. The handoff was the problem.
@@ -226,6 +228,7 @@ Category: Outbound
 
 > Mass AI outbound has buried buyers in noise. Here are practical ways to create signal again: insight people can use, handwritten notes and small events.
 
+Photo: [Towfiqu barbhuiya](https://www.pexels.com/photo/gold-and-wooden-fountain-pen-on-brown-envelope-9786294) on Pexels
 Open your inbox and count the cold emails from the last week. Now count how many you read past the first line. If you buy anything for a living, the second number is probably close to zero, and you are not unusual.
 
 Outbound used to work on a simple, unwritten contract. The seller did the homework, and in return the buyer gave them a few minutes of attention. The seller earned the right to interrupt by showing up with something relevant. That contract is broken, and the sellers broke it.
@@ -294,6 +297,7 @@ Category: Pipeline
 
 > Why AI SDRs fall short in enterprise sales today, what would need to be true for that to change, and where AI actually helps your team.
 
+Photo: [Alex Knight](https://www.pexels.com/photo/high-angle-photo-of-robot-2599244) on Pexels
 Every few weeks a founder asks me whether they should replace their SDR team with an AI SDR. The pitch is attractive: an agent that researches prospects, writes emails, handles replies and books meetings around the clock, at a fraction of the cost of a person. My answer, today, is no. Here is why, and what would need to change for that answer to change.
 
 ## What an SDR is actually for
@@ -368,6 +372,7 @@ Category: Methodology
 
 > Seven principles for building a plan with your buyer that keeps deals on track, from first interest through go-live.
 
+Photo: [Pavel Danilyuk](https://www.pexels.com/photo/people-drawing-on-white-notebook-7674617) on Pexels
 Most enterprise deals that slip do not fail because the buyer stopped wanting the product. They fail because nobody mapped out what had to happen between "yes, we're interested" and a signed contract. Legal review took three weeks longer than expected. Security found a gap. A budget holder nobody had met asked to restart the evaluation. The forecast said this quarter. The deal closed two quarters later, or never. It is a common story: [Ebsta’s 2024 benchmarks](https://ebsta.com/wp-content/uploads/2024/07/H1-Update-2024-B2B-Sales-Benchmarks.pdf) found that between 34 and 46 percent of deals slipped past their close date each quarter in the first half of that year.
 
 A mutual success plan fixes this. It is a shared document, built with the buyer, that lays out every step needed to reach a decision and a successful go-live, who owns each step and when it will happen. Done well, it is the most useful tool in an enterprise deal. Done badly, it is a spreadsheet nobody opens.
@@ -451,6 +456,7 @@ Category: Strategy
 
 > Hiring sellers before you can explain how your deals are won is the most expensive mistake in early-stage sales. Here is what to write down first.
 
+Photo: [Yen Vu](https://unsplash.com/photos/an-open-notebook-filled-with-handwritten-text-3NXtW3eXI2k) on Unsplash
 A familiar pattern: a company raises its round, the founder has closed the first twenty customers personally, and the board wants growth. So the company hires three account executives. Six months later, one is doing fine, one is struggling and one has left. Pipeline is flat and nobody can say exactly why.
 
 The problem is rarely the people. It is that the company hired sellers before it could explain how its deals are won. The founder knew, but the knowledge lived in their head. A playbook gets it out.
@@ -512,6 +518,7 @@ Category: Negotiation
 
 > End-of-quarter discounting teaches buyers to wait. A practical approach to enterprise negotiation that protects price and still gets deals signed.
 
+Photo: [RDNE Stock project](https://www.pexels.com/photo/a-person-passing-a-document-7821676) on Pexels
 It is the last week of the quarter. The deal is late, the forecast is short, and the buyer has just asked for "a bit more flexibility on price". The seller offers fifteen percent off to get it signed by Friday. The buyer agrees. Everyone is relieved.
 
 Then next quarter, the same buyer waits until the last week again. So does their procurement team at renewal. And the sellers who watched it happen learn that discounting is how deals close.
@@ -591,6 +598,7 @@ Category: Forecasting
 
 > Why most early-stage forecasts miss, and how exit criteria, deal reviews and a few honest questions make the number something you can trust.
 
+Photo: [RDNE Stock project](https://www.pexels.com/photo/a-magnifying-glass-on-a-page-of-various-charts-7947669) on Pexels
 Ask an early-stage sales team how their forecast is built and you will often hear some version of: "Each rep tells us what they think will close." That is not a forecast. It is a collection of hopes, weighted by each seller's optimism.
 
 A good forecast is a judgement built on evidence. It should tell you what will close, what might, and why, in a way anyone on the leadership team can check. Getting there does not need expensive software. It needs discipline about what counts as proof. The problem is widespread: in Gartner's State of Sales Operations survey, [only 45 percent of sales leaders and sellers](https://www.gartner.com/en/newsroom/press-releases/2020-02-12-gartner-says-less-than-50--of-sales-leaders-and-selle) said they had high confidence in their organisation's forecast accuracy.
@@ -671,6 +679,7 @@ Category: Strategy
 
 > Early sales teams spread across too many markets. How to choose a first segment, test it and know when to expand.
 
+Photo: [RDNE Stock project](https://www.pexels.com/photo/arrow-on-target-6669448) on Pexels
 When a company has a product that works, it is tempting to sell it to anyone who will take a meeting. Early on that makes sense, because every deal teaches you something. By the time you are hiring sellers, though, selling to everyone starts to cost more than it returns. Messaging gets vague, case studies do not transfer, and each deal feels like starting from scratch.
 
 The fix is to choose one segment and become the obvious choice for it before you expand. Geoffrey Moore made the same case in Crossing the Chasm, describing a good beachhead as [“big enough to matter, small enough to lead”](https://lennysnewsletter.com/p/geoffrey-moore-on-finding-your-beachhead) and a good fit with what you do best.
@@ -738,6 +747,7 @@ Category: Pipeline
 
 > A simple way to work out pipeline coverage from your own numbers, and what to do when you are short.
 
+Photo: [GWANGJIN GO](https://unsplash.com/photos/a-pipeline-runs-through-a-lush-green-mountain-QaiAaGH6tGQ) on Unsplash
 "Three times coverage" is one of the most repeated rules in B2B sales. It is a reasonable starting point, but it is a guess. The right number for your team depends on your own win rate, deal size and sales cycle, and you can work it out in an afternoon.
 
 ## Start with your win rate
@@ -809,6 +819,7 @@ Category: Negotiation
 
 > Procurement is part of every enterprise deal. How to bring them in early, understand what they need and keep the deal moving.
 
+Photo: [Mikhail Nilov](https://www.pexels.com/photo/person-in-long-sleeve-shirt-holding-a-calculator-8297031) on Pexels
 Many sellers treat procurement as the last obstacle before signature, the team that appears late and asks for a discount. That view tends to make procurement harder to deal with. In most enterprise companies procurement has a clear job, and if you help them do it, deals move faster.
 
 ## Understand their role
@@ -881,6 +892,7 @@ Category: Methodology
 
 > A practical structure for first calls with enterprise buyers, the questions worth asking and how to end with a clear next step.
 
+Photo: [Gustavo Fring](https://www.pexels.com/photo/man-being-interviewed-by-a-woman-3874035) on Pexels
 The first call with a new buyer decides most of what happens next. If it goes well, you leave with a real problem, a sense of who else is involved and a reason to meet again. If it goes badly, it turns into a demo nobody asked for and a polite "send me some information".
 
 Good discovery is a skill, and it can be planned.
@@ -955,6 +967,7 @@ Category: Forecasting
 
 > A simple agenda for a weekly forecast meeting that keeps the number honest without taking over the team's week.
 
+Photo: [Alena Darmel](https://www.pexels.com/photo/group-of-businessmen-and-woman-looking-on-a-laptop-8134098) on Pexels
 Weekly forecast calls have a habit of growing. They start at 30 minutes and become a two-hour walk through every deal in the CRM. Sellers dread them, leaders leave without a clear number, and the real problems in the pipeline go unnoticed. It shows in the results: in Gartner's State of Sales Operations survey, [only 45 percent of sales leaders and sellers](https://www.gartner.com/en/newsroom/press-releases/2020-02-12-gartner-says-less-than-50--of-sales-leaders-and-selle) had high confidence in their forecast accuracy.
 
 A forecast call works best when it is short, structured and focused on the deals that move the number.
@@ -1019,6 +1032,7 @@ Category: Outbound
 
 > A practical guide to short, specific outbound emails for enterprise buyers, with a simple structure and what to leave out.
 
+Photo: [Vitaly Gariev](https://www.pexels.com/photo/elderly-businessman-using-smartphone-in-office-30535783) on Pexels
 Senior buyers receive dozens of sales emails a day, and most are deleted after the first line. The ones that get a reply usually have a few things in common: they are short, they are clearly written for that person, and they ask for very little. The bar keeps rising: in Gartner's 2026 survey, [67 percent of B2B buyers said they prefer a rep-free buying experience](https://www.gartner.com/en/newsroom/press-releases/2026-03-09-gartner-sales-survey-finds-67-percent-of-b2b-buyers-prefer-a-rep-free-experience), so an email has to earn the conversation.
 
 ## Research first

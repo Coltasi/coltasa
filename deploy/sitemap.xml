@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url><loc>https://www.coltasa.com/</loc><lastmod>2026-10-27</lastmod></url>
   <url><loc>https://www.coltasa.com/sales-engine-score</loc><lastmod>2026-10-27</lastmod></url>
-  <url><loc>https://www.coltasa.com/about</loc><lastmod>2026-10-29</lastmod></url>
-  <url><loc>https://www.coltasa.com/partners</loc><lastmod>2026-10-29</lastmod></url>
   <url><loc>https://www.coltasa.com/privacy</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.coltasa.com/insights</loc><lastmod>2026-10-27</lastmod></url>
-  <url><loc>https://www.coltasa.com/insights/enterprise-sales-champion</loc><lastmod>2026-10-27</lastmod></url>
-  <url><loc>https://www.coltasa.com/insights/founder-led-sales-handoff</loc><lastmod>2026-10-25</lastmod></url>
-  <url><loc>https://www.coltasa.com/insights/signal-over-noise</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://www.coltasa.com/insights/ai-sdrs</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://www.coltasa.com/insights/mutual-success-plans</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://www.coltasa.com/insights/first-sales-playbook</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://www.coltasa.com/insights/stop-discounting</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://www.coltasa.com/insights/forecast-evidence</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://www.coltasa.com/insights/pick-one-segment</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://www.coltasa.com/insights/pipeline-coverage</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://www.coltasa.com/insights/working-with-procurement</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://www.coltasa.com/insights/discovery-call</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://www.coltasa.com/insights/weekly-forecast-call</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://www.coltasa.com/insights/cold-email-senior-buyers</loc><lastmod>2026-10-05</lastmod></url>
+  <url><loc>https://www.coltasa.com/insights/enterprise-sales-champion</loc><lastmod>2026-10-27</lastmod><image:image><image:loc>https://www.coltasa.com/assets/insights/enterprise-sales-champion.jpg</image:loc></image:image></url>
+  <url><loc>https://www.coltasa.com/insights/founder-led-sales-handoff</loc><lastmod>2026-10-25</lastmod><image:image><image:loc>https://www.coltasa.com/assets/insights/founder-led-sales-handoff.jpg</image:loc></image:image></url>
+  <url><loc>https://www.coltasa.com/insights/signal-over-noise</loc><lastmod>2026-10-05</lastmod><image:image><image:loc>https://www.coltasa.com/assets/insights/signal-over-noise.jpg</image:loc></image:image></url>
+  <url><loc>https://www.coltasa.com/insights/ai-sdrs</loc><lastmod>2026-10-05</lastmod><image:image><image:loc>https://www.coltasa.com/assets/insights/ai-sdrs.jpg</image:loc></image:image></url>
+  <url><loc>https://www.coltasa.com/insights/mutual-success-plans</loc><lastmod>2026-10-05</lastmod><image:image><image:loc>https://www.coltasa.com/assets/insights/mutual-success-plans.jpg</image:loc></image:image></url>
+  <url><loc>https://www.coltasa.com/insights/first-sales-playbook</loc><lastmod>2026-10-05</lastmod><image:image><image:loc>https://www.coltasa.com/assets/insights/first-sales-playbook.jpg</image:loc></image:image></url>
+  <url><loc>https://www.coltasa.com/insights/stop-discounting</loc><lastmod>2026-10-05</lastmod><image:image><image:loc>https://www.coltasa.com/assets/insights/stop-discounting.jpg</image:loc></image:image></url>
+  <url><loc>https://www.coltasa.com/insights/forecast-evidence</loc><lastmod>2026-10-05</lastmod><image:image><image:loc>https://www.coltasa.com/assets/insights/forecast-evidence.jpg</image:loc></image:image></url>
+  <url><loc>https://www.coltasa.com/insights/pick-one-segment</loc><lastmod>2026-10-05</lastmod><image:image><image:loc>https://www.coltasa.com/assets/insights/pick-one-segment.jpg</image:loc></image:image></url>
+  <url><loc>https://www.coltasa.com/insights/pipeline-coverage</loc><lastmod>2026-10-05</lastmod><image:image><image:loc>https://www.coltasa.com/assets/insights/pipeline-coverage.jpg</image:loc></image:image></url>
+  <url><loc>https://www.coltasa.com/insights/working-with-procurement</loc><lastmod>2026-10-05</lastmod><image:image><image:loc>https://www.coltasa.com/assets/insights/working-with-procurement.jpg</image:loc></image:image></url>
+  <url><loc>https://www.coltasa.com/insights/discovery-call</loc><lastmod>2026-10-05</lastmod><image:image><image:loc>https://www.coltasa.com/assets/insights/discovery-call.jpg</image:loc></image:image></url>
+  <url><loc>https://www.coltasa.com/insights/weekly-forecast-call</loc><lastmod>2026-10-05</lastmod><image:image><image:loc>https://www.coltasa.com/assets/insights/weekly-forecast-call.jpg</image:loc></image:image></url>
+  <url><loc>https://www.coltasa.com/insights/cold-email-senior-buyers</loc><lastmod>2026-10-05</lastmod><image:image><image:loc>https://www.coltasa.com/assets/insights/cold-email-senior-buyers.jpg</image:loc></image:image></url>
 </urlset>
