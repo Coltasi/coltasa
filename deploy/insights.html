@@ -116,19 +116,22 @@ button{font-family:var(--font-body)}
     </sc-for>
   </div>
   <p aria-live="polite" style="margin:0;padding:14px 0 0;font-size:14px;color:color-mix(in srgb,var(--color-text) 70%,transparent)">{{ countLabel }}</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:20px;padding-top:20px">
   <sc-for list="{{ shown }}" as="p" hint-placeholder-count="3">
-    <a href="{{ p.href }}" onClick="{{ p.open }}" style="display:flex;flex-wrap:wrap;gap:12px 32px;align-items:baseline;padding:32px 0;border-bottom:2px solid var(--color-divider);text-decoration:none;color:var(--color-text)" style-hover="background:var(--color-accent-100)">
-      <div style="flex:0 0 160px;display:flex;flex-wrap:wrap;column-gap:16px;row-gap:6px;font-size:14px">
-        <span style="width:100%;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;font-size:12px;color:var(--color-accent-700)">{{ p.cat }}</span>
-        <span>{{ p.date }}</span>
+    <a href="{{ p.href }}" onClick="{{ p.open }}" style="display:flex;flex-direction:column;gap:16px;padding:24px;background:#ffffff;border:2px solid var(--color-divider);text-decoration:none;color:var(--color-text)" style-hover="border-color:var(--color-accent-2-600);background:var(--color-accent-2-100)">
+      <div style="display:flex;align-items:center;gap:14px">
+        <span aria-hidden="true" style="flex:0 0 52px;height:52px;display:flex;align-items:center;justify-content:center;background:var(--color-text);color:var(--color-bg);border-bottom:4px solid var(--color-accent)"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="{{ p.icon }}"></path></svg></span>
+        <span style="font-weight:600;letter-spacing:0.08em;text-transform:uppercase;font-size:12px;color:var(--color-accent-700)">{{ p.cat }}</span>
       </div>
-      <div style="flex:1 1 320px;min-width:0">
-        <h2 style="margin:0 0 10px;font-size:clamp(24px,2.8vw,36px);line-height:1.1;letter-spacing:-0.02em">{{ p.title }}</h2>
-        <p style="margin:0;font-size:17px;line-height:1.6;max-width:62ch">{{ p.dek }}</p>
+      <h2 style="margin:0;font-size:clamp(22px,2.2vw,26px);line-height:1.15;letter-spacing:-0.015em">{{ p.title }}</h2>
+      <p style="margin:0;font-size:15px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden">{{ p.dek }}</p>
+      <div style="margin-top:auto;padding-top:14px;border-top:2px solid var(--color-surface);display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:14px">
+        <span style="color:color-mix(in srgb,var(--color-text) 70%,transparent)">{{ p.date }}</span>
+        <span style="display:flex;align-items:center;gap:8px;font-weight:600;color:var(--color-accent-2-700);white-space:nowrap">{{ p.mins }} <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
       </div>
-      <span style="display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--color-accent-2-700);white-space:nowrap">{{ p.mins }} <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
     </a>
   </sc-for>
+  </div>
   <sc-if value="{{ empty }}" hint-placeholder-val="{{ false }}">
     <p style="margin:0;padding:40px 0;font-size:17px">{{ emptyMsg }} <a href="#" onClick="{{ clearCat }}">See all posts</a>.</p>
   </sc-if>
@@ -261,181 +264,197 @@ button{font-family:var(--font-body)}
     
   </div>
   <p aria-live="polite" style="margin: 0px; padding: 14px 0px 0px; font-size: 14px; color: color-mix(in srgb,var(--color-text) 70%,transparent);"><span class="sc-interp">14 posts</span></p>
+  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 20px; padding-top: 20px;">
   
-    <a href="/insights/enterprise-sales-champion" class="scp3" style="display: flex; flex-wrap: wrap; gap: 12px 32px; align-items: baseline; padding: 32px 0px; border-bottom: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
-      <div style="flex: 0 0 160px; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px;">
-        <span style="width: 100%; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-700);"><span class="sc-interp">Methodology</span></span>
-        <span><span class="sc-interp">27 October 2026</span></span>
+    <a href="/insights/enterprise-sales-champion" class="scp3" style="display: flex; flex-direction: column; gap: 16px; padding: 24px; background: rgb(255, 255, 255); border: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <span aria-hidden="true" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; background: var(--color-text); color: var(--color-bg); border-bottom: 4px solid var(--color-accent);"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 6h10M10 12h10M10 18h10M4 6l1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17"></path></svg></span>
+        <span style="font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-700);"><span class="sc-interp">Methodology</span></span>
       </div>
-      <div style="flex: 1 1 320px; min-width: 0px;">
-        <h2 style="margin: 0px 0px 10px; font-size: clamp(24px, 2.8vw, 36px); line-height: 1.1; letter-spacing: -0.02em;"><span class="sc-interp">No champion, no deal: how to find one and make them count</span></h2>
-        <p style="margin: 0px; font-size: 17px; line-height: 1.6; max-width: 62ch;"><span class="sc-interp">How to find and build a champion in enterprise sales: what a real champion is, five tests that separate them from friendly coaches, and how to equip them.</span></p>
+      <h2 style="margin: 0px; font-size: clamp(22px, 2.2vw, 26px); line-height: 1.15; letter-spacing: -0.015em;"><span class="sc-interp">No champion, no deal: how to find one and make them count</span></h2>
+      <p style="margin: 0px; font-size: 15px; line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;"><span class="sc-interp">How to find and build a champion in enterprise sales: what a real champion is, five tests that separate them from friendly coaches, and how to equip them.</span></p>
+      <div style="margin-top: auto; padding-top: 14px; border-top: 2px solid var(--color-surface); display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 14px;">
+        <span style="color: color-mix(in srgb,var(--color-text) 70%,transparent);"><span class="sc-interp">27 October 2026</span></span>
+        <span style="display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--color-accent-2-700); white-space: nowrap;"><span class="sc-interp">6 min read</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
       </div>
-      <span style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: var(--color-accent-2-700); white-space: nowrap;"><span class="sc-interp">6 min read</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
     </a>
   
-    <a href="/insights/founder-led-sales-handoff" class="scp3" style="display: flex; flex-wrap: wrap; gap: 12px 32px; align-items: baseline; padding: 32px 0px; border-bottom: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
-      <div style="flex: 0 0 160px; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px;">
-        <span style="width: 100%; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-700);"><span class="sc-interp">Strategy</span></span>
-        <span><span class="sc-interp">25 October 2026</span></span>
+    <a href="/insights/founder-led-sales-handoff" class="scp3" style="display: flex; flex-direction: column; gap: 16px; padding: 24px; background: rgb(255, 255, 255); border: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <span aria-hidden="true" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; background: var(--color-text); color: var(--color-bg); border-bottom: 4px solid var(--color-accent);"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0M7.5 12a4.5 4.5 0 1 0 9 0a4.5 4.5 0 1 0 -9 0M12 12h.01"></path></svg></span>
+        <span style="font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-700);"><span class="sc-interp">Strategy</span></span>
       </div>
-      <div style="flex: 1 1 320px; min-width: 0px;">
-        <h2 style="margin: 0px 0px 10px; font-size: clamp(24px, 2.8vw, 36px); line-height: 1.1; letter-spacing: -0.02em;"><span class="sc-interp">When to stop selling and hand it to your first rep</span></h2>
-        <p style="margin: 0px; font-size: 17px; line-height: 1.6; max-width: 62ch;"><span class="sc-interp">How to know your B2B startup is ready to hand off founder-led sales, who to hire first, and a three-stage handoff that keeps deals moving.</span></p>
+      <h2 style="margin: 0px; font-size: clamp(22px, 2.2vw, 26px); line-height: 1.15; letter-spacing: -0.015em;"><span class="sc-interp">When to stop selling and hand it to your first rep</span></h2>
+      <p style="margin: 0px; font-size: 15px; line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;"><span class="sc-interp">How to know your B2B startup is ready to hand off founder-led sales, who to hire first, and a three-stage handoff that keeps deals moving.</span></p>
+      <div style="margin-top: auto; padding-top: 14px; border-top: 2px solid var(--color-surface); display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 14px;">
+        <span style="color: color-mix(in srgb,var(--color-text) 70%,transparent);"><span class="sc-interp">25 October 2026</span></span>
+        <span style="display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--color-accent-2-700); white-space: nowrap;"><span class="sc-interp">6 min read</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
       </div>
-      <span style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: var(--color-accent-2-700); white-space: nowrap;"><span class="sc-interp">6 min read</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
     </a>
   
-    <a href="/insights/signal-over-noise" class="scp3" style="display: flex; flex-wrap: wrap; gap: 12px 32px; align-items: baseline; padding: 32px 0px; border-bottom: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
-      <div style="flex: 0 0 160px; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px;">
-        <span style="width: 100%; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-700);"><span class="sc-interp">Outbound</span></span>
-        <span><span class="sc-interp">5 October 2026</span></span>
+    <a href="/insights/signal-over-noise" class="scp3" style="display: flex; flex-direction: column; gap: 16px; padding: 24px; background: rgb(255, 255, 255); border: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <span aria-hidden="true" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; background: var(--color-text); color: var(--color-bg); border-bottom: 4px solid var(--color-accent);"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 3L10 14M21 3l-6.5 18-4.5-7-7-4.5z"></path></svg></span>
+        <span style="font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-700);"><span class="sc-interp">Outbound</span></span>
       </div>
-      <div style="flex: 1 1 320px; min-width: 0px;">
-        <h2 style="margin: 0px 0px 10px; font-size: clamp(24px, 2.8vw, 36px); line-height: 1.1; letter-spacing: -0.02em;"><span class="sc-interp">The contract between buyers and sellers is broken</span></h2>
-        <p style="margin: 0px; font-size: 17px; line-height: 1.6; max-width: 62ch;"><span class="sc-interp">Mass AI outbound has buried buyers in noise. Here are practical ways to create signal again: insight people can use, handwritten notes and small events.</span></p>
+      <h2 style="margin: 0px; font-size: clamp(22px, 2.2vw, 26px); line-height: 1.15; letter-spacing: -0.015em;"><span class="sc-interp">The contract between buyers and sellers is broken</span></h2>
+      <p style="margin: 0px; font-size: 15px; line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;"><span class="sc-interp">Mass AI outbound has buried buyers in noise. Here are practical ways to create signal again: insight people can use, handwritten notes and small events.</span></p>
+      <div style="margin-top: auto; padding-top: 14px; border-top: 2px solid var(--color-surface); display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 14px;">
+        <span style="color: color-mix(in srgb,var(--color-text) 70%,transparent);"><span class="sc-interp">5 October 2026</span></span>
+        <span style="display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--color-accent-2-700); white-space: nowrap;"><span class="sc-interp">6 min read</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
       </div>
-      <span style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: var(--color-accent-2-700); white-space: nowrap;"><span class="sc-interp">6 min read</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
     </a>
   
-    <a href="/insights/ai-sdrs" class="scp3" style="display: flex; flex-wrap: wrap; gap: 12px 32px; align-items: baseline; padding: 32px 0px; border-bottom: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
-      <div style="flex: 0 0 160px; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px;">
-        <span style="width: 100%; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-700);"><span class="sc-interp">Pipeline</span></span>
-        <span><span class="sc-interp">5 October 2026</span></span>
+    <a href="/insights/ai-sdrs" class="scp3" style="display: flex; flex-direction: column; gap: 16px; padding: 24px; background: rgb(255, 255, 255); border: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <span aria-hidden="true" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; background: var(--color-text); color: var(--color-bg); border-bottom: 4px solid var(--color-accent);"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18l-7 8.5V19l-4 2v-8.5z"></path></svg></span>
+        <span style="font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-700);"><span class="sc-interp">Pipeline</span></span>
       </div>
-      <div style="flex: 1 1 320px; min-width: 0px;">
-        <h2 style="margin: 0px 0px 10px; font-size: clamp(24px, 2.8vw, 36px); line-height: 1.1; letter-spacing: -0.02em;"><span class="sc-interp">AI SDRs are a waste of time. For now.</span></h2>
-        <p style="margin: 0px; font-size: 17px; line-height: 1.6; max-width: 62ch;"><span class="sc-interp">Why AI SDRs fall short in enterprise sales today, what would need to be true for that to change, and where AI actually helps your team.</span></p>
+      <h2 style="margin: 0px; font-size: clamp(22px, 2.2vw, 26px); line-height: 1.15; letter-spacing: -0.015em;"><span class="sc-interp">AI SDRs are a waste of time. For now.</span></h2>
+      <p style="margin: 0px; font-size: 15px; line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;"><span class="sc-interp">Why AI SDRs fall short in enterprise sales today, what would need to be true for that to change, and where AI actually helps your team.</span></p>
+      <div style="margin-top: auto; padding-top: 14px; border-top: 2px solid var(--color-surface); display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 14px;">
+        <span style="color: color-mix(in srgb,var(--color-text) 70%,transparent);"><span class="sc-interp">5 October 2026</span></span>
+        <span style="display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--color-accent-2-700); white-space: nowrap;"><span class="sc-interp">6 min read</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
       </div>
-      <span style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: var(--color-accent-2-700); white-space: nowrap;"><span class="sc-interp">6 min read</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
     </a>
   
-    <a href="/insights/mutual-success-plans" class="scp3" style="display: flex; flex-wrap: wrap; gap: 12px 32px; align-items: baseline; padding: 32px 0px; border-bottom: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
-      <div style="flex: 0 0 160px; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px;">
-        <span style="width: 100%; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-700);"><span class="sc-interp">Methodology</span></span>
-        <span><span class="sc-interp">5 October 2026</span></span>
+    <a href="/insights/mutual-success-plans" class="scp3" style="display: flex; flex-direction: column; gap: 16px; padding: 24px; background: rgb(255, 255, 255); border: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <span aria-hidden="true" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; background: var(--color-text); color: var(--color-bg); border-bottom: 4px solid var(--color-accent);"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 6h10M10 12h10M10 18h10M4 6l1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17"></path></svg></span>
+        <span style="font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-700);"><span class="sc-interp">Methodology</span></span>
       </div>
-      <div style="flex: 1 1 320px; min-width: 0px;">
-        <h2 style="margin: 0px 0px 10px; font-size: clamp(24px, 2.8vw, 36px); line-height: 1.1; letter-spacing: -0.02em;"><span class="sc-interp">The key tenets of a mutual success plan</span></h2>
-        <p style="margin: 0px; font-size: 17px; line-height: 1.6; max-width: 62ch;"><span class="sc-interp">Seven principles for building a plan with your buyer that keeps deals on track, from first interest through go-live.</span></p>
+      <h2 style="margin: 0px; font-size: clamp(22px, 2.2vw, 26px); line-height: 1.15; letter-spacing: -0.015em;"><span class="sc-interp">The key tenets of a mutual success plan</span></h2>
+      <p style="margin: 0px; font-size: 15px; line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;"><span class="sc-interp">Seven principles for building a plan with your buyer that keeps deals on track, from first interest through go-live.</span></p>
+      <div style="margin-top: auto; padding-top: 14px; border-top: 2px solid var(--color-surface); display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 14px;">
+        <span style="color: color-mix(in srgb,var(--color-text) 70%,transparent);"><span class="sc-interp">5 October 2026</span></span>
+        <span style="display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--color-accent-2-700); white-space: nowrap;"><span class="sc-interp">6 min read</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
       </div>
-      <span style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: var(--color-accent-2-700); white-space: nowrap;"><span class="sc-interp">6 min read</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
     </a>
   
-    <a href="/insights/first-sales-playbook" class="scp3" style="display: flex; flex-wrap: wrap; gap: 12px 32px; align-items: baseline; padding: 32px 0px; border-bottom: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
-      <div style="flex: 0 0 160px; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px;">
-        <span style="width: 100%; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-700);"><span class="sc-interp">Strategy</span></span>
-        <span><span class="sc-interp">5 October 2026</span></span>
+    <a href="/insights/first-sales-playbook" class="scp3" style="display: flex; flex-direction: column; gap: 16px; padding: 24px; background: rgb(255, 255, 255); border: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <span aria-hidden="true" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; background: var(--color-text); color: var(--color-bg); border-bottom: 4px solid var(--color-accent);"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0M7.5 12a4.5 4.5 0 1 0 9 0a4.5 4.5 0 1 0 -9 0M12 12h.01"></path></svg></span>
+        <span style="font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-700);"><span class="sc-interp">Strategy</span></span>
       </div>
-      <div style="flex: 1 1 320px; min-width: 0px;">
-        <h2 style="margin: 0px 0px 10px; font-size: clamp(24px, 2.8vw, 36px); line-height: 1.1; letter-spacing: -0.02em;"><span class="sc-interp">Write the playbook before you hire the team</span></h2>
-        <p style="margin: 0px; font-size: 17px; line-height: 1.6; max-width: 62ch;"><span class="sc-interp">Hiring sellers before you can explain how your deals are won is the most expensive mistake in early-stage sales. Here is what to write down first.</span></p>
+      <h2 style="margin: 0px; font-size: clamp(22px, 2.2vw, 26px); line-height: 1.15; letter-spacing: -0.015em;"><span class="sc-interp">Write the playbook before you hire the team</span></h2>
+      <p style="margin: 0px; font-size: 15px; line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;"><span class="sc-interp">Hiring sellers before you can explain how your deals are won is the most expensive mistake in early-stage sales. Here is what to write down first.</span></p>
+      <div style="margin-top: auto; padding-top: 14px; border-top: 2px solid var(--color-surface); display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 14px;">
+        <span style="color: color-mix(in srgb,var(--color-text) 70%,transparent);"><span class="sc-interp">5 October 2026</span></span>
+        <span style="display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--color-accent-2-700); white-space: nowrap;"><span class="sc-interp">6 min read</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
       </div>
-      <span style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: var(--color-accent-2-700); white-space: nowrap;"><span class="sc-interp">6 min read</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
     </a>
   
-    <a href="/insights/stop-discounting" class="scp3" style="display: flex; flex-wrap: wrap; gap: 12px 32px; align-items: baseline; padding: 32px 0px; border-bottom: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
-      <div style="flex: 0 0 160px; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px;">
-        <span style="width: 100%; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-700);"><span class="sc-interp">Negotiation</span></span>
-        <span><span class="sc-interp">5 October 2026</span></span>
+    <a href="/insights/stop-discounting" class="scp3" style="display: flex; flex-direction: column; gap: 16px; padding: 24px; background: rgb(255, 255, 255); border: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <span aria-hidden="true" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; background: var(--color-text); color: var(--color-bg); border-bottom: 4px solid var(--color-accent);"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h15M15 4l4 4-4 4M20 16H5M9 12l-4 4 4 4"></path></svg></span>
+        <span style="font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-700);"><span class="sc-interp">Negotiation</span></span>
       </div>
-      <div style="flex: 1 1 320px; min-width: 0px;">
-        <h2 style="margin: 0px 0px 10px; font-size: clamp(24px, 2.8vw, 36px); line-height: 1.1; letter-spacing: -0.02em;"><span class="sc-interp">Never give a discount. Trade it.</span></h2>
-        <p style="margin: 0px; font-size: 17px; line-height: 1.6; max-width: 62ch;"><span class="sc-interp">End-of-quarter discounting teaches buyers to wait. A practical approach to enterprise negotiation that protects price and still gets deals signed.</span></p>
+      <h2 style="margin: 0px; font-size: clamp(22px, 2.2vw, 26px); line-height: 1.15; letter-spacing: -0.015em;"><span class="sc-interp">Never give a discount. Trade it.</span></h2>
+      <p style="margin: 0px; font-size: 15px; line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;"><span class="sc-interp">End-of-quarter discounting teaches buyers to wait. A practical approach to enterprise negotiation that protects price and still gets deals signed.</span></p>
+      <div style="margin-top: auto; padding-top: 14px; border-top: 2px solid var(--color-surface); display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 14px;">
+        <span style="color: color-mix(in srgb,var(--color-text) 70%,transparent);"><span class="sc-interp">5 October 2026</span></span>
+        <span style="display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--color-accent-2-700); white-space: nowrap;"><span class="sc-interp">6 min read</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
       </div>
-      <span style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: var(--color-accent-2-700); white-space: nowrap;"><span class="sc-interp">6 min read</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
     </a>
   
-    <a href="/insights/forecast-evidence" class="scp3" style="display: flex; flex-wrap: wrap; gap: 12px 32px; align-items: baseline; padding: 32px 0px; border-bottom: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
-      <div style="flex: 0 0 160px; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px;">
-        <span style="width: 100%; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-700);"><span class="sc-interp">Forecasting</span></span>
-        <span><span class="sc-interp">5 October 2026</span></span>
+    <a href="/insights/forecast-evidence" class="scp3" style="display: flex; flex-direction: column; gap: 16px; padding: 24px; background: rgb(255, 255, 255); border: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <span aria-hidden="true" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; background: var(--color-text); color: var(--color-bg); border-bottom: 4px solid var(--color-accent);"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18M4 16l5-5 4 3 7-8M15 6h5v5"></path></svg></span>
+        <span style="font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-700);"><span class="sc-interp">Forecasting</span></span>
       </div>
-      <div style="flex: 1 1 320px; min-width: 0px;">
-        <h2 style="margin: 0px 0px 10px; font-size: clamp(24px, 2.8vw, 36px); line-height: 1.1; letter-spacing: -0.02em;"><span class="sc-interp">A forecast is evidence, not optimism</span></h2>
-        <p style="margin: 0px; font-size: 17px; line-height: 1.6; max-width: 62ch;"><span class="sc-interp">Why most early-stage forecasts miss, and how exit criteria, deal reviews and a few honest questions make the number something you can trust.</span></p>
+      <h2 style="margin: 0px; font-size: clamp(22px, 2.2vw, 26px); line-height: 1.15; letter-spacing: -0.015em;"><span class="sc-interp">A forecast is evidence, not optimism</span></h2>
+      <p style="margin: 0px; font-size: 15px; line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;"><span class="sc-interp">Why most early-stage forecasts miss, and how exit criteria, deal reviews and a few honest questions make the number something you can trust.</span></p>
+      <div style="margin-top: auto; padding-top: 14px; border-top: 2px solid var(--color-surface); display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 14px;">
+        <span style="color: color-mix(in srgb,var(--color-text) 70%,transparent);"><span class="sc-interp">5 October 2026</span></span>
+        <span style="display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--color-accent-2-700); white-space: nowrap;"><span class="sc-interp">6 min read</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
       </div>
-      <span style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: var(--color-accent-2-700); white-space: nowrap;"><span class="sc-interp">6 min read</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
     </a>
   
-    <a href="/insights/pick-one-segment" class="scp3" style="display: flex; flex-wrap: wrap; gap: 12px 32px; align-items: baseline; padding: 32px 0px; border-bottom: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
-      <div style="flex: 0 0 160px; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px;">
-        <span style="width: 100%; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-700);"><span class="sc-interp">Strategy</span></span>
-        <span><span class="sc-interp">5 October 2026</span></span>
+    <a href="/insights/pick-one-segment" class="scp3" style="display: flex; flex-direction: column; gap: 16px; padding: 24px; background: rgb(255, 255, 255); border: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <span aria-hidden="true" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; background: var(--color-text); color: var(--color-bg); border-bottom: 4px solid var(--color-accent);"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0M7.5 12a4.5 4.5 0 1 0 9 0a4.5 4.5 0 1 0 -9 0M12 12h.01"></path></svg></span>
+        <span style="font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-700);"><span class="sc-interp">Strategy</span></span>
       </div>
-      <div style="flex: 1 1 320px; min-width: 0px;">
-        <h2 style="margin: 0px 0px 10px; font-size: clamp(24px, 2.8vw, 36px); line-height: 1.1; letter-spacing: -0.02em;"><span class="sc-interp">Pick one segment and win it first</span></h2>
-        <p style="margin: 0px; font-size: 17px; line-height: 1.6; max-width: 62ch;"><span class="sc-interp">Early sales teams spread across too many markets. How to choose a first segment, test it and know when to expand.</span></p>
+      <h2 style="margin: 0px; font-size: clamp(22px, 2.2vw, 26px); line-height: 1.15; letter-spacing: -0.015em;"><span class="sc-interp">Pick one segment and win it first</span></h2>
+      <p style="margin: 0px; font-size: 15px; line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;"><span class="sc-interp">Early sales teams spread across too many markets. How to choose a first segment, test it and know when to expand.</span></p>
+      <div style="margin-top: auto; padding-top: 14px; border-top: 2px solid var(--color-surface); display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 14px;">
+        <span style="color: color-mix(in srgb,var(--color-text) 70%,transparent);"><span class="sc-interp">5 October 2026</span></span>
+        <span style="display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--color-accent-2-700); white-space: nowrap;"><span class="sc-interp">5 min read</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
       </div>
-      <span style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: var(--color-accent-2-700); white-space: nowrap;"><span class="sc-interp">5 min read</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
     </a>
   
-    <a href="/insights/pipeline-coverage" class="scp3" style="display: flex; flex-wrap: wrap; gap: 12px 32px; align-items: baseline; padding: 32px 0px; border-bottom: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
-      <div style="flex: 0 0 160px; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px;">
-        <span style="width: 100%; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-700);"><span class="sc-interp">Pipeline</span></span>
-        <span><span class="sc-interp">5 October 2026</span></span>
+    <a href="/insights/pipeline-coverage" class="scp3" style="display: flex; flex-direction: column; gap: 16px; padding: 24px; background: rgb(255, 255, 255); border: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <span aria-hidden="true" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; background: var(--color-text); color: var(--color-bg); border-bottom: 4px solid var(--color-accent);"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18l-7 8.5V19l-4 2v-8.5z"></path></svg></span>
+        <span style="font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-700);"><span class="sc-interp">Pipeline</span></span>
       </div>
-      <div style="flex: 1 1 320px; min-width: 0px;">
-        <h2 style="margin: 0px 0px 10px; font-size: clamp(24px, 2.8vw, 36px); line-height: 1.1; letter-spacing: -0.02em;"><span class="sc-interp">How much pipeline do you actually need?</span></h2>
-        <p style="margin: 0px; font-size: 17px; line-height: 1.6; max-width: 62ch;"><span class="sc-interp">A simple way to work out pipeline coverage from your own numbers, and what to do when you are short.</span></p>
+      <h2 style="margin: 0px; font-size: clamp(22px, 2.2vw, 26px); line-height: 1.15; letter-spacing: -0.015em;"><span class="sc-interp">How much pipeline do you actually need?</span></h2>
+      <p style="margin: 0px; font-size: 15px; line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;"><span class="sc-interp">A simple way to work out pipeline coverage from your own numbers, and what to do when you are short.</span></p>
+      <div style="margin-top: auto; padding-top: 14px; border-top: 2px solid var(--color-surface); display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 14px;">
+        <span style="color: color-mix(in srgb,var(--color-text) 70%,transparent);"><span class="sc-interp">5 October 2026</span></span>
+        <span style="display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--color-accent-2-700); white-space: nowrap;"><span class="sc-interp">5 min read</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
       </div>
-      <span style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: var(--color-accent-2-700); white-space: nowrap;"><span class="sc-interp">5 min read</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
     </a>
   
-    <a href="/insights/working-with-procurement" class="scp3" style="display: flex; flex-wrap: wrap; gap: 12px 32px; align-items: baseline; padding: 32px 0px; border-bottom: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
-      <div style="flex: 0 0 160px; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px;">
-        <span style="width: 100%; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-700);"><span class="sc-interp">Negotiation</span></span>
-        <span><span class="sc-interp">5 October 2026</span></span>
+    <a href="/insights/working-with-procurement" class="scp3" style="display: flex; flex-direction: column; gap: 16px; padding: 24px; background: rgb(255, 255, 255); border: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <span aria-hidden="true" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; background: var(--color-text); color: var(--color-bg); border-bottom: 4px solid var(--color-accent);"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h15M15 4l4 4-4 4M20 16H5M9 12l-4 4 4 4"></path></svg></span>
+        <span style="font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-700);"><span class="sc-interp">Negotiation</span></span>
       </div>
-      <div style="flex: 1 1 320px; min-width: 0px;">
-        <h2 style="margin: 0px 0px 10px; font-size: clamp(24px, 2.8vw, 36px); line-height: 1.1; letter-spacing: -0.02em;"><span class="sc-interp">Working with procurement, not around it</span></h2>
-        <p style="margin: 0px; font-size: 17px; line-height: 1.6; max-width: 62ch;"><span class="sc-interp">Procurement is part of every enterprise deal. How to bring them in early, understand what they need and keep the deal moving.</span></p>
+      <h2 style="margin: 0px; font-size: clamp(22px, 2.2vw, 26px); line-height: 1.15; letter-spacing: -0.015em;"><span class="sc-interp">Working with procurement, not around it</span></h2>
+      <p style="margin: 0px; font-size: 15px; line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;"><span class="sc-interp">Procurement is part of every enterprise deal. How to bring them in early, understand what they need and keep the deal moving.</span></p>
+      <div style="margin-top: auto; padding-top: 14px; border-top: 2px solid var(--color-surface); display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 14px;">
+        <span style="color: color-mix(in srgb,var(--color-text) 70%,transparent);"><span class="sc-interp">5 October 2026</span></span>
+        <span style="display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--color-accent-2-700); white-space: nowrap;"><span class="sc-interp">5 min read</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
       </div>
-      <span style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: var(--color-accent-2-700); white-space: nowrap;"><span class="sc-interp">5 min read</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
     </a>
   
-    <a href="/insights/discovery-call" class="scp3" style="display: flex; flex-wrap: wrap; gap: 12px 32px; align-items: baseline; padding: 32px 0px; border-bottom: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
-      <div style="flex: 0 0 160px; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px;">
-        <span style="width: 100%; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-700);"><span class="sc-interp">Methodology</span></span>
-        <span><span class="sc-interp">5 October 2026</span></span>
+    <a href="/insights/discovery-call" class="scp3" style="display: flex; flex-direction: column; gap: 16px; padding: 24px; background: rgb(255, 255, 255); border: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <span aria-hidden="true" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; background: var(--color-text); color: var(--color-bg); border-bottom: 4px solid var(--color-accent);"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 6h10M10 12h10M10 18h10M4 6l1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17"></path></svg></span>
+        <span style="font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-700);"><span class="sc-interp">Methodology</span></span>
       </div>
-      <div style="flex: 1 1 320px; min-width: 0px;">
-        <h2 style="margin: 0px 0px 10px; font-size: clamp(24px, 2.8vw, 36px); line-height: 1.1; letter-spacing: -0.02em;"><span class="sc-interp">Running a discovery call that earns the second meeting</span></h2>
-        <p style="margin: 0px; font-size: 17px; line-height: 1.6; max-width: 62ch;"><span class="sc-interp">A practical structure for first calls with enterprise buyers, the questions worth asking and how to end with a clear next step.</span></p>
+      <h2 style="margin: 0px; font-size: clamp(22px, 2.2vw, 26px); line-height: 1.15; letter-spacing: -0.015em;"><span class="sc-interp">Running a discovery call that earns the second meeting</span></h2>
+      <p style="margin: 0px; font-size: 15px; line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;"><span class="sc-interp">A practical structure for first calls with enterprise buyers, the questions worth asking and how to end with a clear next step.</span></p>
+      <div style="margin-top: auto; padding-top: 14px; border-top: 2px solid var(--color-surface); display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 14px;">
+        <span style="color: color-mix(in srgb,var(--color-text) 70%,transparent);"><span class="sc-interp">5 October 2026</span></span>
+        <span style="display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--color-accent-2-700); white-space: nowrap;"><span class="sc-interp">5 min read</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
       </div>
-      <span style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: var(--color-accent-2-700); white-space: nowrap;"><span class="sc-interp">5 min read</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
     </a>
   
-    <a href="/insights/weekly-forecast-call" class="scp3" style="display: flex; flex-wrap: wrap; gap: 12px 32px; align-items: baseline; padding: 32px 0px; border-bottom: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
-      <div style="flex: 0 0 160px; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px;">
-        <span style="width: 100%; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-700);"><span class="sc-interp">Forecasting</span></span>
-        <span><span class="sc-interp">5 October 2026</span></span>
+    <a href="/insights/weekly-forecast-call" class="scp3" style="display: flex; flex-direction: column; gap: 16px; padding: 24px; background: rgb(255, 255, 255); border: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <span aria-hidden="true" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; background: var(--color-text); color: var(--color-bg); border-bottom: 4px solid var(--color-accent);"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18M4 16l5-5 4 3 7-8M15 6h5v5"></path></svg></span>
+        <span style="font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-700);"><span class="sc-interp">Forecasting</span></span>
       </div>
-      <div style="flex: 1 1 320px; min-width: 0px;">
-        <h2 style="margin: 0px 0px 10px; font-size: clamp(24px, 2.8vw, 36px); line-height: 1.1; letter-spacing: -0.02em;"><span class="sc-interp">Running a weekly forecast call in 30 minutes</span></h2>
-        <p style="margin: 0px; font-size: 17px; line-height: 1.6; max-width: 62ch;"><span class="sc-interp">A simple agenda for a weekly forecast meeting that keeps the number honest without taking over the team's week.</span></p>
+      <h2 style="margin: 0px; font-size: clamp(22px, 2.2vw, 26px); line-height: 1.15; letter-spacing: -0.015em;"><span class="sc-interp">Running a weekly forecast call in 30 minutes</span></h2>
+      <p style="margin: 0px; font-size: 15px; line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;"><span class="sc-interp">A simple agenda for a weekly forecast meeting that keeps the number honest without taking over the team's week.</span></p>
+      <div style="margin-top: auto; padding-top: 14px; border-top: 2px solid var(--color-surface); display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 14px;">
+        <span style="color: color-mix(in srgb,var(--color-text) 70%,transparent);"><span class="sc-interp">5 October 2026</span></span>
+        <span style="display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--color-accent-2-700); white-space: nowrap;"><span class="sc-interp">4 min read</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
       </div>
-      <span style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: var(--color-accent-2-700); white-space: nowrap;"><span class="sc-interp">4 min read</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
     </a>
   
-    <a href="/insights/cold-email-senior-buyers" class="scp3" style="display: flex; flex-wrap: wrap; gap: 12px 32px; align-items: baseline; padding: 32px 0px; border-bottom: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
-      <div style="flex: 0 0 160px; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px;">
-        <span style="width: 100%; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-700);"><span class="sc-interp">Outbound</span></span>
-        <span><span class="sc-interp">5 October 2026</span></span>
+    <a href="/insights/cold-email-senior-buyers" class="scp3" style="display: flex; flex-direction: column; gap: 16px; padding: 24px; background: rgb(255, 255, 255); border: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <span aria-hidden="true" style="flex: 0 0 52px; height: 52px; display: flex; align-items: center; justify-content: center; background: var(--color-text); color: var(--color-bg); border-bottom: 4px solid var(--color-accent);"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 3L10 14M21 3l-6.5 18-4.5-7-7-4.5z"></path></svg></span>
+        <span style="font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; color: var(--color-accent-700);"><span class="sc-interp">Outbound</span></span>
       </div>
-      <div style="flex: 1 1 320px; min-width: 0px;">
-        <h2 style="margin: 0px 0px 10px; font-size: clamp(24px, 2.8vw, 36px); line-height: 1.1; letter-spacing: -0.02em;"><span class="sc-interp">Writing a cold email a senior buyer will read</span></h2>
-        <p style="margin: 0px; font-size: 17px; line-height: 1.6; max-width: 62ch;"><span class="sc-interp">A practical guide to short, specific outbound emails for enterprise buyers, with a simple structure and what to leave out.</span></p>
+      <h2 style="margin: 0px; font-size: clamp(22px, 2.2vw, 26px); line-height: 1.15; letter-spacing: -0.015em;"><span class="sc-interp">Writing a cold email a senior buyer will read</span></h2>
+      <p style="margin: 0px; font-size: 15px; line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;"><span class="sc-interp">A practical guide to short, specific outbound emails for enterprise buyers, with a simple structure and what to leave out.</span></p>
+      <div style="margin-top: auto; padding-top: 14px; border-top: 2px solid var(--color-surface); display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 14px;">
+        <span style="color: color-mix(in srgb,var(--color-text) 70%,transparent);"><span class="sc-interp">5 October 2026</span></span>
+        <span style="display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--color-accent-2-700); white-space: nowrap;"><span class="sc-interp">4 min read</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
       </div>
-      <span style="display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: var(--color-accent-2-700); white-space: nowrap;"><span class="sc-interp">4 min read</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
     </a>
   
+  </div>
   </section></main><footer style="background: var(--color-text); color: var(--color-bg); border-top: 4px solid var(--color-accent);">
   <div style="max-width: 1200px; margin: 0px auto; padding: 24px clamp(20px, 5vw, 72px); display: flex; flex-wrap: wrap; gap: 12px 32px; align-items: center; font-size: 14px;">
     <span style="font-family: var(--font-heading); font-weight: var(--heading-weight); font-size: 20px; letter-spacing: -0.02em; margin-right: auto;">coltasa<span style="color: var(--color-accent-2);">.</span></span>
     <span>B2B sales strategy &amp; execution</span>
-    <a href="mailto:hello@coltasa.com" class="scp4" style="color: var(--color-accent-400);">hello@coltasa.com</a>
-    <a href="/partners" class="scp4" style="color: var(--color-accent-400);">Partners</a>
+    <a href="mailto:hello@coltasa.com" class="scp5" style="color: var(--color-accent-400);">hello@coltasa.com</a>
+    <a href="/partners" class="scp5" style="color: var(--color-accent-400);">Partners</a>
     <span>© 2026 Coltasa</span>
   </div></footer></div></div></div>
 <!--prerender:end-->
@@ -500,6 +519,15 @@ class Component extends DCLogic {
       dek: 'A practical guide to short, specific outbound emails for enterprise buyers, with a simple structure and what to leave out.' },
   ];
   CATS = ['All', 'Strategy', 'Pipeline', 'Negotiation', 'Methodology', 'Forecasting', 'Outbound'];
+  // Line icon (24px grid) shown on each post tile, by category
+  ICONS = {
+    Strategy: 'M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0M7.5 12a4.5 4.5 0 1 0 9 0a4.5 4.5 0 1 0 -9 0M12 12h.01',
+    Pipeline: 'M3 4h18l-7 8.5V19l-4 2v-8.5z',
+    Negotiation: 'M4 8h15M15 4l4 4-4 4M20 16H5M9 12l-4 4 4 4',
+    Methodology: 'M10 6h10M10 12h10M10 18h10M4 6l1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17',
+    Forecasting: 'M3 20h18M4 16l5-5 4 3 7-8M15 6h5v5',
+    Outbound: 'M21 3L10 14M21 3l-6.5 18-4.5-7-7-4.5z',
+  };
   state = { view: 'index', cat: 'All', q: '', sort: 'new' };
   componentDidMount() {
     this.sync = () => {
@@ -551,7 +579,7 @@ class Component extends DCLogic {
   renderVals() {
     const { view, cat } = this.state;
     const post = this.POSTS.find(p => p.id === view);
-    const link = p => ({ ...p, href: '/insights/' + p.id, open: undefined });
+    const link = p => ({ ...p, href: '/insights/' + p.id, open: undefined, icon: this.ICONS[p.cat] || this.ICONS.Methodology });
     const { q, sort } = this.state;
     const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
     const when = s => { const [d, m, y] = s.split(' '); return Number(y) * 10000 + (MONTHS.indexOf(m) + 1) * 100 + Number(d); };
