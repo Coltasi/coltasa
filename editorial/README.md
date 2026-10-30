@@ -10,13 +10,14 @@ Files:
 - `check.py`: renders every page in headless Chromium and fails on anything broken.
 - `drafts/<post-id>.json`: the source for each post. Keep them; they are the record of what was published.
 - `faq/<post-id>.json`: FAQ entries per post, used for FAQ structured data.
+- `images.json`: the header photo for each post (source URL, alt text, photographer credit). `python3 editorial/publish.py images` re-applies it to every post.
 
 ## Weekly procedure
 
 1. `git pull` on `main`.
 2. Open `topics.md`. Take the first unchecked topic. Skip it (and note why on the line) only if it now overlaps an existing post in `deploy/insights.html` POSTS.
 3. Research for 10 minutes with web search: what people search for on this topic, what the top results and AI answers say, and what they miss. Use this to pick the search query the post targets and the angle that adds something.
-4. Write the post as `editorial/drafts/<post-id>.json` (format in `publish.py`). Follow the voice, structure and checklist below.
+4. Write the post as `editorial/drafts/<post-id>.json` (format in `publish.py`). Follow the voice, structure and checklist below. Add an `image`: search the Pexafy connector for a landscape photo that fits the post's idea (no named people, no AI-generated images, prefer Pexels or Unsplash, never Pixabay because it blocks hotlinking), and fill `src` (the photo URL with `?auto=compress&cs=tinysrgb&w=1280` for Pexels or `?w=1280&q=80&auto=format` for Unsplash), `alt` (what the photo shows), `credit`, `source` and `url` (the photo's page).
 5. `python3 editorial/publish.py add editorial/drafts/<post-id>.json`
 6. Link the new post from one or two older related posts: in each, wrap an existing phrase (or extend one sentence minimally) with `<a href="/insights/<new-id>">`. Edit only inside that post's article body.
 7. `PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers python3 editorial/prerender.py`, then `PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers python3 editorial/check.py` (setup steps are at the top of `check.py`). Fix anything that fails. The prerender writes a static copy of every page so AI crawlers, which do not run JavaScript, can read the post. Never skip it: a post without it is invisible to ChatGPT, Claude and Perplexity.
@@ -53,7 +54,7 @@ HTML in `body_html` uses exactly these patterns (copied from existing posts):
 - Paragraph: `<p>...</p>`
 - Heading: `<h2 style="margin:18px 0 0;font-size:30px;line-height:1.15;letter-spacing:-0.02em">...</h2>`
 - List: `<ul style="padding-left:22px"><li>...</li></ul>` (or `<ol style="padding-left:22px">`)
-- `<strong>` for a bold lead-in on a list item is fine. No other tags or inline styles. No images.
+- `<strong>` for a bold lead-in on a list item is fine. No other tags or inline styles. No images inside `body_html`: the header photo goes in `image`.
 
 ## SEO and GEO checklist
 

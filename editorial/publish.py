@@ -15,8 +15,12 @@ A draft JSON looks like:
   "mins": "6 min read",
   "date": "27 October 2026",            # D Month YYYY
   "body_html": "<p>...</p><h2 ...>...</h2>...",   # article body, no FAQ
-  "faq": [{"q": "Question?", "a": "Plain-text answer."}]
+  "faq": [{"q": "Question?", "a": "Plain-text answer."}],
+  "image": {"src": "https://images.pexels.com/...", "alt": "What the photo shows",
+            "credit": "Photographer", "source": "Pexels", "url": "https://www.pexels.com/photo/..."}
 }
+The optional "image" is the post's header photo (also recorded in editorial/images.json).
+  python3 editorial/publish.py images   # apply editorial/images.json to every post
 """
 import html, json, os, re, sys
 
@@ -296,6 +300,38 @@ def refresh(posts):
     write(os.path.join(DEPLOY, "llms-full.txt"), "\n".join(full) + "\n")
 
 
+IMAGES = os.path.join(ROOT, "editorial", "images.json")
+FIG_RE = re.compile(r'\n    <figure data-post-image[^\n]*?</figure>')
+
+
+def figure(img):
+    a = lambda v: html.escape(v, quote=True)
+    return ('<figure data-post-image style="margin:0 0 8px">'
+            f'<img src="{a(img['src'])}" alt="{a(img['alt'])}" width="1280" height="853" loading="eager" decoding="async" '
+            'style="display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:4px" />'
+            '<figcaption style="margin-top:8px;font-size:13px;color:var(--color-text-muted, inherit);opacity:0.75">'
+            f'Photo: <a href="{a(img['url'])}" target="_blank" rel="noopener">{a(img['credit'])}</a> on {a(img['source'])}</figcaption></figure>')
+
+
+def set_image(pid, img):
+    """Insert or replace the header photo at the top of a post's article body."""
+    path = os.path.join(POSTS_DIR, pid + ".html")
+    s = read(path)
+    key = next(p["key"] for p in parse_posts(s) if p["id"] == pid)
+    m = re.search(r'(  <sc-if value="\{\{ %s \}\}"[^\n]*\n    <div style="display:grid;gap:22px">)(.*?)\n  </sc-if>' % key, s, flags=re.S)
+    assert m, f"no article body block for {pid} ({key})"
+    body = FIG_RE.sub("", m.group(2))
+    s = s[:m.start()] + m.group(1) + "\n    " + figure(img) + body + "\n  </sc-if>" + s[m.end():]
+    write(path, s)
+
+
+def apply_images():
+    imgs = json.loads(read(IMAGES))
+    for pid, img in imgs.items():
+        set_image(pid, img)
+    print(f"Applied {len(imgs)} post images")
+
+
 def add(spec_path):
     d = json.loads(read(spec_path))
     for k in ("id", "cat", "title", "seo", "dek", "mins", "date", "body_html"):
@@ -347,6 +383,11 @@ def add(spec_path):
         s = s.replace("  POSTS = [\n", "  POSTS = [\n" + entry_js(d), 1)
         write(path, s)
     refresh(parse_posts(read(INDEX)))
+    if d.get("image"):
+        imgs = json.loads(read(IMAGES)) if os.path.exists(IMAGES) else {}
+        imgs[d["id"]] = d["image"]
+        write(IMAGES, json.dumps(imgs, indent=2, ensure_ascii=False) + "\n")
+        set_image(d["id"], d["image"])
     print(f"Added /insights/{d['id']} as {key}")
 
 
@@ -354,6 +395,8 @@ if __name__ == "__main__":
     if len(sys.argv) >= 2 and sys.argv[1] == "refresh":
         refresh(parse_posts(read(INDEX)))
         print("Refreshed static SEO for all posts")
+    elif len(sys.argv) >= 2 and sys.argv[1] == "images":
+        apply_images()
     elif len(sys.argv) == 3 and sys.argv[1] == "add":
         add(sys.argv[2])
     else:
