@@ -5,7 +5,7 @@ A scheduled Claude task follows it once a week. Anyone (or any Claude session) c
 
 Files:
 - `topics.md`: the topic backlog. Take the first unchecked topic, tick it when published.
-- `publish.py`: adds a post to the site (post page, blog list in every file, sitemap, llms.txt, structured data).
+- `publish.py`: adds a post to the site (post page, blog list in every file, sitemap, llms.txt, structured data, and a plain Markdown copy at `deploy/insights/<post-id>.md`).
 - `prerender.py`: renders the home page, Insights list and every post into static HTML for crawlers. Run after any page change.
 - `check.py`: renders every page in headless Chromium and fails on anything broken.
 - `drafts/<post-id>.json`: the source for each post. Keep them; they are the record of what was published.

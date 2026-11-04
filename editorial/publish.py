@@ -116,11 +116,16 @@ def head_block(title, desc, url, ld, kind, post=None):
                    f'<meta property="article:modified_time" content="{iso(post.get("modified", post["date"]))}">\n'
                    f'<meta property="article:author" content="https://www.linkedin.com/in/colvcon">\n'
                    f'<meta property="article:section" content="{e(post["cat"])}">\n')
+    if post:  # plain Markdown copy of the article, for answer engines
+        alt_md = f'<link rel="alternate" type="text/markdown" title="Markdown version" href="{SITE}/insights/{post["id"]}.md">\n'
+    else:
+        alt_md = f'<link rel="alternate" type="text/markdown" title="llms.txt" href="{SITE}/llms.txt">\n'
     return (f"{START}\n<title>{e(title)}</title>\n"
             f'<meta name="description" content="{e(desc)}">\n'
             f'<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">\n'
             f'<link rel="canonical" href="{url}">\n'
             f'<link rel="alternate" type="application/rss+xml" title="Coltasa Insights" href="{SITE}/feed.xml">\n'
+            f'{alt_md}'
             f'<meta property="og:type" content="{kind}">\n'
             f'<meta property="og:site_name" content="Coltasa">\n'
             f'<meta property="og:locale" content="en_GB">\n'
@@ -210,6 +215,15 @@ def article_text(path, key):
     return re.sub(r"\n{3,}", "\n\n", s).strip()
 
 
+def post_markdown(p):
+    """One article as plain Markdown. Used for insights/<id>.md and llms-full.txt."""
+    body = article_text(os.path.join(POSTS_DIR, p["id"] + ".html"), p["key"])
+    return "\n".join([f"# {p['title']}", "",
+                      f"URL: {SITE}/insights/{p['id']}  ", "Author: Colin Constantine  ",
+                      f"Published: {iso(p['date'])}  ", f"Category: {p['cat']}", "",
+                      f"> {p['dek']}", "", body, ""])
+
+
 def rfc822(d):
     from email.utils import format_datetime
     from datetime import datetime, timezone
@@ -255,6 +269,7 @@ def refresh(posts):
     write(home, set_head(read(home), head_block(HOME_TITLE, HOME_DESC, f"{SITE}/", home_ld(), "website")))
     # Sitemap
     urls = [(f"{SITE}/", "2026-10-27"), (f"{SITE}/sales-engine-score", "2026-10-27"), (f"{SITE}/privacy", "2026-10-26"),
+            (f"{SITE}/about", "2026-11-04"),
             (f"{SITE}/insights", iso(posts[0]["date"]))]
     urls += [(f"{SITE}/insights/{p['id']}", iso(p.get("modified", p["date"]))) for p in posts]
     imgs = load_images()
@@ -288,8 +303,10 @@ def refresh(posts):
              "outbound, negotiation and forecasting.", "",
              f"- [Home]({SITE}/): services, background and how to work with Colin",
              f"- [Sales Engine Score]({SITE}/sales-engine-score): a 5-minute assessment that scores a B2B sales engine out of 100 across pipeline, process, people, tools and metrics",
-             f"- [Insights]({SITE}/insights): all articles", "", "## Insights", ""]
-    lines += [f"- [{p['title']}]({SITE}/insights/{p['id']}): {p['dek']}" for p in posts]
+             f"- [About]({SITE}/about): Colin Constantine's background, methods and deal experience",
+             f"- [Insights]({SITE}/insights): all articles",
+             f"- [Privacy]({SITE}/privacy): how personal data is collected, used and deleted", "", "## Insights", ""]
+    lines += [f"- [{p['title']}]({SITE}/insights/{p['id']}): {p['dek']} ([Markdown]({SITE}/insights/{p['id']}.md))" for p in posts]
     lines += ["", "## Optional", "",
               f"- [Full text of every article]({SITE}/llms-full.txt): all Insights posts in plain Markdown",
               f"- [RSS feed]({SITE}/feed.xml)"]
@@ -302,11 +319,9 @@ def refresh(posts):
             "Services: " + ", ".join(n for n, _ in SERVICES) + ".", "",
             f"Website: {SITE}/ · Sales Engine Score: {SITE}/sales-engine-score · Contact: hello@coltasa.com", ""]
     for p in posts:
-        body = article_text(os.path.join(POSTS_DIR, p["id"] + ".html"), p["key"])
-        full += ["---", "", f"# {p['title']}", "",
-                 f"URL: {SITE}/insights/{p['id']}  ", f"Author: Colin Constantine  ",
-                 f"Published: {iso(p['date'])}  ", f"Category: {p['cat']}", "",
-                 f"> {p['dek']}", "", body, ""]
+        md = post_markdown(p)
+        write(os.path.join(POSTS_DIR, p["id"] + ".md"), md)  # served as /insights/<id>.md
+        full += ["---", "", md]
     write(os.path.join(DEPLOY, "llms-full.txt"), "\n".join(full) + "\n")
 
 
