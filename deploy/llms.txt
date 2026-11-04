@@ -6,6 +6,7 @@
 - [Sales Engine Score](https://www.coltasa.com/sales-engine-score): a 5-minute assessment that scores a B2B sales engine out of 100 across pipeline, process, people, tools and metrics
 - [About](https://www.coltasa.com/about): Colin Constantine's background, methods and deal experience
 - [Insights](https://www.coltasa.com/insights): all articles
+- [Partners](https://www.coltasa.com/partners): for agencies, fractional sales leaders and RevOps consultants who want to refer a client or partner with Coltasa
 - [Privacy](https://www.coltasa.com/privacy): how personal data is collected, used and deleted
 
 ## Insights

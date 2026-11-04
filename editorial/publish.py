@@ -269,7 +269,7 @@ def refresh(posts):
     write(home, set_head(read(home), head_block(HOME_TITLE, HOME_DESC, f"{SITE}/", home_ld(), "website")))
     # Sitemap
     urls = [(f"{SITE}/", "2026-10-27"), (f"{SITE}/sales-engine-score", "2026-10-27"), (f"{SITE}/privacy", "2026-10-26"),
-            (f"{SITE}/about", "2026-11-04"),
+            (f"{SITE}/about", "2026-11-04"), (f"{SITE}/partners", "2026-11-04"),
             (f"{SITE}/insights", iso(posts[0]["date"]))]
     urls += [(f"{SITE}/insights/{p['id']}", iso(p.get("modified", p["date"]))) for p in posts]
     imgs = load_images()
@@ -305,6 +305,7 @@ def refresh(posts):
              f"- [Sales Engine Score]({SITE}/sales-engine-score): a 5-minute assessment that scores a B2B sales engine out of 100 across pipeline, process, people, tools and metrics",
              f"- [About]({SITE}/about): Colin Constantine's background, methods and deal experience",
              f"- [Insights]({SITE}/insights): all articles",
+             f"- [Partners]({SITE}/partners): for agencies, fractional sales leaders and RevOps consultants who want to refer a client or partner with Coltasa",
              f"- [Privacy]({SITE}/privacy): how personal data is collected, used and deleted", "", "## Insights", ""]
     lines += [f"- [{p['title']}]({SITE}/insights/{p['id']}): {p['dek']} ([Markdown]({SITE}/insights/{p['id']}.md))" for p in posts]
     lines += ["", "## Optional", "",
