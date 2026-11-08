@@ -11,6 +11,7 @@
 
 ## Insights
 
+- ["It is too expensive" is a question, not an answer](https://www.coltasa.com/insights/price-objection): How to handle price objections in enterprise sales: find what the buyer is comparing you with, rebuild the value case, then trade terms instead of discounting. ([Markdown](https://www.coltasa.com/insights/price-objection.md))
 - [One contact is not a deal: how to multithread an enterprise account](https://www.coltasa.com/insights/sales-multithreading): Multithreading in sales means building relationships with several people in a buying group. How to map the group, earn introductions and cover every role. ([Markdown](https://www.coltasa.com/insights/sales-multithreading.md))
 - [No champion, no deal: how to find one and make them count](https://www.coltasa.com/insights/enterprise-sales-champion): How to find and build a champion in enterprise sales: what a real champion is, five tests that separate them from friendly coaches, and how to equip them. ([Markdown](https://www.coltasa.com/insights/enterprise-sales-champion.md))
 - [When to stop selling and hand it to your first rep](https://www.coltasa.com/insights/founder-led-sales-handoff): How to know your B2B startup is ready to hand off founder-led sales, who to hire first, and a three-stage handoff that keeps deals moving. ([Markdown](https://www.coltasa.com/insights/founder-led-sales-handoff.md))

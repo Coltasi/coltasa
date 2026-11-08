@@ -48,7 +48,7 @@ Procurement teams tend to ask for the same documents. Having them ready can save
 
 ## Make the value easy to defend
 
-Procurement often has to justify the spend internally. Share the business case your champion agreed: the problem, the cost of leaving it unsolved and the expected return. When they can explain why the purchase is worth it, they are less likely to focus on price alone.
+Procurement often has to justify the spend internally. Share the business case your champion agreed: the problem, the cost of leaving it unsolved and the expected return. When they can explain why the purchase is worth it, they are less likely to focus on price alone, and [price objections](https://www.coltasa.com/insights/price-objection) become easier to answer.
 
 ## Negotiate with a plan
 

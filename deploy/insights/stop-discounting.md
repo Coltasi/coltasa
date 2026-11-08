@@ -18,7 +18,7 @@ Discounts given away for nothing are the most expensive habit in B2B sales. They
 
 Most buyers ask for a discount because it is their job to ask, not because the deal depends on it. Procurement teams are often measured on savings. Asking costs them nothing. If the answer is an instant yes, they learn the first number was padded, and they push for more.
 
-So the first rule is not to treat the request as a crisis. It is a normal part of the process, and you should plan for it before it arrives.
+So the first rule is not to treat the request as a crisis, and to [find out what "too expensive" really means](https://www.coltasa.com/insights/price-objection) before you respond. It is a normal part of the process, and you should plan for it before it arrives.
 
 ## Prepare before you negotiate
 

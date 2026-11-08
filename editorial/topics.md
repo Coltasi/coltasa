@@ -6,7 +6,7 @@ Order already rotates categories. Add new topics anywhere; keep the rotation.
 - [x] Strategy: When to hand off founder-led sales to your first sales hire (founder-led-sales-handoff, 25 October 2026)
 - [x] Methodology: How to find and build a champion in an enterprise deal (enterprise-sales-champion, 27 October 2026)
 - [x] Pipeline: Multithreading: how to reach more than one buyer in an account (sales-multithreading, 3 November 2026)
-- [ ] Negotiation: How to handle "it is too expensive" in enterprise deals
+- [x] Negotiation: How to handle "it is too expensive" in enterprise deals (price-objection, 8 November 2026)
 - [ ] Forecasting: Writing sales stage exit criteria your team will actually use
 - [ ] Outbound: A follow-up cadence for enterprise prospects that does not annoy them
 - [ ] Strategy: How to define an ideal customer profile from your first ten customers

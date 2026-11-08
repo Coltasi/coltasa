@@ -1,4 +1,11 @@
 {
+  "price-objection": {
+    "src": "/assets/insights/price-objection.jpg",
+    "alt": "Two people at a wooden desk passing a document across, with spreadsheets, pens and a calculator on the table",
+    "credit": "RDNE Stock project",
+    "source": "Pexels",
+    "url": "https://www.pexels.com/photo/a-person-passing-a-document-7821676"
+  },
   "sales-multithreading": {
     "src": "/assets/insights/sales-multithreading.jpg",
     "alt": "Five colleagues seen from above working around a meeting table covered in charts, notes and laptops",
