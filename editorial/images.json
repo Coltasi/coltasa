@@ -1,4 +1,11 @@
 {
+  "stage-exit-criteria": {
+    "src": "/assets/insights/stage-exit-criteria.jpg",
+    "alt": "A clipboard holding a handwritten checklist with two items ticked in red, a pen and the corner of a laptop on a white desk",
+    "credit": "RDNE Stock project",
+    "source": "Pexels",
+    "url": "https://www.pexels.com/photo/black-pen-on-white-pad-paper-8580716"
+  },
   "price-objection": {
     "src": "/assets/insights/price-objection.jpg",
     "alt": "Two people at a wooden desk passing a document across, with spreadsheets, pens and a calculator on the table",

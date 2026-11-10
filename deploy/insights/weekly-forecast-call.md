@@ -28,7 +28,7 @@ Ask each seller to update their deals by the end of the previous day. Every deal
 
 ## Focus on what changed
 
-The most useful question in a forecast call is "what changed since last week?" A deal that moves from best case to commit should come with new evidence, such as an agreed contract date or confirmed budget. A deal that slips should come with a reason. Plan for slippage: [Ebsta’s 2024 benchmarks](https://ebsta.com/wp-content/uploads/2024/07/H1-Update-2024-B2B-Sales-Benchmarks.pdf) found that a third or more of deals slipped past their close date each quarter in the first half of that year. Deals that have not changed do not need discussion.
+The most useful question in a forecast call is "what changed since last week?" A deal that moves from best case to commit should come with new evidence that it has met your [stage exit criteria](https://www.coltasa.com/insights/stage-exit-criteria), such as an agreed contract date or confirmed budget. A deal that slips should come with a reason. Plan for slippage: [Ebsta’s 2024 benchmarks](https://ebsta.com/wp-content/uploads/2024/07/H1-Update-2024-B2B-Sales-Benchmarks.pdf) found that a third or more of deals slipped past their close date each quarter in the first half of that year. Deals that have not changed do not need discussion.
 
 ## Ask the same questions every time
 

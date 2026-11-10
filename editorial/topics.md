@@ -7,7 +7,7 @@ Order already rotates categories. Add new topics anywhere; keep the rotation.
 - [x] Methodology: How to find and build a champion in an enterprise deal (enterprise-sales-champion, 27 October 2026)
 - [x] Pipeline: Multithreading: how to reach more than one buyer in an account (sales-multithreading, 3 November 2026)
 - [x] Negotiation: How to handle "it is too expensive" in enterprise deals (price-objection, 8 November 2026)
-- [ ] Forecasting: Writing sales stage exit criteria your team will actually use
+- [x] Forecasting: Writing sales stage exit criteria your team will actually use (stage-exit-criteria, 10 November 2026)
 - [ ] Outbound: A follow-up cadence for enterprise prospects that does not annoy them
 - [ ] Strategy: How to define an ideal customer profile from your first ten customers
 - [ ] Methodology: Building a business case your buyer can take to their CFO

@@ -6,7 +6,16 @@
   <atom:link href="https://www.coltasa.com/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Practical writing on B2B sales strategy, pipeline, outbound, negotiation and forecasting from Colin Constantine.</description>
   <language>en</language>
-  <lastBuildDate>Sun, 08 Nov 2026 09:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 10 Nov 2026 09:00:00 +0000</lastBuildDate>
+  <item>
+    <title>If the buyer has not done it, the deal has not moved</title>
+    <link>https://www.coltasa.com/insights/stage-exit-criteria</link>
+    <guid isPermaLink="true">https://www.coltasa.com/insights/stage-exit-criteria</guid>
+    <pubDate>Tue, 10 Nov 2026 09:00:00 +0000</pubDate>
+    <category>Forecasting</category>
+    <dc:creator>Colin Constantine</dc:creator>
+    <description>How to write sales stage exit criteria your team will use: two or three buyer actions per stage, each with evidence you can check in the CRM, inspected weekly.</description>
+  </item>
   <item>
     <title>&quot;It is too expensive&quot; is a question, not an answer</title>
     <link>https://www.coltasa.com/insights/price-objection</link>

@@ -24,7 +24,7 @@ A good forecast is a judgement built on evidence. It should tell you what will c
 
 ## Define stages by buyer evidence
 
-Rewrite every stage so it can only be passed when the buyer has done something verifiable. For example:
+Rewrite every stage so it can only be passed when the buyer has done something verifiable, using [exit criteria written as buyer actions](https://www.coltasa.com/insights/stage-exit-criteria). For example:
 
 - Qualified: the buyer has confirmed a problem worth solving and who else is involved.
 

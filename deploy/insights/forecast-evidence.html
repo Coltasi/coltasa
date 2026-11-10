@@ -171,7 +171,7 @@ button{font-family:var(--font-body)}
       <li><strong>Nobody challenges the call.</strong> Pipeline reviews become status updates, so weak deals are never questioned until they slip.</li>
     </ul>
     <h2 style="margin:18px 0 0;font-size:30px;line-height:1.15;letter-spacing:-0.02em">Define stages by buyer evidence</h2>
-    <p>Rewrite every stage so it can only be passed when the buyer has done something verifiable. For example:</p>
+    <p>Rewrite every stage so it can only be passed when the buyer has done something verifiable, using <a href="/insights/stage-exit-criteria">exit criteria written as buyer actions</a>. For example:</p>
     <ul style="padding-left:22px">
       <li><strong>Qualified:</strong> the buyer has confirmed a problem worth solving and who else is involved.</li>
       <li><strong>Validated:</strong> the economic buyer has agreed the business case and a budget range.</li>
@@ -311,7 +311,7 @@ button{font-family:var(--font-body)}
       <li><strong>Nobody challenges the call.</strong> Pipeline reviews become status updates, so weak deals are never questioned until they slip.</li>
     </ul>
     <h2 style="margin: 18px 0px 0px; font-size: 30px; line-height: 1.15; letter-spacing: -0.02em;">Define stages by buyer evidence</h2>
-    <p>Rewrite every stage so it can only be passed when the buyer has done something verifiable. For example:</p>
+    <p>Rewrite every stage so it can only be passed when the buyer has done something verifiable, using <a href="/insights/stage-exit-criteria">exit criteria written as buyer actions</a>. For example:</p>
     <ul style="padding-left: 22px;">
       <li><strong>Qualified:</strong> the buyer has confirmed a problem worth solving and who else is involved.</li>
       <li><strong>Validated:</strong> the economic buyer has agreed the business case and a budget range.</li>
@@ -376,6 +376,11 @@ button{font-family:var(--font-body)}
   <div style="margin-top: 56px;">
     <p style="margin: 0px 0px 4px; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700);">Keep reading</p>
     
+      <a href="/insights/stage-exit-criteria" class="scp2" style="display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: baseline; justify-content: space-between; padding: 22px 0px; border-bottom: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
+        <span style="font-family: var(--font-heading); font-weight: var(--heading-weight); font-size: 24px; line-height: 1.2;"><span class="sc-interp">If the buyer has not done it, the deal has not moved</span></span>
+        <span style="font-size: 14px; font-weight: 600; color: var(--color-accent-2-700);"><span class="sc-interp">Forecasting</span> · <span class="sc-interp">6 min read</span></span>
+      </a>
+    
       <a href="/insights/price-objection" class="scp2" style="display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: baseline; justify-content: space-between; padding: 22px 0px; border-bottom: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
         <span style="font-family: var(--font-heading); font-weight: var(--heading-weight); font-size: 24px; line-height: 1.2;"><span class="sc-interp">"It is too expensive" is a question, not an answer</span></span>
         <span style="font-size: 14px; font-weight: 600; color: var(--color-accent-2-700);"><span class="sc-interp">Negotiation</span> · <span class="sc-interp">6 min read</span></span>
@@ -384,11 +389,6 @@ button{font-family:var(--font-body)}
       <a href="/insights/sales-multithreading" class="scp2" style="display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: baseline; justify-content: space-between; padding: 22px 0px; border-bottom: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
         <span style="font-family: var(--font-heading); font-weight: var(--heading-weight); font-size: 24px; line-height: 1.2;"><span class="sc-interp">One contact is not a deal: how to multithread an enterprise account</span></span>
         <span style="font-size: 14px; font-weight: 600; color: var(--color-accent-2-700);"><span class="sc-interp">Pipeline</span> · <span class="sc-interp">6 min read</span></span>
-      </a>
-    
-      <a href="/insights/enterprise-sales-champion" class="scp2" style="display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: baseline; justify-content: space-between; padding: 22px 0px; border-bottom: 2px solid var(--color-divider); text-decoration: none; color: var(--color-text);">
-        <span style="font-family: var(--font-heading); font-weight: var(--heading-weight); font-size: 24px; line-height: 1.2;"><span class="sc-interp">No champion, no deal: how to find one and make them count</span></span>
-        <span style="font-size: 14px; font-weight: 600; color: var(--color-accent-2-700);"><span class="sc-interp">Methodology</span> · <span class="sc-interp">6 min read</span></span>
       </a>
     
   </div></div></main><footer style="background: var(--color-text); color: var(--color-bg); border-top: 4px solid var(--color-accent);">
@@ -403,6 +403,10 @@ button{font-family:var(--font-body)}
 <script type="text/x-dc" data-dc-script>
 class Component extends DCLogic {
   POSTS = [
+    { id: 'stage-exit-criteria', key: 'p17', cat: 'Forecasting', date: '10 November 2026', mins: '6 min read',
+      title: 'If the buyer has not done it, the deal has not moved',
+      seo: 'How to write sales stage exit criteria that work',
+      dek: 'How to write sales stage exit criteria your team will use: two or three buyer actions per stage, each with evidence you can check in the CRM, inspected weekly.' },
     { id: 'price-objection', key: 'p16', cat: 'Negotiation', date: '8 November 2026', mins: '6 min read',
       title: '"It is too expensive" is a question, not an answer',
       seo: 'How to handle price objections in enterprise sales',

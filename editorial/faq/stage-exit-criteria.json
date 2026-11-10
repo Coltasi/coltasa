@@ -1,0 +1,18 @@
+[
+  {
+    "q": "How many exit criteria should each sales stage have?",
+    "a": "Two or three is usually enough. Each criterion should be a buyer action with evidence you can check in the CRM. Long checklists get skimmed and ticked without thought, so a short list that is enforced every week will improve your forecast far more than a comprehensive one that nobody reads or inspects."
+  },
+  {
+    "q": "What is the difference between entry criteria and exit criteria?",
+    "a": "Entry criteria describe what must be true for a deal to enter a stage, and exit criteria describe what must be true for it to leave. In practice they are the same conditions seen from either side, so most teams write only exit criteria. That keeps one definition per stage boundary and avoids two lists drifting apart over time."
+  },
+  {
+    "q": "Should exit criteria be enforced in the CRM?",
+    "a": "Enforce the one or two pieces of evidence that matter most, such as the champion's name or an agreed signature date, by making those fields required when a deal moves stage. Do not lock down everything. Too many required fields push reps to enter placeholder values, which makes the data look complete while making it less accurate."
+  },
+  {
+    "q": "How do exit criteria improve forecast accuracy?",
+    "a": "They make stage a measure of buyer progress rather than seller activity. When every deal in a stage has met the same verifiable conditions, the historical win rate for that stage becomes meaningful, and you can use it to weight the pipeline. Without consistent criteria, two deals in the same stage can be at completely different points."
+  }
+]
